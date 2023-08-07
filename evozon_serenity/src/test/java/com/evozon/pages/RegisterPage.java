@@ -1,6 +1,6 @@
 package com.evozon.pages;
 
-//import com.github.javafaker.Faker;
+import com.github.javafaker.Faker;
 import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,10 +39,10 @@ public class RegisterPage extends PageObject {
         typeInto(lastnameField, lastname);
     }
 
-    public void setRandomEmailAddressField(){
-        String randomEmailAddress = faker.bothify("??????###@gmail.com");
-        typeInto(emailAddressField, randomEmailAddress);
-    }
+//    public void setRandomEmailAddressField(){
+//        String randomEmailAddress = faker.bothify("??????###@gmail.com");
+//        typeInto(emailAddressField, randomEmailAddress);
+//    }
 
     public void setPasswordField(String password){
         typeInto(passwordField, password);

@@ -23,4 +23,14 @@ public class CartSteps extends BaseSteps {
     public void verifyQuantityWasUpdated(int quantity){
         cartPage.verifyQuantityWasUpdated(quantity);
     }
+
+    @Step
+    public void clickRemove(){
+        cartPage.clickRemoveButton();
+    }
+
+    @Step
+    public void verifyProductWasDeleted(){
+        cartPage.productWasDeleted();
+    }
 }

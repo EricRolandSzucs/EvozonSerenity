@@ -9,7 +9,7 @@ public class RegisterTest extends BaseTest {
         registerSteps.navigateToRegisterPage();
         registerSteps.enterFirstname("Tabita");
         registerSteps.enterLastname("Lucaciu");
-        registerSteps.enterEmailAddress();
+//        registerSteps.enterEmailAddress();
         registerSteps.enterPassword("password");
         registerSteps.enterConfirmationPassword("password");
         registerSteps.signUpForNewsletter();

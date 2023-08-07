@@ -1,9 +1,13 @@
 package com.evozon.pages;
 
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends BasePage {
+
+    @FindBy(css = "h1")
+    private WebElementFacade shoppingCartTitle;
 
     @FindBy(css = ".success-msg")
     private WebElementFacade productAddedParagraph;
@@ -16,6 +20,9 @@ public class CartPage extends BasePage {
 
     @FindBy(css = ".product-cart-actions .btn-update")
     private WebElementFacade updateButton;
+
+    @FindBy(css = ".product-cart-remove .btn-remove")
+    private WebElementFacade removeButton;
 
     public boolean isProductAdded(String product) {
         return productAddedParagraph.containsOnlyText(product + " was added to your shopping cart.");
@@ -42,6 +49,18 @@ public class CartPage extends BasePage {
     public boolean verifyQuantityWasUpdated(int quantity){
         String quantityString = String.valueOf(quantity);
         return getQuantityField().equals(quantityString);
+    }
+
+    public void clickRemoveButton(){
+        clickOn(removeButton);
+    }
+
+    public String getShoppingCartTitle(){
+        return shoppingCartTitle.getText();
+    }
+
+    public boolean productWasDeleted(){
+        return shoppingCartTitle.containsOnlyText("SHOPPING CART IS EMPTY");
     }
 
     public void clickCheckoutButton() {

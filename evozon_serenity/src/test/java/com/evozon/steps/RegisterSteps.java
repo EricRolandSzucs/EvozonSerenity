@@ -24,10 +24,10 @@ public class RegisterSteps extends BaseSteps {
         registerPage.setLastnameField(lastname);
     }
 
-    @Step
-    public void enterEmailAddress(){
-        registerPage.setRandomEmailAddressField();
-    }
+//    @Step
+//    public void enterEmailAddress(){
+//        registerPage.setRandomEmailAddressField();
+//    }
 
     @Step
     public void enterPassword(String password){

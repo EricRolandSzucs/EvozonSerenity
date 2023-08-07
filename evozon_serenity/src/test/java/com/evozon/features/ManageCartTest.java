@@ -13,4 +13,11 @@ public class ManageCartTest extends BaseTest {
         cartSteps.clickUpdate();
         cartSteps.verifyQuantityWasUpdated(quantity);
     }
+
+    @Test
+    public void validRemoveFromCart(){
+        addProductSteps.doValidAddToCartVirtualProduct();
+        cartSteps.clickRemove();
+        cartSteps.verifyProductWasDeleted();
+    }
 }
