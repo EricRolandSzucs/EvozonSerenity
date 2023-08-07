@@ -1,0 +1,2151 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ana popa / Manage Customers / Customers / Magento Admin</title>
+<link rel="icon" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/favicon.ico" type="image/x-icon">
+
+<script type="text/javascript">
+    var BLANK_URL = 'http://qa1magento.dev.evozon.com/js/blank.html';
+    var BLANK_IMG = 'http://qa1magento.dev.evozon.com/js/spacer.gif';
+    var BASE_URL = 'http://qa1magento.dev.evozon.com/index.php/admin/index/index/key/9158c7dad9e49842ac8d742baf708b92/';
+    var SKIN_URL = 'http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/';
+    var FORM_KEY = '25c1Ln1XHoVxVSHL';
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/js/calendar/calendar-win2k-1.css">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/reset.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/boxes.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/custom.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/print.css" media="print">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/menu.css" media="screen, projection">
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/prototype/window.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/hash.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/events.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/loader.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/grid.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/tabs.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/form.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/accordion.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/tools.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/uploader.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/product.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/calendar/calendar-setup.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/product/composite/configure.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/varien/configurable.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/iestyles.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/below_ie7.css" media="all" />
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/lib/ds-sleight.js" defer></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/varien/iehover-fix.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/ie7.css" media="all" />
+<![endif]-->
+
+
+
+<script type="text/javascript">
+    Fieldset.addToPrefix(2);
+</script>
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+
+<script type="text/javascript">
+//<![CDATA[
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; // full day names
+Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]; // short day names
+Calendar._FD = 0; // First day of the week. "0" means display Sunday first, "1" means display Monday first, etc.
+Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; // full month names
+Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; // short month names
+Calendar._am = "AM"; // am/pm
+Calendar._pm = "PM";
+
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = "About the calendar";
+
+Calendar._TT["ABOUT"] =
+"DHTML Date/Time Selector\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL. See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n" +
+"- Use the \xab, \xbb buttons to select year\n" +
+"- Use the \u2039, \u203a buttons to select month\n" +
+"- Hold mouse button on any of the above buttons for faster selection.";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+
+Calendar._TT["PREV_YEAR"] = "Prev. year (hold for menu)";
+Calendar._TT["PREV_MONTH"] = "Prev. month (hold for menu)";
+Calendar._TT["GO_TODAY"] = "Go Today";
+Calendar._TT["NEXT_MONTH"] = "Next month (hold for menu)";
+Calendar._TT["NEXT_YEAR"] = "Next year (hold for menu)";
+Calendar._TT["SEL_DATE"] = "Select date";
+Calendar._TT["DRAG_TO_MOVE"] = "Drag to move";
+Calendar._TT["PART_TODAY"] = ' (' + "today" + ')';
+
+// the following is to inform that "%s" is to be the first day of week
+Calendar._TT["DAY_FIRST"] = "Display %s first";
+
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+
+Calendar._TT["CLOSE"] = "Close";
+Calendar._TT["TODAY"] = "today";
+Calendar._TT["TIME_PART"] = "(Shift-)Click or drag to change value";
+
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%b %e, %Y";
+Calendar._TT["TT_DATE_FORMAT"] = "%B %e, %Y";
+
+Calendar._TT["WK"] = "Week";
+Calendar._TT["TIME"] = "Time:";
+
+CalendarDateObject._LOCAL_TIMZEONE_OFFSET_SECONDS = -25200;
+CalendarDateObject._SERVER_TIMZEONE_SECONDS = 1691391684;
+
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+
+function onAddressCountryChanged (countryElement) {
+    var zipElementId = countryElement.id.replace(/country_id/, 'postcode');
+
+    // Ajax-request and normal content load compatibility
+    if ($(zipElementId) != undefined) {
+        setPostcodeOptional($(zipElementId), countryElement.value);
+    } else {
+        Event.observe(window, "load", function () {
+            setPostcodeOptional($(zipElementId), countryElement.value);
+        });
+    }
+}
+
+function setPostcodeOptional(zipElement, country) {
+    if (optionalZipCountries.indexOf(country) != -1) {
+        while (zipElement.hasClassName('required-entry')) {
+            zipElement.removeClassName('required-entry');
+        }
+        zipElement.up(1).down('label > span.required').hide();
+    } else {
+        zipElement.addClassName('required-entry');
+        zipElement.up(1).down('label > span.required').show();
+    }
+}
+
+varienGlobalEvents.attachEventHandler("address_country_changed", onAddressCountryChanged);
+//]]>
+</script>
+</head>
+
+<body id="html-body" class=" adminhtml-customer-edit">
+<div class="wrapper">
+        <noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong>JavaScript seems to be disabled in your browser.</strong></p>
+                <p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+            </div>
+        </div>
+    </noscript>
+    <p class="demo-notice">This is a demo store. Any orders placed through this store will not be honored or fulfilled.</p>
+        <div class="header">
+            <div class="header-top">
+    <a href="http://qa1magento.dev.evozon.com/index.php/admin/index/index/key/9158c7dad9e49842ac8d742baf708b92/"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/logo.gif" alt="Magento Logo" class="logo"></a>
+    <div class="header-right">
+        <p class="super">
+            Logged in as testuser<span class="separator">|</span>Monday, August 7, 2023<span class="separator">|</span><a href="http://qa1magento.dev.evozon.com/index.php/admin/index/logout/key/9891f8b7ba30c54e72690e64c9a368cb/" class="link-logout">Log Out</a>
+        </p>
+                <fieldset>
+            <legend>Search</legend>
+            <span id="global_search_indicator" class="autocomplete-indicator" style="display: none">
+                <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/ajax-loader.gif" alt="Loading..." class="v-middle">
+            </span>
+                        <input id="global_search" name="query" type="text" class="input-text" value="Global Record Search" onfocus="if(this.value=='Global Record Search')this.value=''; " onblur="if(this.value=='')this.value='Global Record Search';" autocomplete="off">
+            <div id="global_search_autocomplete" class="autocomplete" style="display: none;"></div>
+            <script type="text/javascript">
+                new Ajax.Autocompleter(
+                    'global_search',
+                    'global_search_autocomplete',
+                    'http://qa1magento.dev.evozon.com/index.php/admin/index/globalSearch/key/55838a450a126b13cbad1982b1994e40/',
+                    {
+                        paramName:"query",
+                        minChars:2,
+                        indicator:"global_search_indicator",
+                        updateElement:getSelectionId,
+                        evalJSON:'force'
+                    }
+                );
+                function getSelectionId(li) {
+                    location.href = li.getAttribute('url');
+                }
+            </script>
+        </fieldset>
+            </div>
+</div>
+        <div class="clear"></div>
+            
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li class="  level0"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/dashboard/index/key/ec50e1dae42d10890b5eb8c3dd6a263c/" class=""><span>Dashboard</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Sales</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_order/index/key/1ec375581ea6171f855351d83f1b5521/" class=""><span>Orders</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_invoice/index/key/deb636191207af432540e0ac841abf87/" class=""><span>Invoices</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_shipment/index/key/0d4cf16d43ac6710f18c85ef8a2ef479/" class=""><span>Shipments</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_creditmemo/index/key/7bff73fc25335c0c901f2aa5f42ec9d2/" class=""><span>Credit Memos</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_transactions/index/key/8a62df7ad6ce6f684ec3a734feadca09/" class=""><span>Transactions</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_recurring_profile/index/key/3f844c004b7c57205f3c89f47aa5a056/" class=""><span>Recurring Profiles (beta)</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_billing_agreement/index/key/e1cd6eb718d1faf21ad08456f288ea8f/" class=""><span>Billing Agreements</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/checkout_agreement/index/key/90175ac37cd1620f5d24169dd6a1a7bb/" class=""><span>Terms and conditions</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#" onclick="return false" class=""><span>Tax</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_rule/index/key/8d54a13bb92c1a5e2cb2eda771dcaa6d/" class=""><span>Manage Tax Rules</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_rate/index/key/0df70088734f86d2edd14c8acbb8ec10/" class=""><span>Manage Tax Zones &amp; Rates</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_rate/importExport/key/c5979d3fe3e64d8b580c314b79a60538/" class=""><span>Import / Export Tax Rates</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_class_customer/index/key/4265b5831272b3a503c1052fedab9772/" class=""><span>Customer Tax Classes</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_class_product/index/key/df86c13e18f1120c2ae8185d2ac33a57/" class=""><span>Product Tax Classes</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Catalog</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product/index/key/8aa4ae7cb91cb29d9a6628aab52c04d6/" class=""><span>Manage Products</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_category/index/key/2528261758d7eb745a51e5e77b7f0a0a/" class=""><span>Manage Categories</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Attributes</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_attribute/index/key/a97147619c43b0926da61fcc8444be45/" class=""><span>Manage Attributes</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_set/index/key/5bfdf029d20fe4081e1c294f40339c4b/" class=""><span>Manage Attribute Sets</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/urlrewrite/index/key/c314392c813cef1cf656c61c562f5eac/" class=""><span>URL Rewrite Management</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/index/key/981b36116c2d1c5b52c68c68904c985d/" class=""><span>Search Terms</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Reviews and Ratings</span></a>
+<ul>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#" onclick="return false" class=""><span>Customer Reviews</span></a>
+<ul>
+<li class="  level3"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_review/pending/key/48b845cd7ac64735b9e62f5479d6ed96/" class=""><span>Pending Reviews</span></a>
+</li>
+<li class="  last level3"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_review/index/key/6b31f5b1d8e9b0433c2571cd828a6dee/" class=""><span>All Reviews</span></a>
+</li>
+</ul>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/rating/index/key/a1125ad09a2d69a6efe9351d5a0f4cd9/" class=""><span>Manage Ratings</span></a>
+</li>
+</ul>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sitemap/index/key/27418ac43b77c8ad8ccd3143a3fead43/" class=""><span>Google Sitemap</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class=" active  parent level0"> <a href="#" onclick="return false" class="active"><span>Customers</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/index/key/761a03439e4f11c145ebb68471711fe4/" class=""><span>Manage Customers</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer_group/index/key/57a3f3cd78b4be623f8eed6022fb9fb5/" class=""><span>Customer Groups</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer_online/index/key/7a417bcfca8263e97343f0aab58474ad/" class=""><span>Online Customers</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Promotions</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/promo_catalog/index/key/a0af0dc9e8cbb7ffc1b91d60a3b45229/" class=""><span>Catalog Price Rules</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/promo_quote/index/key/f4e75060eb64500bf0e358908bb65225/" class=""><span>Shopping Cart Price Rules</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Newsletter</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_template/index/key/651efccbb54e49a6691858ec2e81af19/" class=""><span>Newsletter Templates</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_queue/index/key/f437a2dad0ab4fad427b887edbd4e6eb/" class=""><span>Newsletter Queue</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_subscriber/index/key/8b483f148f9f6a345af1b671a4e1d96a/" class=""><span>Newsletter Subscribers</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_problem/index/key/083ae6bc2aaca9790209d0057f144841/" class=""><span>Newsletter Problem Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>CMS</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/cms_page/index/key/8f25fe3d035cdcc670280c7e280a5fc1/" class=""><span>Pages</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/cms_block/index/key/55007eaebc9c496436e0bf8a783d3acc/" class=""><span>Static Blocks</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/widget_instance/index/key/d47b72c8f67a1098f88e6fb825d28870/" class=""><span>Widgets</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Reports</span></a>
+<ul>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Sales</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/sales/key/45982058e8a7a5fdd9e2d623f921fee1/" class=""><span>Orders</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/tax/key/3d529a664dafa87ff489328cdead9c2c/" class=""><span>Tax</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/invoiced/key/4742848b270b404beaede9d5281226d3/" class=""><span>Invoiced</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/shipping/key/1c3a9b94c1236078d8baaf5eeb0a18f7/" class=""><span>Shipping</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/refunded/key/6403a2ad307d542985370d24d57a6b11/" class=""><span>Refunds</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/coupons/key/9fa77474fa288398ce863da26c1c7c69/" class=""><span>Coupons</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/paypal_reports/index/key/fa5e4f6b43aca1d0496c15f00563a34c/" class=""><span>PayPal Settlement Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Shopping Cart</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_shopcart/product/key/6ed4acb536b29cbe865e790cf419e714/" class=""><span>Products in carts</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_shopcart/abandoned/key/005cc706f5497be5330cb97bae3d01bd/" class=""><span>Abandoned carts</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Products</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/bestsellers/key/66ee0cdb328e7f823e0d31ec4495045c/" class=""><span>Bestsellers</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/sold/key/3796f39cdd8fc13180947bcafa6c0e9d/" class=""><span>Products Ordered</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/viewed/key/2d1034e58d24b0d3ff7cbc84958666ed/" class=""><span>Most Viewed</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/lowstock/key/39a984e633126d245dcc0777b425afb8/" class=""><span>Low stock</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/downloads/key/624921126e40f05bec45f1f7766c9d02/" class=""><span>Downloads</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Customers</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_customer/accounts/key/8aa8af737563f5551f587cbe63bcbe9e/" class=""><span>New Accounts</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_customer/totals/key/71b1d521e94712c4837aaf13c8f5e2a5/" class=""><span>Customers by orders total</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_customer/orders/key/ddf72ce0e8424d509bd4b68ec4af516d/" class=""><span>Customers by number of orders</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Reviews</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_review/customer/key/96d38ce51ed5fe691b05f762fab2af27/" class=""><span>Customers Reviews</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_review/product/key/3ed511dc53a847dbb0fda738ed90569f/" class=""><span>Products Reviews</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report/search/key/773c910442342105937b6d8cd79e1e14/" class=""><span>Search Terms</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_statistics/index/key/6243c12d675ac63937d6763861d3677f/" class=""><span>Refresh Statistics</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>System</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_account/index/key/f3514c2578e4d5124054e894b5005022/" class=""><span>My Account</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/notification/index/key/e0ce18ef435768f7a481694ed69d0d22/" class=""><span>Notifications</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Tools</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_backup/index/key/f04f64b4c60056254381fa329dc7ec3a/" class=""><span>Backups</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/compiler_process/index/key/da806af8a37e8f044a68f5a48b20865d/" class=""><span>Compilation</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Web Services</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api_user/index/key/e281c37542e1e588852b12fb8bdc13a0/" class=""><span>SOAP/XML-RPC - Users</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api_role/index/key/37e16b3aa59a50687ff697b0aa6076e8/" class=""><span>SOAP/XML-RPC - Roles</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api2_role/index/key/9328686462b10467e85d3e9ef0d89c69/" class=""><span>REST - Roles</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api2_attribute/index/key/3cea6da1fdb6d8d94bbd45253f830c39/" class=""><span>REST - Attributes</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/oauth_consumer/index/key/dce8dccddb48856ee77cf164dfaa1f61/" class=""><span>REST - OAuth Consumers</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/oauth_authorizedTokens/index/key/b6efde638c02aedcd62a2ec43338a34e/" class=""><span>REST - OAuth Authorized Tokens</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/oauth_admin_token/index/key/660b4c79d5a8b8cabbd6c3c4e10148c1/" class=""><span>REST - My Apps</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_design/index/key/b6b3a046232021d4659cc2b027a96f7c/" class=""><span>Design</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Import/Export</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/import/index/key/9663d324e36ac7919e6a43f8440887f1/" class=""><span>Import</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/export/index/key/467f27cd644c8c50fc5686090bc08a09/" class=""><span>Export</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_convert_gui/index/key/6d0f0c7f472929f70d1cc6139ad0bcca/" class=""><span>Dataflow - Profiles</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_convert_profile/index/key/532721a0fb3ab4cebc65edcbe137ed62/" class=""><span>Dataflow - Advanced Profiles</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_currency/index/key/e96f85fa8c8c0f028212abd98061bb54/" class=""><span>Manage Currency</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_currency/index/key/e96f85fa8c8c0f028212abd98061bb54/" class=""><span>Rates</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_currencysymbol/index/key/a3570370fe9973da32d60659353e834b/" class=""><span>Symbols</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_email_template/index/key/2322fdc39de3896ea27a30f5bb453841/" class=""><span>Transactional Emails</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_variable/index/key/bca764fd933e7adb11d81d11ae619aad/" class=""><span>Custom Variables</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Permissions</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_user/index/key/8d285f6cc2fa36d0c2a58e8a3293b3b6/" class=""><span>Users</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_role/index/key/3a9ab1054c06f2c16c592bf6ba248c5b/" class=""><span>Roles</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_variable/index/key/18d6796cf28c73b6a8e054782b333847/" class=""><span>Variables</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_block/index/key/dde03e9df4c473afb7d299ee3c027b0e/" class=""><span>Blocks</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Magento Connect</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/extension_local/index/key/736d32dc98d99f526a581f3352cb3309/" class=""><span>Magento Connect Manager</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/extension_custom/index/key/2cf6515e72458626309e1a1d9c875344/" class=""><span>Package Extensions</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/cache/index/key/5f67ceee19747fef604ab97fdcbec647/" class=""><span>Cache Management</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/process/list/key/984563083c638c135de2929d307c86a5/" class=""><span>Index Management</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_store/index/key/cb39d2fa837a347c783442285e123747/" class=""><span>Manage Stores</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_order_status/index/key/d4296da899e7f59de50a2e717206b08e/" class=""><span>Order Statuses</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_config/index/key/6165dcc55181924b142d0fdfdde0e79c/" class=""><span>Configuration</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://magento.com/help/documentation" target="magento_page_help">Get help for this page</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>
+        </div>
+        <div class="notification-global">
+    <strong>One or more of the Cache Types are invalidated:</strong>
+    Blocks HTML output, Layouts.
+    Click here to go to <a href="http://qa1magento.dev.evozon.com/index.php/admin/cache/index/key/5f67ceee19747fef604ab97fdcbec647/">Cache Management</a> and refresh cache types.</div>
+    <div class="notification-global notification-global-warning">
+        <strong style="color:red">Important: </strong>
+        <span>Formkey validation on checkout disabled. This may expose security risks.
+        We strongly recommend to Enable Form Key Validation On Checkout in
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_config/edit/section/admin/key/e1f7d6487d6a56d01d185515a29bbdb7/">Admin / Security Section</a>,
+        for protect your own checkout process. </span>
+    </div>
+<div class="notification-global">
+        
+    <span class="f-right">
+                You have <span class="critical"><strong>18</strong> critical</span>, <strong>7</strong> major, <strong>19</strong> minor and <strong>152</strong> notice unread message(s). <a href="http://qa1magento.dev.evozon.com/index.php/admin/notification/index/key/e0ce18ef435768f7a481694ed69d0d22/">Go to messages inbox</a>
+    </span>
+            <strong class="label">
+    
+    Latest Message:</strong> New Patch for PayPal Instant Payment Notification (IPN) Changes. Upgrade to 1.9.3.3 or SUPEE-8167 by June 30, 2017 to Avoid Service Disruptions – 6/13/2017            <a href="https://magento.com/tech-resources/download " onclick="this.target='_blank';">Read details</a>
+    </div>
+<div class="notification-global">
+    <strong>One or more of the Indexes are not up to date:</strong>
+    Catalog URL Rewrites.
+    Click here to go to <a href="http://qa1magento.dev.evozon.com/index.php/admin/process/list/key/984563083c638c135de2929d307c86a5/">Index Management</a> and rebuild required indexes.</div>
+
+
+
+
+        <div class="middle" id="anchor-content">
+            <div id="page:main-container">
+            
+                <div class="columns ">
+                    <div class="side-col" id="page:left">
+                            <h3>Customer Information</h3>
+<ul id="customer_info_tabs" class="tabs">
+    <li>
+        <a href="#" id="customer_info_tabs_customer_edit_tab_view" name="customer_edit_tab_view" title="Customer View" class="tab-item-link active">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Customer View</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="#" id="customer_info_tabs_account" name="account" title="Account Information" class="tab-item-link">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Account Information</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="#" id="customer_info_tabs_addresses" name="addresses" title="Addresses" class="tab-item-link">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Addresses</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/orders/id/301/key/4d982ceadfeeb1d496045e15b0814e31/" id="customer_info_tabs_orders" name="orders" title="Orders" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Orders</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="#" id="customer_info_tabs_customer_edit_tab_agreements" name="customer_edit_tab_agreements" title="Billing Agreements" class="tab-item-link">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Billing Agreements</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="#" id="customer_info_tabs_customer_edit_tab_recurring_profile" name="customer_edit_tab_recurring_profile" title="Recurring Profiles (beta)" class="tab-item-link">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Recurring Profiles (beta)</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/carts/id/301/key/92b96bdcbb81ac446b1378e77e70da49/" id="customer_info_tabs_cart" name="cart" title="Shopping Cart" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Shopping Cart</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/wishlist/id/301/key/fd99c8e1b260dd0fa6b85f06764bf26b/" id="customer_info_tabs_wishlist" name="wishlist" title="Wishlist" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Wishlist</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="#" id="customer_info_tabs_newsletter" name="newsletter" title="Newsletter" class="tab-item-link">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Newsletter</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/productReviews/id/301/key/11506cbf1909f06d83bb3e3df8d1a740/" id="customer_info_tabs_reviews" name="reviews" title="Product Reviews" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Product Reviews</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/productTags/id/301/key/538c2a3f8502bf1292e1ff058d9a2f95/" id="customer_info_tabs_tags" name="tags" title="Product Tags" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Product Tags</span>
+        </a>
+        
+    </li>
+</ul>
+<script type="text/javascript">
+    customer_info_tabsJsTabs = new varienTabs('customer_info_tabs', 'edit_form', 'customer_info_tabs_customer_edit_tab_view', []);
+</script>
+                    </div>
+                    <div class="main-col" id="content">
+                        <div class="main-col-inner">
+                            <div id="messages"></div>
+                            <div class="content-header">
+    <h3 class="icon-head head-customer">ana popa</h3>    <p class="form-buttons"><button id="id_8ffffea6e3b2dcc335c285d1f1bfe587" title="Back" type="button" class="scalable back" onclick="setLocation('http://qa1magento.dev.evozon.com/index.php/admin/customer/index/key/761a03439e4f11c145ebb68471711fe4/')" style=""><span><span><span>Back</span></span></span></button><button id="id_10a85f601eb78c28119c157a4b7c93b7" title="Reset" type="button" class="scalable " onclick="setLocation(window.location.href)" style=""><span><span><span>Reset</span></span></span></button><button id="id_92dcc3094c357aedc52210d336aee2c9" title="Create Order" type="button" class="scalable add" onclick="setLocation('http://qa1magento.dev.evozon.com/index.php/admin/sales_order_create/start/customer_id/301/key/99d40d3f84e0fd9bfa7d0a118727d6ca/')" style=""><span><span><span>Create Order</span></span></span></button><button id="id_d3b9d7765610b84dafef5d427b0ebbc8" title="Delete Customer" type="button" class="scalable delete" onclick="deleteConfirm('Are you sure you want to do this?', 'http://qa1magento.dev.evozon.com/index.php/admin/customer/delete/id/301/key/1a51656978e90ee585a79606cf2bf08f/')" style=""><span><span><span>Delete Customer</span></span></span></button><button id="id_a05fe6bdecf08713b34a96b2e85cbf02" title="Save Customer" type="button" class="scalable save" onclick="editForm.submit();" style=""><span><span><span>Save Customer</span></span></span></button><button id="id_098722ccf3f65fba2badf30594c2de2c" title="Save and Continue Edit" type="button" class="scalable save" onclick="saveAndContinueEdit('http://qa1magento.dev.evozon.com/index.php/admin/customer/save/back/edit/tab/{{tab_id}}/id/301/key/ebb1284ff4caa06324b3b8f0d08b62bb/')" style=""><span><span><span>Save and Continue Edit</span></span></span></button></p>
+</div>
+<div class="entry-edit">
+    <form id="edit_form" action="http://qa1magento.dev.evozon.com/index.php/admin/customer/save/key/ebb1284ff4caa06324b3b8f0d08b62bb/" method="post" enctype="multipart/form-data"><div><input name="form_key" type="hidden" value="25c1Ln1XHoVxVSHL"></div><span class="field-row">
+<input id="entity_id" name="customer_id" value="301" type="hidden">
+</span>
+<div id="customer_info_tabs_customer_edit_tab_view_content" style=""><div class="entry-edit">
+    <div class="entry-edit-head"><h4 class="icon-head head-customer-view">Personal Information</h4></div>
+    <fieldset>
+        <table cellspacing="2" class="box-left">
+            <tbody><tr>
+                <td><strong>Last Logged In:</strong></td>
+                <td>Never (Offline)</td>
+            </tr>
+                        <tr>
+                <td><strong>Confirmed email:</strong></td>
+                <td>Confirmed</td>
+            </tr>
+            <tr>
+                <td><strong>Account Created on:</strong></td>
+                <td>Aug 7, 2023 6:14:38 AM</td>
+            </tr>
+                        <tr>
+                <td><strong>Account Created in:</strong></td>
+                <td>Admin</td>
+            </tr>
+            <tr>
+                <td><strong>Customer Group:</strong></td>
+                <td>General</td>
+            </tr>
+        </tbody></table>
+        <address class="box-right">
+            <strong>Default Billing Address</strong><br>
+            The customer does not have default billing address.        </address>
+    </fieldset>
+</div>
+<div class="entry-edit">
+    <div class="entry-edit-head"><h4 class="icon-head head-customer-sales-statistics">Sales Statistics</h4></div>
+    <div class="grid">
+        <table cellspacing="0" class="data">
+            <thead>
+                <tr class="headings">
+                    <th>Website</th>
+                    <th>Store</th>
+                    <th>Store View</th>
+                    <th>Lifetime Sales</th>
+                    <th>Average Sale</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="label"><strong><big>All Store Views</big></strong></td>
+                    <td class="emph"><strong><big><span class="price">$0.00</span></big></strong></td>
+                    <td class="emph"><strong><big><span class="price">$0.00</span></big></strong></td>
+                </tr>
+            </tfoot>
+                        <tbody>
+                <tr class="no-display"><td colspan="5"></td></tr>
+            </tbody>
+                    </table>
+    </div>
+</div>
+<div class="clear"></div>
+<br>
+<dl id="tab_content_customerViewAccordion" name="tab_content_customerViewAccordion" class="accordion">
+    <dt id="dt-lastOrders" class=""><a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/lastOrders/id/301/key/7695781ed2808a54a3b5f8ff1574185a/" class="ajax">Recent Orders</a></dt><dd id="dd-lastOrders" class=""></dd>    <dt id="dt-shopingCart1" class=""><a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/viewCart/website_id/1/id/301/key/ede60ec5c4700176a94c662a2e9358c4/" class="ajax">Shopping Cart - 0 item(s)</a></dt><dd id="dd-shopingCart1" class=""></dd>    <dt id="dt-wishlist" class=""><a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/viewWishlist/id/301/key/11933c2e8a9a2f80e08ca6545c402023/" class="ajax">Wishlist - 0 item(s)</a></dt><dd id="dd-wishlist" class=""></dd></dl>
+<script type="text/javascript">
+    tab_content_customerViewAccordionAccordionJs = new varienAccordion('tab_content_customerViewAccordion', '');
+</script>
+</div><div id="customer_info_tabs_account_content" style="display:none;"><div class="entry-edit">
+    <div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Account Information</h4>
+    <div class="form-buttons"></div>
+</div>
+    <div class="fieldset " id="_accountbase_fieldset">
+    <div class="hor-scroll">
+                        <table cellspacing="0" class="form-list">
+            <tbody>
+                <tr>
+        <td class="label"><label for="_accountwebsite_id">Associate to Website <span class="required">*</span></label></td>
+    <td class="value">
+        <div class="store-scope">
+            <select id="_accountwebsite_id" name="account[website_id]" class=" required-entry required-entry select" disabled="disabled">
+<option value="">-- Please Select --</option>
+<option value="0">Admin</option>
+<option value="1" selected="selected">Main Website</option>
+</select>            <a href="http://merch.docs.magento.com/ce/user_guide/configuration/scope.html" onclick="this.target='_blank'" title="What is this?" class="link-store-scope">What is this?</a>        </div>
+            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountcreated_in">Created From</label></td>
+    <td class="value">
+        <input id="_accountcreated_in" name="account[created_in]" value="Admin" class=" input-text" type="text" disabled="disabled">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountgroup_id">Group <span class="required">*</span></label></td>
+    <td class="value">
+        <select id="_accountgroup_id" name="account[group_id]" class=" required-entry required-entry select">
+<option value="1" selected="selected">General</option>
+<option value="2">Wholesale</option>
+<option value="4">VIP Member</option>
+<option value="5">Private Sales Member</option>
+<option value="6">hhh</option>
+</select>                    <br>
+            <input id="disable_auto_group_change" name="account[disable_auto_group_change]" type="checkbox" value="1">
+            <label for="disable_auto_group_change">Disable Automatic Group Change Based on VAT ID</label>
+                    </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountprefix">Prefix</label></td>
+    <td class="value">
+        <input id="_accountprefix" name="account[prefix]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountfirstname">First Name <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_accountfirstname" name="account[firstname]" value="ana" class=" required-entry input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountmiddlename">Middle Name/Initial</label></td>
+    <td class="value">
+        <input id="_accountmiddlename" name="account[middlename]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountlastname">Last Name <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_accountlastname" name="account[lastname]" value="popa" class=" required-entry input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountsuffix">Suffix</label></td>
+    <td class="value">
+        <input id="_accountsuffix" name="account[suffix]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountemail">Email <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_accountemail" name="account[email]" value="ana@popa.com" class=" required-entry validate-email input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountdob">Date Of Birth</label></td>
+    <td class="value">
+        <input name="account[dob]" id="_accountdob" value="" class=" input-text" type="text" style="width:110px !important;"> <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="_accountdob_trig" title="Select Date" style="">
+            <script type="text/javascript">
+            //<![CDATA[
+                Calendar.setup({
+                    inputField: "_accountdob",
+                    ifFormat: "%m/%e/%Y",
+                    showsTime: false,
+                    button: "_accountdob_trig",
+                    align: "Bl",
+                    singleClick : true
+                });
+            //]]>
+            </script>            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accounttaxvat">Tax/VAT Number</label></td>
+    <td class="value">
+        <input id="_accounttaxvat" name="account[taxvat]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_accountgender">Gender</label></td>
+    <td class="value">
+        <select id="_accountgender" name="account[gender]" class=" select">
+<option value="" selected="selected"></option>
+<option value="1">Male</option>
+<option value="2">Female</option>
+</select>            </td>
+    </tr>
+            </tbody>
+        </table>
+            </div>
+        </div>
+<div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Password Management</h4>
+    <div class="form-buttons"></div>
+</div>
+    <div class="fieldset " id="_accountpassword_fieldset">
+    <div class="hor-scroll">
+                        <table cellspacing="0" class="form-list">
+            <tbody>
+                <tr><td class="label"><label for="_accountnew_password">New Password</label>
+</td><td class="value"><input id="_accountnew_password" name="account[new_password]" value="" class="validate-new-password input-text" type="text">
+</td></tr>
+<tr><td class="label"><label>&nbsp;</label></td><td class="value">or</td></tr>
+<tr><td class="label"><label>&nbsp;</label></td><td class="value"><input type="checkbox" id="account-send-pass" name="account[new_password]" value="auto" onclick="setElementDisable('_accountnew_password', this.checked)">&nbsp;<label for="account-send-pass">Send Auto-Generated Password</label></td></tr>
+<tr id="_accountcurrent_password_container" style="display: none;"><td class="label"><label for="_accountcurrent_password">Current Admin Password <span class="required">*</span></label>
+</td><td class="value"><input id="_accountcurrent_password" name="account[current_password]" value="" title="Current Admin Password" type="password" class=" input-text required-entry" disabled="">
+ <script type="text/javascript">
+//<![CDATA[
+    $$('#_accountnew_password,#account-send-pass').each(function(elem) {
+        $(elem).on('change', function() {
+            if ($('_accountnew_password').getValue() || $('account-send-pass').checked) {
+                $('_accountcurrent_password_container').show();
+                $('_accountcurrent_password').enable();
+            } else {
+                $('_accountcurrent_password_container').hide();
+                $('_accountcurrent_password').disable();
+            }
+        });
+        $(elem).on('focus', function() {
+            $('_accountcurrent_password_container').show();
+            $('_accountcurrent_password').enable();
+        });
+        $(elem).on('blur', function() {
+            if (!$('_accountnew_password').getValue() && !$('account-send-pass').checked) {
+                $('_accountcurrent_password_container').hide();
+                $('_accountcurrent_password').disable();
+            }
+        });
+        document.observe("dom:loaded", function() {
+            $('_accountcurrent_password_container').hide();
+            $('_accountcurrent_password').disable();
+        });
+    });
+//]]></script></td></tr>
+<tr>            </tr></tbody>
+        </table>
+            </div>
+        </div>
+</div>
+</div><div id="customer_info_tabs_addresses_content" style="display:none;"><!-- Addresses list -->
+<table cellspacing="0" class="form-edit">
+<tbody><tr>
+<td class="address-list">
+    <div class="entry-edit-head">
+        <h4 class="icon-head head-customer-address-list">Customer Addresses</h4>
+    </div>
+    <div class="sub-btn-set"><button id="add_address_button" name="add_address_button" title="Add New Address" type="button" class="scalable add" onclick="customerAddresses.addNewAddress()" style=""><span><span><span>Add New Address</span></span></span></button></div>
+    <ul id="address_list">
+            </ul>
+</td>
+<td>
+    <!-- Template for adding address item to list -->
+        <div id="address_item_template" class="no-display template">
+                <a href="#" class="btn-remove-address">
+            <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/cancel_icon.gif" alt="Remove address" id="delete_button1">
+        </a>
+        <a href="#" id="select_button_" class="select_button btn-edit-address">
+            <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/edit_icon.gif" alt="Edit address">
+        </a>
+                <address>New Customer Address</address>
+        <div class="address-type">
+            <span class="address-type-line">
+                <input type="radio" value="_template_" id="address_item_billing_template_" name="account[default_billing]" title="Set as Default Billing Address">
+                &nbsp;<label for="address_item_billing_template_">Default Billing Address</label>
+            </span>
+            <span class="address-type-line">
+                <input type="radio" value="_template_" id="address_item_shipping_template_" name="account[default_shipping]" title="Set as Default Shipping Address">
+                &nbsp;<label for="address_item_shipping_template_">Default Shipping Address</label>
+            </span>
+        </div>
+    </div>
+
+    <!-- Address form template -->
+    <div id="address_form_template" class="no-display template">
+        <div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Edit Customer's Address</h4>
+    <div class="form-buttons"></div>
+</div>
+    <div class="fieldset " id="_template_address_fieldset">
+    <div class="hor-scroll">
+                        <table cellspacing="0" class="form-list">
+            <tbody>
+                <tr>
+        <td class="label"><label for="_template_prefix">Prefix</label></td>
+    <td class="value">
+        <input id="_template_prefix" name="address[_template_][prefix]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_firstname">First Name <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_template_firstname" name="address[_template_][firstname]" value="" class=" required-entry input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_middlename">Middle Name/Initial</label></td>
+    <td class="value">
+        <input id="_template_middlename" name="address[_template_][middlename]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_lastname">Last Name <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_template_lastname" name="address[_template_][lastname]" value="" class=" required-entry input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_suffix">Suffix</label></td>
+    <td class="value">
+        <input id="_template_suffix" name="address[_template_][suffix]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_company">Company</label></td>
+    <td class="value">
+        <input id="_template_company" name="address[_template_][company]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_street0">Street Address <span class="required">*</span></label></td>
+    <td class="value">
+        <div class="multi-input"><input id="_template_street0" name="address[_template_][street][0]" value="" class="input-text required-entry" type="text">
+</div><div class="multi-input"><input id="_template_street1" name="address[_template_][street][1]" value="" class="input-text" type="text">
+</div>            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_city">City <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_template_city" name="address[_template_][city]" value="" class=" required-entry input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_country_id">Country <span class="required">*</span></label></td>
+    <td class="value">
+        <select id="_template_country_id" name="address[_template_][country_id]" class=" required-entry countries required-entry select">
+<option value=""> </option>
+<option value="AF">Afghanistan</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua and Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BA">Bosnia and Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="VG">British Virgin Islands</option>
+<option value="BN">Brunei</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CA">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+<option value="CC">Cocos (Keeling) Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo - Brazzaville</option>
+<option value="CD">Congo - Kinshasa</option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="HR">Croatia</option>
+<option value="CU">Cuba</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="CI">Côte d’Ivoire</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard &amp; McDonald Islands</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong SAR China</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IR">Iran</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IM">Isle of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Laos</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LY">Libya</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macau SAR China</option>
+<option value="MK">Macedonia</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia</option>
+<option value="MD">Moldova</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar (Burma)</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NC">New Caledonia</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="KP">North Korea</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territories</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PN">Pitcairn Islands</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="PR">Puerto Rico</option>
+<option value="QA">Qatar</option>
+<option value="RO">Romania</option>
+<option value="RU">Russia</option>
+<option value="RW">Rwanda</option>
+<option value="RE">Réunion</option>
+<option value="BL">Saint Barthélemy</option>
+<option value="SH">Saint Helena</option>
+<option value="KN">Saint Kitts and Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin</option>
+<option value="PM">Saint Pierre and Miquelon</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia &amp; South Sandwich Islands</option>
+<option value="KR">South Korea</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="VC">St. Vincent &amp; Grenadines</option>
+<option value="SD">Sudan</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard and Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="SY">Syria</option>
+<option value="ST">São Tomé and Príncipe</option>
+<option value="TW">Taiwan</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad and Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UM">U.S. Outlying Islands</option>
+<option value="VI">U.S. Virgin Islands</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="US" selected="selected">United States</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VA">Vatican City</option>
+<option value="VE">Venezuela</option>
+<option value="VN">Vietnam</option>
+<option value="WF">Wallis and Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+<option value="AX">Åland Islands</option>
+</select>            </td>
+    </tr>
+<tr>
+<td class="label"><label for="_template_region">State/Province <span class="required">*</span></label>
+</td><td class="value"><select id="_template_region_id" name="address[_template_][region_id]" class=" input-text required-entry">
+<option value="" selected="selected">-- Please select --</option><option value="1">Alabama</option><option value="2">Alaska</option><option value="3">American Samoa</option><option value="4">Arizona</option><option value="5">Arkansas</option><option value="6">Armed Forces Africa</option><option value="7">Armed Forces Americas</option><option value="8">Armed Forces Canada</option><option value="9">Armed Forces Europe</option><option value="10">Armed Forces Middle East</option><option value="11">Armed Forces Pacific</option><option value="12">California</option><option value="13">Colorado</option><option value="14">Connecticut</option><option value="15">Delaware</option><option value="16">District of Columbia</option><option value="17">Federated States Of Micronesia</option><option value="18">Florida</option><option value="19">Georgia</option><option value="20">Guam</option><option value="21">Hawaii</option><option value="22">Idaho</option><option value="23">Illinois</option><option value="24">Indiana</option><option value="25">Iowa</option><option value="26">Kansas</option><option value="27">Kentucky</option><option value="28">Louisiana</option><option value="29">Maine</option><option value="30">Marshall Islands</option><option value="31">Maryland</option><option value="32">Massachusetts</option><option value="33">Michigan</option><option value="34">Minnesota</option><option value="35">Mississippi</option><option value="36">Missouri</option><option value="37">Montana</option><option value="38">Nebraska</option><option value="39">Nevada</option><option value="40">New Hampshire</option><option value="41">New Jersey</option><option value="42">New Mexico</option><option value="43">New York</option><option value="44">North Carolina</option><option value="45">North Dakota</option><option value="46">Northern Mariana Islands</option><option value="47">Ohio</option><option value="48">Oklahoma</option><option value="49">Oregon</option><option value="50">Palau</option><option value="51">Pennsylvania</option><option value="52">Puerto Rico</option><option value="53">Rhode Island</option><option value="54">South Carolina</option><option value="55">South Dakota</option><option value="56">Tennessee</option><option value="57">Texas</option><option value="58">Utah</option><option value="59">Vermont</option><option value="60">Virgin Islands</option><option value="61">Virginia</option><option value="62">Washington</option><option value="63">West Virginia</option><option value="64">Wisconsin</option><option value="65">Wyoming</option></select>
+<input type="hidden" name="address[_template_][region]" id="_template_region" value=""></td></tr>
+<tr>
+        <td class="label"><label for="_template_postcode">Zip/Postal Code <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_template_postcode" name="address[_template_][postcode]" value="" class=" required-entry input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_telephone">Telephone <span class="required">*</span></label></td>
+    <td class="value">
+        <input id="_template_telephone" name="address[_template_][telephone]" value="" class=" required-entry input-text required-entry" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_fax">Fax</label></td>
+    <td class="value">
+        <input id="_template_fax" name="address[_template_][fax]" value="" class=" input-text" type="text">            </td>
+    </tr>
+<tr>
+        <td class="label"><label for="_template_vat_id">VAT number</label></td>
+    <td class="value">
+        <input id="_template_vat_id" name="address[_template_][vat_id]" value="" class=" input-text" type="text">            </td>
+    </tr>
+            </tbody>
+        </table>
+            </div>
+        </div>
+    <button id="cancel_add_address_template_" name="cancel_address" title="Cancel" type="button" class="scalable cancel delete-address" onclick="customerAddresses.cancelAdd(this)" style=""><span><span><span>Cancel</span></span></span></button>    </div>
+<!-- -->
+
+<!-- Addresses forms -->
+    <div class="entry-edit" id="address_form_container">
+                    <div id="no_address_message">This customer has no saved addresses.</div>
+            </div>
+
+<script type="text/javascript">
+//<![CDATA[
+var deleteButtonId = 1;
+
+var addressesModel = Class.create();
+addressesModel.prototype = {
+    initialize : function() {
+        this.activeItem   = null;
+        this.itemTemplate = $('address_item_template');
+        this.formTemplate = $('address_form_template');
+        this.itemContainer= $('address_list');
+        this.formContainer= $('address_form_container');
+        this.baseItemId   = 'new_item';
+
+        this.defaultCountries = ["US","US"];
+        this.itemContentTemplate = new Template('#{prefix} #{firstname} #{middlename} #{lastname} #{suffix}<br/>#{company}<br/>#{street0}<br/>#{street1}<br/>#{street2}<br/>#{street3}<br/>#{city}, #{region}, #{postcode}<br/>#{country_id}<br/>T: #{telephone}<br/>F: #{fax}<br/>VAT: #{vat_id}');
+
+        this.onNewAddressClick  = this.addNewAddress.bindAsEventListener(this);
+        this.onItemMouseOver    = this.itemMouseOver.bindAsEventListener(this);
+        this.onItemMouseOut     = this.itemMouseOut.bindAsEventListener(this);
+        this.onItemMouseClick   = this.itemMouseClick.bindAsEventListener(this);
+        this.onItemFormFieldChange = this.syncFormData.bindAsEventListener(this);
+
+        this.loader = new varienLoader(true);
+        this.regionsUrl = 'http://qa1magento.dev.evozon.com/index.php/admin/json/countryRegion/key/ad478796476184bbdf3f80640a476c0d/';
+        this.requiredStateForCountries = ["AT","CA","EE","FI","FR","DE","LV","LT","RO","ES","CH","US"];
+        this.showAllRegions = 1;
+
+        this.reloadItemList(1);
+
+        for(var i=0,n=this.itemList.length; i<n; i++){
+            if(this.itemList[i].id){
+                this.addItemObservers(this.itemList[i]);
+                this.initItem(this.itemList[i]);
+            }
+        }
+        if($('add_new_address_button')){
+            Event.observe('add_new_address_button', 'click', this.onNewAddressClick)
+        }
+
+        this.setActiveItem(this.itemList[0]);
+        this.setAddressAsDefault();
+        this.bindCountryRegionRelation();
+    },
+
+    reloadItemList : function(initial){
+        this.itemList = $$('#address_list li');
+        if( initial ) {
+            this.itemCount = this.itemList.length;
+        }
+        if(!this.itemList.length){
+            if($('no_address_message')){
+                $('no_address_message').show();
+            }
+            else {
+                this.formContainer.innerHTML+= '<div id="no_address_message">This customer has no saved addresses.</div>'
+            }
+        }
+    },
+
+    initItem : function(item){
+        if(item && $('form_'+item.id)){
+            item.formBlock = $('form_'+item.id);
+            Element.hide($('form_'+item.id));
+            $('form_'+item.id).statusBar = item;
+            $('form_'+item.id).addressItem = item;
+
+            // set Zip optional/required
+            var countryElement = $('_item' + item.id.replace(/address_item_/, '').replace(new RegExp(this.baseItemId), '') + 'country_id');
+            varienGlobalEvents.fireEvent("address_country_changed", countryElement);
+        }
+    },
+
+    addItemObservers : function(item){
+        if(item.id){
+            Event.observe(item, 'mouseover', this.onItemMouseOver);
+            Event.observe(item, 'mouseout', this.onItemMouseOut);
+            Event.observe(item, 'click', this.onItemMouseClick);
+        }
+    },
+
+    addNewAddress : function(event){
+        if(this.canCreateNewAddress){
+            this.itemCount++;
+            if($('no_address_message')){
+                $('no_address_message').hide();
+            }
+            // preventing duplication of ids for fields and blocks
+            while ($$("div[id='form_address_item_" + this.itemCount + "']").length) {
+                this.itemCount++;
+            }
+            // create new form elements
+            Element.insert(this.formContainer, {bottom:
+                '<div id="' + 'form_' + this.baseItemId + this.itemCount + '">'
+                + this.prepareTemplate(this.formTemplate.innerHTML)
+                + '</div>'
+            });
+
+            var newForm = $('form_' + this.baseItemId + this.itemCount);
+
+            $('_item'+this.itemCount+'firstname').value = $('_accountfirstname').value;
+            $('_item'+this.itemCount+'lastname').value = $('_accountlastname').value;
+
+            if ($('_accountwebsite_id').value !== '' && undefined !== this.defaultCountries[$('_accountwebsite_id').value]) {
+                $('_item'+this.itemCount+'country_id').value = this.defaultCountries[$('_accountwebsite_id').value];
+            }
+
+            Element.hide(newForm);
+            var template = '<li id="' + this.baseItemId+this.itemCount + '">';
+            deleteButtonId ++;
+            template    += this.prepareTemplate(this.itemTemplate.innerHTML).replace('delete_button', 'delete_button'+ deleteButtonId);
+            template    += '</li>';
+            Element.insert(this.itemContainer, {bottom: template});
+            var newItem = $(this.baseItemId+this.itemCount);
+            newItem.isNewAddress = true;
+            newItem.formBlock = newForm;
+
+
+            newForm.statusBar = newItem;
+            newForm.addressItem = newItem;
+
+            // set Zip optional/required
+            var countryElement = $('_item' + newItem.id.replace(/address_item_/, '').replace(new RegExp(this.baseItemId), '') + 'country_id');
+            varienGlobalEvents.fireEvent("address_country_changed", countryElement);
+
+            this.addItemObservers(newItem);
+            this.setActiveItem(newItem);
+            this.bindCountryRegionRelation(newForm.id);
+
+            if( $('_item'+this.itemCount+'firstname').value ) this.syncFormData($('_item'+this.itemCount+'firstname'));
+            if( $('_item'+this.itemCount+'lastname').value ) this.syncFormData($('_item'+this.itemCount+'lastname'));
+        }
+        this.reloadItemList();
+        //Event.stop(event);
+    },
+
+    prepareTemplate : function(template){
+        return template
+            .replace(/_template_/g, '_item'+this.itemCount)
+            .replace(/_counted="undefined"/g, '')
+            .replace(/"select_button_"/g, 'select_button_' + this.itemCount)
+            ;
+    },
+
+    canCreateNewAddress : function(){
+        return true;
+    },
+
+    itemMouseOver : function(event){
+        var element = Event.findElement(event, 'li');
+        Element.addClassName(element, 'over');
+    },
+
+    itemMouseOut : function(event){
+        var element = Event.findElement(event, 'li');
+        Element.removeClassName(element, 'over');
+    },
+
+    itemMouseClick : function(event){
+        if (!Event) {
+            return;
+        }
+        var element = Event.findElement(event, 'li'); // find top item
+        var elem = Event.element(event); // exact element clicked
+
+        if ( ((elem.tagName.toUpperCase() == 'A') && elem.id.match(/^delete_button([0-9]*?)$/)) || ((elem.tagName.toUpperCase() == 'IMG') && elem.id.match(/^delete_button([0-9]*?)$/)) ) {
+            this.deleteAddress(element);
+            Event.stop(event);
+        }
+        else if(elem.tagName.toUpperCase() == 'INPUT') {
+            this.setAddressAsDefault(element);
+        }
+        else {
+            this.setActiveItem(element);
+        }
+    },
+
+     setAddressAsDefault : function(){
+        for(var i=0; i<this.itemList.length;i++){
+            if(this.itemList[i].id){
+                var inputs = $(this.itemList[i].id).getElementsBySelector('input');
+                var isActive = false;
+                for(var j in inputs){
+                    if(inputs[j].type=='radio' && inputs[j].checked && this.itemList.length > 1){
+                        isActive = true;
+                    }
+                }
+                this.toggleDeleteButton(this.itemList[i], !isActive);
+            }
+        }
+    },
+
+    toggleDeleteButton : function(item, flag){
+        if(flag){
+            $(item).select('.btn-remove-address').each(Element.show);
+            $(item.formBlock).getElementsBySelector('.delete-address').each(Element.show);
+        } else {
+            $(item).select('.btn-remove-address').each(Element.hide);
+            $(item.formBlock).getElementsBySelector('.delete-address').each(Element.hide);
+        }
+    },
+
+    setActiveItem : function(item){
+        if(this.activeItem){
+            Element.removeClassName(this.activeItem, 'on');
+            if($('form_'+this.activeItem.id)){
+                Element.hide($('form_'+this.activeItem.id));
+            }
+        }
+        Element.addClassName(item, 'on');
+
+        if(item && $('form_'+item.id)){
+            $('form_'+item.id).changeRelation = item;
+            $('form_'+item.id).addressItem = item;
+            Element.show($('form_'+item.id));
+            //new Effect.Appear($('form_'+item.id), {duration : 0.3 });
+            //$('form_'+item.id).focus();
+            this.addFieldChangeObserver($('form_'+item.id));
+            var regionIdElement = $('_item' + item.id.replace(/address_item_/, '').replace(new RegExp(this.baseItemId), '') + 'region_id');
+            var regionElement = $('_item' + item.id.replace(/address_item_/, '').replace(new RegExp(this.baseItemId), '') + 'region');
+            this.countryEl = $('_item' + item.id.replace(/address_item_/, '').replace(new RegExp(this.baseItemId), '') + 'country_id');
+            if (regionIdElement && regionElement) {
+                var actualId = regionElement.id;
+                if (('select' == regionIdElement.tagName.toLowerCase()) && regionIdElement) {
+                    actualId = regionIdElement.id;
+                }
+                this._checkRegionRequired([regionIdElement, regionElement], actualId);
+            }
+        }
+
+        this.activeItem = item;
+    },
+
+    getFormContainerFields : function(container){
+        var fields = $$( '#' + container.id + ' input','#' + container.id + ' select','#' + container.id + ' textarea');
+        return fields;
+    },
+
+    addFieldChangeObserver : function(container){
+        var fields = this.getFormContainerFields(container);
+        for (var i = 0; i < fields.length; i++) {
+            Event.observe(fields[i], 'change', this.onItemFormFieldChange);
+        }
+
+    },
+
+    syncFormData : function(evt){
+        var container = false;
+
+        if(!evt.addClassName) {
+            var elm = Event.element(evt);
+        } else {
+            var elm = evt;
+        }
+
+        elm = $(elm);
+        while(elm.tagName.toUpperCase() != 'BODY') {
+            if(elm.addressItem){
+                container = elm;
+            }
+            elm = $(elm.parentNode);
+        }
+
+        if(container){
+            var data = {};
+            var fields = this.getFormContainerFields(container);
+            for(var i=0; i < fields.size(); i++){
+                if(fields[i].id){
+                    var id = fields[i].id.replace(/^(_item)?[0-9]+/, '');
+                    var id = id.replace(/^(id)?[0-9]+/, '');
+                    var value = fields[i].getValue();
+                    var tagName = fields[i].tagName.toLowerCase();
+                    if (tagName == 'select') {
+                        if (fields[i].multiple) {
+                            var values = $([]);
+                            var l = fields[i].options.length;
+                            for (j=0; j<l; j++) {
+                                var o = fields[i].options[j];
+                                if (o.selected === true) {
+                                    values[values.length] = o.text.escapeHTML();
+                                }
+                            }
+                            data[id] = values.join(', ');
+                        } else {
+                            var option = fields[i].options[fields[i].selectedIndex],
+                                text   = option.value == '0' || option.value == '' ? '' : option.text;
+                            data[id] = text.escapeHTML();
+                        }
+                    } else if (value !== null) {
+                        data[id] = value.escapeHTML();
+                    }
+                }
+            }
+
+            // Set name of state to 'region' if list of states are in 'region_id' selectbox
+            if (!data['region'] && data['region_id']) {
+                data['region'] = data['region_id'];
+                delete data['region_id'];
+            }
+
+            // Set data to html
+            var itemContainer = container.addressItem.getElementsBySelector('address');
+            if(itemContainer[0]){
+                var html = this.itemContentTemplate.evaluate(data);
+                html = html.replace(new RegExp('(<br\\s*/?>\\s*){2,}','img'),'<br/>');
+                html = html.replace(new RegExp('<br\\s*/?>(\\s*,){1,}\\s*<br\\s*/?>','ig'),'<br/>');
+                html = html.replace(new RegExp('<br\\s*/?>(\\s*,){1,}(.*)<br\\s*/?>','ig'),'<br/>$2<br/>');
+                html = html.replace(new RegExp('<br\\s*/?>(.*?)(,\\s*){1,}<br\\s*/?>','ig'),'<br/>$1<br/>');
+                html = html.replace(new RegExp('<br\\s*/?>(.*?)(,\\s*){2,}(.*?)<br\\s*/?>','ig'),'<br/>$1, $3<br/>');
+                html = html.replace(new RegExp('t:\\s*<br\\s*/?>','ig'),'');
+                html = html.replace(new RegExp('f:\\s*<br\\s*/?>','ig'),'');
+                html = html.replace(new RegExp('vat:\\s*$','ig'),'');
+                itemContainer[0].innerHTML = html;
+            }
+        }
+    },
+
+    deleteAddress : function(item){
+        if(confirm('Are you sure you want to delete this address?')){
+            if (!item.isNewAddress && $('deleted_'+item.id)){
+                $('deleted_'+item.id).value = 1;
+                if (item.formBlock){
+                    item.formBlock.addClassName('ignore-validation');
+                }
+            }
+            if (this.activeItem == item && item != this.itemList[0]) this.setActiveItem(this.itemList[0]);
+            if (item == this.itemList[0] && (this.itemList[1])) this.setActiveItem(this.itemList[1]);
+
+            this.formContainer.removeChild(item.formBlock);
+            this.itemContainer.removeChild(item);
+            this.reloadItemList();
+            this.setAddressAsDefault();
+        }
+    },
+
+    cancelAdd : function(button){
+        if(confirm('Are you sure you want to cancel adding of this address?')){
+            var item = $(this.baseItemId + button.id.replace(new RegExp('[a-z_]*',''), ''));
+
+            if( item.isNewAddress){
+                if ( this.activeItem == item ) this.formContainer.removeChild(item.formBlock);
+            }
+            if ( this.activeItem == item && item != this.itemList[0] ) this.setActiveItem(this.itemList[0]);
+            if ( item == this.itemList[0] && (this.itemList[1]) ) this.setActiveItem(this.itemList[1]);
+
+            this.itemContainer.removeChild(item);
+
+            this.reloadItemList();
+            this.setAddressAsDefault();
+        }
+    },
+
+    bindCountryRegionRelation : function(parentId){
+        //alert('OK');
+        if(parentId){
+            var countryElements = $(parentId).getElementsByClassName('countries');
+        }
+        else{
+            var countryElements = $$('.countries');
+        }
+
+        for(var i=0;i<=countryElements.length;i++){
+            if(countryElements[i]){
+                if(!countryElements[i].bindRegions || !countryElements[i].parentBindId || countryElements[i].parentBindId!=parentId){
+                //if(!countryElements[i].bindRegions || !countryElements[i].parentBindId){
+                    Event.observe(countryElements[i], 'change', this.reloadRegionField.bind(this));
+
+                    countryElements[i].bindRegions = true;
+                    countryElements[i].parentBindId = parentId;
+                }
+            }
+        }
+    },
+
+    reloadRegionField : function(event){
+        var countryElement = Event.element(event);
+        if(countryElement.id){
+            var regionElement  = $(countryElement.id.replace(/country_id/, 'region'));
+            if(regionElement){
+                this.regionElement = regionElement;
+                this.countryEl = countryElement;
+                if (countryElement.value) {
+                    var url = this.regionsUrl + 'parent/' + countryElement.value;
+                    this.loader.load(url, {}, this.refreshRegionField.bind(this));
+                } else {
+                    // Set empty text field in region
+                    this.refreshRegionField('[]');
+                }
+            }
+            // set Zip optional/required
+            varienGlobalEvents.fireEvent("address_country_changed", countryElement);
+        }
+    },
+
+    // serverResponse is either string with server response, or object to force some paricular data setting
+    refreshRegionField : function(serverResponse){
+        if (!serverResponse)
+            return;
+        var data = eval('(' + serverResponse + ')');
+
+        var row = Element.previous(this.regionElement.parentNode,0);
+        var reqLabel = Element.select(row, '.required');
+
+        // Set regions and refresh controls
+        // We use a pair of 'region' and 'region_id' to properly submit data:
+        // manually entered text goes in 'region' and selected option id goes in 'region_id'
+        var regionHtmlName = this.regionElement.name;
+        var regionIdHtmlName = regionHtmlName.replace(/region/, 'region_id');
+        var regionHtmlId = this.regionElement.id;
+        var regionIdHtmlId = regionHtmlId.replace(/region/, 'region_id');
+        var newInputId = null; // id of imput that was added to a page - filled below
+
+        if (data.length) {
+            // Create visible selectbox 'region_id' and hidden 'region'
+            var html = '<select name="' + regionIdHtmlName + '" id="' + regionIdHtmlId + '" class="required-entry select" title="' + this.regionElement.title + '">';
+            for (var i in data){
+                if(data[i].label) {
+                    html+= '<option value="'+data[i].value+'"';
+                    if(this.regionElement.value && (this.regionElement.value == data[i].value || this.regionElement.value == data[i].label)){
+                        html+= ' selected="selected"';
+                    }
+                    html+='>'+data[i].label+'</option>';
+                }
+            }
+            html += '</select>';
+
+            html += '<input type="hidden" name="' + regionHtmlName + '" id="' + regionHtmlId + '"/>';
+
+            if (reqLabel) {
+                reqLabel.each(function(item){Element.show(item)});
+            }
+
+            newInputId = regionIdHtmlId;
+        } else {
+            // Create visible text input 'region' and hidden 'region_id'
+            var html = '<input type="text" name="' + regionHtmlName + '" id="' + regionHtmlId + '" class="input-text" title="' + this.regionElement.title + '" />';
+            html += '<input type="hidden" name="' + regionIdHtmlName + '" id="' + regionIdHtmlId + '"/>';
+
+            if (reqLabel) {
+                reqLabel.each(function(item){Element.hide(item)});
+            }
+
+            newInputId = regionHtmlId;
+        }
+
+        var parentNode = this.regionElement.parentNode;
+        parentNode.innerHTML = html;
+        this.regionElement = $(regionHtmlId);
+
+        // Updating in address info
+        var newInput = $(newInputId);
+        Event.observe(newInput, 'change', this.onItemFormFieldChange); // Restore observing to update address info
+        this.syncFormData(newInput); // Update address info now
+        var activeElementId = regionHtmlId;
+        if (('select' == $(regionIdHtmlId).tagName.toLowerCase()) && regionIdHtmlId) {
+            activeElementId = regionIdHtmlId;
+        }
+        this._checkRegionRequired([$(regionHtmlId), $(regionIdHtmlId)], activeElementId);
+    },
+
+    _checkRegionRequired: function(elements, activeElementId)
+    {
+        var label, wildCard;
+        var that = this;
+        var regionRequired = this.requiredStateForCountries.indexOf(this.countryEl.value) >= 0;
+
+        elements.each(function(currentElement) {
+            Validation.reset(currentElement);
+            label = $$('label[for="' + currentElement.id + '"]')[0];
+            if (label) {
+                wildCard = label.down('em') || label.down('span.required');
+                if (!that.showAllRegions) {
+                    if (regionRequired) {
+                        label.up('tr').show();
+                    } else {
+                        label.up('tr').hide();
+                    }
+                }
+            }
+
+            if (label && wildCard) {
+                if (!regionRequired) {
+                    wildCard.hide();
+                } else {
+                    wildCard.show();
+                }
+            }
+
+            if (!regionRequired) {
+                if (currentElement.hasClassName('required-entry')) {
+                    currentElement.removeClassName('required-entry');
+                }
+                if ('select' == currentElement.tagName.toLowerCase() &&
+                    currentElement.hasClassName('validate-select')
+                ) {
+                    currentElement.removeClassName('validate-select');
+                }
+            } else if (activeElementId == currentElement.id) {
+                if (!currentElement.hasClassName('required-entry')) {
+                    currentElement.addClassName('required-entry');
+                }
+                if ('select' == currentElement.tagName.toLowerCase() &&
+                    !currentElement.hasClassName('validate-select')
+                ) {
+                    currentElement.addClassName('validate-select');
+                }
+            }
+        });
+    }
+}
+
+customerAddresses = new addressesModel();
+//]]>
+</script>
+</td>
+</tr>
+</tbody></table>
+</div><div id="customer_info_tabs_orders_content" style="display:none;"></div><div id="customer_info_tabs_customer_edit_tab_agreements_content" style="display:none;">            
+        <div id="customer_edit_tab_agreements">
+        <table cellspacing="0" class="actions">
+        <tbody><tr>
+                    <td class="pager">
+            Page
+                                                    <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/pager_arrow_left_off.gif" alt="Go to Previous page" class="arrow">
+            
+            <input type="text" name="page" value="1" class="input-text page" onkeypress="customer_edit_tab_agreementsJsObject.inputPage(event, '1')">
+
+                            <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/pager_arrow_right_off.gif" alt="Go to Next page" class="arrow">
+            
+            of 1 pages            <span class="separator">|</span>
+            View            <select name="limit" onchange="customer_edit_tab_agreementsJsObject.loadByElement(this)">
+                <option value="20" selected="selected">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+            </select>
+            per page<span class="separator">|</span>
+            Total 0 records found            <span id="customer_edit_tab_agreements-total-count" class="no-display">0</span>
+                    </td>
+                <td class="filter-actions a-right">
+            <button id="id_61a77d8580a802cd3ea8507c2dccccc1" title="Reset Filter" type="button" class="scalable " onclick="customer_edit_tab_agreementsJsObject.resetFilter()" style=""><span><span><span>Reset Filter</span></span></span></button><button id="id_8db2d870e36de87060617dfab0f959ed" title="Search" type="button" class="scalable task" onclick="customer_edit_tab_agreementsJsObject.doFilter()" style=""><span><span><span>Search</span></span></span></button>        </td>
+        </tr>
+    </tbody></table>
+<div class="grid">
+    <div class="hor-scroll">
+    <table cellspacing="0" class="data" id="customer_edit_tab_agreements_table">
+                <colgroup><col>
+                <col>
+                <col>
+                <col>
+                <col width="1">
+                <col width="1">
+                            </colgroup><thead>
+                                    <tr class="headings">
+                                            <th><span class="nobr"><a href="#" name="agreement_id" title="asc" class="sort-arrow-desc"><span class="sort-title">ID</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="method_code" title="asc" class="not-sort"><span class="sort-title">Payment Method</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="reference_id" title="asc" class="not-sort"><span class="sort-title">Reference ID</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="status" title="asc" class="not-sort"><span class="sort-title">Status</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="created_at" title="asc" class="not-sort"><span class="sort-title">Created At</span></a></span></th>
+                                            <th class=" last"><span class="nobr"><a href="#" name="updated_at" title="asc" class="not-sort"><span class="sort-title">Updated At</span></a></span></th>
+                                        </tr>
+                                                    <tr class="filter">
+                                            <th><div class="field-100"><input type="text" name="agreement_id" id="customer_edit_tab_agreements_filter_agreement_id" value="" class="input-text no-changes"></div></th>
+                                            <th><select name="method_code" id="customer_edit_tab_agreements_filter_method_code" class="no-changes"><option value=""></option><option value="paypal_billing_agreement">PayPal Billing Agreement</option></select></th>
+                                            <th><div class="field-100"><input type="text" name="reference_id" id="customer_edit_tab_agreements_filter_reference_id" value="" class="input-text no-changes"></div></th>
+                                            <th><select name="status" id="customer_edit_tab_agreements_filter_status" class="no-changes"><option value=""></option><option value="active">Active</option><option value="canceled">Canceled</option></select></th>
+                                            <th><div class="range"><div class="range-line date"><span class="label">From:</span><input type="text" name="created_at[from]" id="customer_edit_tab_agreements_filter_created_at1691416885.2445_from" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_agreements_filter_created_at1691416885.2445_from_trig" title="Date selector"></div><div class="range-line date"><span class="label">To :</span><input type="text" name="created_at[to]" id="customer_edit_tab_agreements_filter_created_at1691416885.2445_to" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_agreements_filter_created_at1691416885.2445_to_trig" title="Date selector"></div></div><input type="hidden" name="created_at[locale]" value="en_US"><script type="text/javascript">
+            Calendar.setup({
+                inputField : "customer_edit_tab_agreements_filter_created_at1691416885.2445_from",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_agreements_filter_created_at1691416885.2445_from_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+            Calendar.setup({
+                inputField : "customer_edit_tab_agreements_filter_created_at1691416885.2445_to",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_agreements_filter_created_at1691416885.2445_to_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+        </script></th>
+                                            <th class=" last"><div class="range"><div class="range-line date"><span class="label">From:</span><input type="text" name="updated_at[from]" id="customer_edit_tab_agreements_filter_updated_at1691416885.2466_from" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_agreements_filter_updated_at1691416885.2466_from_trig" title="Date selector"></div><div class="range-line date"><span class="label">To :</span><input type="text" name="updated_at[to]" id="customer_edit_tab_agreements_filter_updated_at1691416885.2466_to" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_agreements_filter_updated_at1691416885.2466_to_trig" title="Date selector"></div></div><input type="hidden" name="updated_at[locale]" value="en_US"><script type="text/javascript">
+            Calendar.setup({
+                inputField : "customer_edit_tab_agreements_filter_updated_at1691416885.2466_from",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_agreements_filter_updated_at1691416885.2466_from_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+            Calendar.setup({
+                inputField : "customer_edit_tab_agreements_filter_updated_at1691416885.2466_to",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_agreements_filter_updated_at1691416885.2466_to_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+        </script></th>
+                                        </tr>
+                            </thead>
+                
+        <tbody>
+                    <tr class="even">
+                <td class="empty-text a-center" colspan="6">No records found.</td>
+            </tr>
+                </tbody>
+
+    </table>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    customer_edit_tab_agreementsJsObject = new varienGrid('customer_edit_tab_agreements', 'http://qa1magento.dev.evozon.com/index.php/admin/sales_billing_agreement/customerGrid/id/301/key/32cc313d0d185e86095f4925d9097541/', 'page', 'sort', 'dir', 'filter');
+    customer_edit_tab_agreementsJsObject.useAjax = '1';
+            customer_edit_tab_agreementsJsObject.rowClickCallback = openGridRow;
+                    //]]>
+</script>
+</div><div id="customer_info_tabs_customer_edit_tab_recurring_profile_content" style="display:none;">            
+        <div id="customer_edit_tab_recurring_profile">
+        <table cellspacing="0" class="actions">
+        <tbody><tr>
+                    <td class="pager">
+            Page
+                                                    <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/pager_arrow_left_off.gif" alt="Go to Previous page" class="arrow">
+            
+            <input type="text" name="page" value="1" class="input-text page" onkeypress="customer_edit_tab_recurring_profileJsObject.inputPage(event, '1')">
+
+                            <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/pager_arrow_right_off.gif" alt="Go to Next page" class="arrow">
+            
+            of 1 pages            <span class="separator">|</span>
+            View            <select name="limit" onchange="customer_edit_tab_recurring_profileJsObject.loadByElement(this)">
+                <option value="20" selected="selected">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+            </select>
+            per page<span class="separator">|</span>
+            Total 0 records found            <span id="customer_edit_tab_recurring_profile-total-count" class="no-display">0</span>
+                    </td>
+                <td class="filter-actions a-right">
+            <button id="id_d43931453b02ac18b88397c8097403be" title="Reset Filter" type="button" class="scalable " onclick="customer_edit_tab_recurring_profileJsObject.resetFilter()" style=""><span><span><span>Reset Filter</span></span></span></button><button id="id_4fcc7f8f84b9d5152e7ee8ac90e053ef" title="Search" type="button" class="scalable task" onclick="customer_edit_tab_recurring_profileJsObject.doFilter()" style=""><span><span><span>Search</span></span></span></button>        </td>
+        </tr>
+    </tbody></table>
+<div class="grid">
+    <div class="hor-scroll">
+    <table cellspacing="0" class="data" id="customer_edit_tab_recurring_profile_table">
+                <colgroup><col width="1">
+                <col>
+                <col width="1">
+                <col width="1">
+                <col width="1">
+                <col>
+                <col>
+                            </colgroup><thead>
+                                    <tr class="headings">
+                                            <th><span class="nobr"><a href="#" name="reference_id" title="asc" class="not-sort"><span class="sort-title">Payment Reference ID</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="store_id" title="asc" class="not-sort"><span class="sort-title">Store</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="state" title="asc" class="not-sort"><span class="sort-title">Profile State</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="created_at" title="asc" class="not-sort"><span class="sort-title">Created At</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="updated_at" title="asc" class="not-sort"><span class="sort-title">Updated At</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="method_code" title="asc" class="not-sort"><span class="sort-title">Payment Method</span></a></span></th>
+                                            <th class=" last"><span class="nobr"><a href="#" name="schedule_description" title="asc" class="not-sort"><span class="sort-title">Schedule Description</span></a></span></th>
+                                        </tr>
+                                                    <tr class="filter">
+                                            <th><div class="field-100"><input type="text" name="reference_id" id="customer_edit_tab_recurring_profile_filter_reference_id" value="" class="input-text no-changes"></div></th>
+                                            <th><select name="store_id"><option value="" selected="selected"></option><optgroup label="Main Website"></optgroup><optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Madison Island"><option value="1">&nbsp;&nbsp;&nbsp;&nbsp;English</option><option value="2">&nbsp;&nbsp;&nbsp;&nbsp;French</option><option value="3">&nbsp;&nbsp;&nbsp;&nbsp;German</option></optgroup><option value="_deleted_">[ deleted ]</option></select></th>
+                                            <th><select name="state" id="customer_edit_tab_recurring_profile_filter_state" class="no-changes"><option value=""></option><option value="unknown">Not Initialized</option><option value="pending">Pending</option><option value="active">Active</option><option value="suspended">Suspended</option><option value="canceled">Canceled</option><option value="expired">Expired</option></select></th>
+                                            <th><div class="range"><div class="range-line date"><span class="label">From:</span><input type="text" name="created_at[from]" id="customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_from" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_from_trig" title="Date selector"></div><div class="range-line date"><span class="label">To :</span><input type="text" name="created_at[to]" id="customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_to" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_to_trig" title="Date selector"></div></div><input type="hidden" name="created_at[locale]" value="en_US"><script type="text/javascript">
+            Calendar.setup({
+                inputField : "customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_from",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_from_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+            Calendar.setup({
+                inputField : "customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_to",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_recurring_profile_filter_created_at1691416885.3012_to_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+        </script></th>
+                                            <th><div class="range"><div class="range-line date"><span class="label">From:</span><input type="text" name="updated_at[from]" id="customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_from" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_from_trig" title="Date selector"></div><div class="range-line date"><span class="label">To :</span><input type="text" name="updated_at[to]" id="customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_to" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_to_trig" title="Date selector"></div></div><input type="hidden" name="updated_at[locale]" value="en_US"><script type="text/javascript">
+            Calendar.setup({
+                inputField : "customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_from",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_from_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+            Calendar.setup({
+                inputField : "customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_to",
+                ifFormat : "%m/%e/%Y",
+                button : "customer_edit_tab_recurring_profile_filter_updated_at1691416885.3034_to_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+        </script></th>
+                                            <th><select name="method_code" id="customer_edit_tab_recurring_profile_filter_method_code" class="no-changes"><option value=""></option><option value="paypal_express">PayPal Express Checkout</option><option value="paypal_express_bml">Paypal Credit</option><option value="paypaluk_express_bml">Paypal Credit</option></select></th>
+                                            <th class=" last"><div class="field-100"><input type="text" name="schedule_description" id="customer_edit_tab_recurring_profile_filter_schedule_description" value="" class="input-text no-changes"></div></th>
+                                        </tr>
+                            </thead>
+                
+        <tbody>
+                    <tr class="even">
+                <td class="empty-text a-center" colspan="7">No records found.</td>
+            </tr>
+                </tbody>
+
+    </table>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    customer_edit_tab_recurring_profileJsObject = new varienGrid('customer_edit_tab_recurring_profile', 'http://qa1magento.dev.evozon.com/index.php/admin/sales_recurring_profile/customerGrid/id/301/key/2714979e6b3c8769f94f8bcb528d7665/', 'page', 'sort', 'dir', 'filter');
+    customer_edit_tab_recurring_profileJsObject.useAjax = '1';
+            customer_edit_tab_recurring_profileJsObject.rowClickCallback = openGridRow;
+                    //]]>
+</script>
+</div><div id="customer_info_tabs_cart_content" style="display:none;"></div><div id="customer_info_tabs_wishlist_content" style="display:none;"></div><div id="customer_info_tabs_newsletter_content" style="display:none;"><div class="entry-edit">
+<div class="entry-edit-head">
+    <h4 class="icon-head head-edit-form fieldset-legend">Newsletter Information</h4>
+    <div class="form-buttons"></div>
+</div>
+    <div class="fieldset " id="_newsletterbase_fieldset">
+    <div class="hor-scroll">
+                        <table cellspacing="0" class="form-list">
+            <tbody>
+                <tr>
+        <td class="label"><label for="_newslettersubscription">Subscribed to Newsletter?</label></td>
+    <td class="value">
+        <input id="_newslettersubscription" name="subscription" value="" type="checkbox">            </td>
+    </tr>
+            </tbody>
+        </table>
+            </div>
+        </div>
+</div>
+            
+        <div id="queueGrid">
+        <table cellspacing="0" class="actions">
+        <tbody><tr>
+                    <td class="pager">
+            Page
+                                                    <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/pager_arrow_left_off.gif" alt="Go to Previous page" class="arrow">
+            
+            <input type="text" name="page" value="1" class="input-text page" onkeypress="queueGridJsObject.inputPage(event, '1')">
+
+                            <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/pager_arrow_right_off.gif" alt="Go to Next page" class="arrow">
+            
+            of 1 pages            <span class="separator">|</span>
+            View            <select name="limit" onchange="queueGridJsObject.loadByElement(this)">
+                <option value="20" selected="selected">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+            </select>
+            per page<span class="separator">|</span>
+            Total 0 records found            <span id="queueGrid-total-count" class="no-display">0</span>
+                    </td>
+                <td class="filter-actions a-right">
+            <button id="id_a31eac91610fc48764f6adc41f136741" title="Reset Filter" type="button" class="scalable " onclick="queueGridJsObject.resetFilter()" style=""><span><span><span>Reset Filter</span></span></span></button><button id="id_104fa05ef44a72b471731a90b6a99d0b" title="Search" type="button" class="scalable task" onclick="queueGridJsObject.doFilter()" style=""><span><span><span>Search</span></span></span></button>        </td>
+        </tr>
+    </tbody></table>
+<div class="grid">
+    <div class="hor-scroll">
+    <table cellspacing="0" class="data" id="queueGrid_table">
+                <colgroup><col width="10">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                            </colgroup><thead>
+                                    <tr class="headings">
+                                            <th><span class="nobr"><a href="#" name="queue_id" title="asc" class="not-sort"><span class="sort-title">ID</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="start_at" title="asc" class="sort-arrow-desc"><span class="sort-title">Newsletter Start</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="finish_at" title="asc" class="not-sort"><span class="sort-title">Newsletter Finish</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="letter_sent_at" title="asc" class="not-sort"><span class="sort-title">Newsletter Received</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="template_subject" title="asc" class="not-sort"><span class="sort-title">Subject</span></a></span></th>
+                                            <th><span class="nobr"><a href="#" name="status" title="asc" class="not-sort"><span class="sort-title">Status</span></a></span></th>
+                                            <th class=" no-link last"><span class="nobr">Action</span></th>
+                                        </tr>
+                                                    <tr class="filter">
+                                            <th><div class="field-100"><input type="text" name="queue_id" id="queueGrid_filter_queue_id" value="" class="input-text no-changes"></div></th>
+                                            <th><div class="range"><div class="range-line date"><span class="label">From:</span><input type="text" name="start_at[from]" id="queueGrid_filter_start_at1691416885.0964_from" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="queueGrid_filter_start_at1691416885.0964_from_trig" title="Date selector"></div><div class="range-line date"><span class="label">To :</span><input type="text" name="start_at[to]" id="queueGrid_filter_start_at1691416885.0964_to" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="queueGrid_filter_start_at1691416885.0964_to_trig" title="Date selector"></div></div><input type="hidden" name="start_at[locale]" value="en_US"><script type="text/javascript">
+            Calendar.setup({
+                inputField : "queueGrid_filter_start_at1691416885.0964_from",
+                ifFormat : "%m/%e/%Y",
+                button : "queueGrid_filter_start_at1691416885.0964_from_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+            Calendar.setup({
+                inputField : "queueGrid_filter_start_at1691416885.0964_to",
+                ifFormat : "%m/%e/%Y",
+                button : "queueGrid_filter_start_at1691416885.0964_to_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+        </script></th>
+                                            <th><div class="range"><div class="range-line date"><span class="label">From:</span><input type="text" name="finish_at[from]" id="queueGrid_filter_finish_at1691416885.0986_from" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="queueGrid_filter_finish_at1691416885.0986_from_trig" title="Date selector"></div><div class="range-line date"><span class="label">To :</span><input type="text" name="finish_at[to]" id="queueGrid_filter_finish_at1691416885.0986_to" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="queueGrid_filter_finish_at1691416885.0986_to_trig" title="Date selector"></div></div><input type="hidden" name="finish_at[locale]" value="en_US"><script type="text/javascript">
+            Calendar.setup({
+                inputField : "queueGrid_filter_finish_at1691416885.0986_from",
+                ifFormat : "%m/%e/%Y",
+                button : "queueGrid_filter_finish_at1691416885.0986_from_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+            Calendar.setup({
+                inputField : "queueGrid_filter_finish_at1691416885.0986_to",
+                ifFormat : "%m/%e/%Y",
+                button : "queueGrid_filter_finish_at1691416885.0986_to_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+        </script></th>
+                                            <th><div class="range"><div class="range-line date"><span class="label">From:</span><input type="text" name="letter_sent_at[from]" id="queueGrid_filter_letter_sent_at1691416885.1006_from" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="queueGrid_filter_letter_sent_at1691416885.1006_from_trig" title="Date selector"></div><div class="range-line date"><span class="label">To :</span><input type="text" name="letter_sent_at[to]" id="queueGrid_filter_letter_sent_at1691416885.1006_to" value="" class="input-text no-changes"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/grid-cal.gif" alt="" class="v-middle" id="queueGrid_filter_letter_sent_at1691416885.1006_to_trig" title="Date selector"></div></div><input type="hidden" name="letter_sent_at[locale]" value="en_US"><script type="text/javascript">
+            Calendar.setup({
+                inputField : "queueGrid_filter_letter_sent_at1691416885.1006_from",
+                ifFormat : "%m/%e/%Y",
+                button : "queueGrid_filter_letter_sent_at1691416885.1006_from_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+            Calendar.setup({
+                inputField : "queueGrid_filter_letter_sent_at1691416885.1006_to",
+                ifFormat : "%m/%e/%Y",
+                button : "queueGrid_filter_letter_sent_at1691416885.1006_to_trig",
+                showsTime: false,
+                align : "Bl",
+                singleClick : true
+            });
+        </script></th>
+                                            <th><div class="field-100"><input type="text" name="template_subject" id="queueGrid_filter_template_subject" value="" class="input-text no-changes"></div></th>
+                                            <th><select name="status" id="queueGrid_filter_status" class="no-changes"><option value=""></option><option value="3">Sent</option><option value="2">Cancel</option><option value="0">Not Sent</option><option value="1">Sending</option><option value="4">Paused</option></select></th>
+                                            <th class=" no-link last">&nbsp;</th>
+                                        </tr>
+                            </thead>
+                
+        <tbody>
+                    <tr class="even">
+                <td class="empty-text a-center" colspan="7">No Newsletter Found</td>
+            </tr>
+                </tbody>
+
+    </table>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    queueGridJsObject = new varienGrid('queueGrid', 'http://qa1magento.dev.evozon.com/index.php/admin/customer/newsletter/id/301/key/5db1bef3743a763d5f4cfbcdd1e730e3/', 'page', 'sort', 'dir', 'filter');
+    queueGridJsObject.useAjax = '1';
+            queueGridJsObject.rowClickCallback = openGridRow;
+                    //]]>
+</script>
+</div><div id="customer_info_tabs_reviews_content" style="display:none;"></div><div id="customer_info_tabs_tags_content" style="display:none;"></div></form></div>
+<div id="popup-window-mask" style="display:none;"></div>
+<div id="product_composite_configure" class="product-configure-popup" style="display:none;">
+    <iframe name="product_composite_configure_iframe" id="product_composite_configure_iframe" src="#" style="width:0; height:0; border:0px solid #fff; position:absolute; top:-1000px; left:-1000px" onload="window.productConfigure &amp;&amp; productConfigure.onLoadIFrame()"></iframe>
+    <form action="" method="post" id="product_composite_configure_form" enctype="multipart/form-data" onsubmit="productConfigure.onConfirmBtn(); return false;" target="product_composite_configure_iframe">
+        <div class="entry-edit">
+            <div class="entry-edit-head">
+                <h4 class="icon-head fieldset-legend">Configure Product</h4>
+            </div>
+            <div id="product_composite_configure_messages" style="display: none;">
+                <ul class="messages"><li class="error-msg"></li></ul>
+            </div>
+            <div id="product_composite_configure_form_fields" class="content"></div>
+            <div id="product_composite_configure_form_additional" style="display:none;"></div>
+            <div id="product_composite_configure_form_confirmed" style="display:none;"></div>
+            <div class="buttons-set a-right">
+                <button type="button" class="scalable" onclick="productConfigure.onCancelBtn()" id="product_composite_configure_form_cancel"><span><span><span>Cancel</span></span></span></button>
+                <button type="submit" class="scalable"><span><span><span>OK</span></span></span></button>
+            </div>
+        </div>
+        <input type="hidden" name="as_js_varname" value="iFrameResponse">
+        <input type="hidden" name="form_key" value="25c1Ln1XHoVxVSHL">
+    </form>
+    <div id="product_composite_configure_confirmed" style="display:none;"></div>
+
+    <script type="text/javascript">
+        var productCompositeConfigureForm = new varienForm('product_composite_configure_form');
+    </script>
+</div>
+<script type="text/javascript">
+    editForm = new varienForm('edit_form', 'http://qa1magento.dev.evozon.com/index.php/admin/customer/validate/id/301/key/0a0a3bb79f17720345c44e6b7747e827/');
+</script>
+                        </div>
+                    </div>
+                </div>
+
+                        </div>
+        </div>
+        <div class="footer">
+            <p class="bug-report">
+    <a href="http://www.magentocommerce.com/bug-tracking" id="footer_bug_tracking" target="Varien_External">Help Us Keep Magento Healthy - Report All Bugs</a><br>
+    Interface Locale: <select name="locale" id="interface_locale" class="" title="Interface Language" style="width:200px"><option value="af_ZA">Afrikaans (Suid-Afrika) / Afrikaans (South Africa)</option><option value="az_AZ">Azərbaycan (Azərbaycan) / Azerbaijani (Azerbaijan)</option><option value="id_ID">Bahasa Indonesia (Indonesia) / Indonesian (Indonesia)</option><option value="ms_MY">Bahasa Melayu (Malaysia) / Malay (Malaysia)</option><option value="bs_BA">Bosanski (Bosna i Hercegovina) / Bosnian (Bosnia and Herzegovina)</option><option value="ca_ES">Català (Espanya) / Catalan (Spain)</option><option value="cy_GB">Cymraeg (Y Deyrnas Unedig) / Welsh (United Kingdom)</option><option value="da_DK">Dansk (Danmark) / Danish (Denmark)</option><option value="de_DE">Deutsch (Deutschland) / German (Germany)</option><option value="de_CH">Deutsch (Schweiz) / German (Switzerland)</option><option value="de_AT">Deutsch (Österreich) / German (Austria)</option><option value="et_EE">Eesti (Eesti) / Estonian (Estonia)</option><option value="en_AU">English (Australia) / English (Australia)</option><option value="en_CA">English (Canada) / English (Canada)</option><option value="en_IE">English (Ireland) / English (Ireland)</option><option value="en_NZ">English (New Zealand) / English (New Zealand)</option><option value="en_GB">English (United Kingdom) / English (United Kingdom)</option><option value="en_US" selected="selected">English (United States) / English (United States)</option><option value="es_AR">Español (Argentina) / Spanish (Argentina)</option><option value="es_CL">Español (Chile) / Spanish (Chile)</option><option value="es_CO">Español (Colombia) / Spanish (Colombia)</option><option value="es_CR">Español (Costa Rica) / Spanish (Costa Rica)</option><option value="es_ES">Español (España) / Spanish (Spain)</option><option value="es_MX">Español (México) / Spanish (Mexico)</option><option value="es_PA">Español (Panamá) / Spanish (Panama)</option><option value="es_PE">Español (Perú) / Spanish (Peru)</option><option value="es_VE">Español (Venezuela) / Spanish (Venezuela)</option><option value="fil_PH">Filipino (Pilipinas) / Filipino (Philippines)</option><option value="fr_CA">Français (Canada) / French (Canada)</option><option value="fr_FR">Français (France) / French (France)</option><option value="gl_ES">Galego (España) / Galician (Spain)</option><option value="hr_HR">Hrvatski (Hrvatska) / Croatian (Croatia)</option><option value="it_IT">Italiano (Italia) / Italian (Italy)</option><option value="it_CH">Italiano (Svizzera) / Italian (Switzerland)</option><option value="sw_KE">Kiswahili (Kenya) / Swahili (Kenya)</option><option value="lv_LV">Latviešu (Latvija) / Latvian (Latvia)</option><option value="lt_LT">Lietuvių (Lietuva) / Lithuanian (Lithuania)</option><option value="hu_HU">Magyar (Magyarország) / Hungarian (Hungary)</option><option value="nl_NL">Nederlands (Nederland) / Dutch (Netherlands)</option><option value="nb_NO">Norsk Bokmål (Norge) / Norwegian Bokmål (Norway)</option><option value="nn_NO">Nynorsk (Noreg) / Norwegian Nynorsk (Norway)</option><option value="pl_PL">Polski (Polska) / Polish (Poland)</option><option value="pt_BR">Português (Brasil) / Portuguese (Brazil)</option><option value="pt_PT">Português (Portugal) / Portuguese (Portugal)</option><option value="ro_RO">Română (România) / Romanian (Romania)</option><option value="sq_AL">Shqip (Shqipëri) / Albanian (Albania)</option><option value="sk_SK">Slovenčina (Slovensko) / Slovak (Slovakia)</option><option value="sl_SI">Slovenščina (Slovenija) / Slovenian (Slovenia)</option><option value="sr_RS">Srpski (Srbija) / Serbian (Serbia)</option><option value="fi_FI">Suomi (Suomi) / Finnish (Finland)</option><option value="sv_SE">Svenska (Sverige) / Swedish (Sweden)</option><option value="vi_VN">Tiếng Việt (Việt Nam) / Vietnamese (Vietnam)</option><option value="tr_TR">Türkçe (Türkiye) / Turkish (Turkey)</option><option value="is_IS">íslenska (Ísland) / Icelandic (Iceland)</option><option value="cs_CZ">čeština (Česká republika) / Czech (Czech Republic)</option><option value="el_GR">Ελληνικά (Ελλάδα) / Greek (Greece)</option><option value="be_BY">беларуская (Беларусь) / Belarusian (Belarus)</option><option value="bg_BG">български (България) / Bulgarian (Bulgaria)</option><option value="mk_MK">македонски (Македонија) / Macedonian (Macedonia)</option><option value="mn_MN">монгол (Монгол) / Mongolian (Mongolia)</option><option value="ru_RU">русский (Россия) / Russian (Russia)</option><option value="uk_UA">українська (Україна) / Ukrainian (Ukraine)</option><option value="he_IL">עברית (ישראל) / Hebrew (Israel)</option><option value="ar_DZ">العربية (الجزائر) / Arabic (Algeria)</option><option value="ar_KW">العربية (الكويت) / Arabic (Kuwait)</option><option value="ar_MA">العربية (المغرب) / Arabic (Morocco)</option><option value="ar_SA">العربية (المملكة العربية السعودية) / Arabic (Saudi Arabia)</option><option value="ar_EG">العربية (مصر) / Arabic (Egypt)</option><option value="fa_IR">فارسی (ایران) / Persian (Iran)</option><option value="hi_IN">हिंदी (भारत) / Hindi (India)</option><option value="bn_BD">বাংলা (বাংলাদেশ) / Bengali (Bangladesh)</option><option value="gu_IN">ગુજરાતી (ભારત) / Gujarati (India)</option><option value="th_TH">ไทย (ไทย) / Thai (Thailand)</option><option value="lo_LA">ລາວ (ລາວ) / Lao (Laos)</option><option value="ka_GE">ქართული (საქართველო) / Georgian (Georgia)</option><option value="km_KH">ខ្មែរ (កម្ពុជា) / Khmer (Cambodia)</option><option value="zh_CN">中文 (中国) / Chinese (China)</option><option value="zh_HK">中文 (中華人民共和國香港特別行政區) / Chinese (Hong Kong SAR China)</option><option value="zh_TW">中文 (台灣) / Chinese (Taiwan)</option><option value="ja_JP">日本語 (日本) / Japanese (Japan)</option><option value="ko_KR">한국어 (대한민국) / Korean (South Korea)</option></select></p>
+<p class="legality">
+    <a href="http://magento.com/resources/technical" id="footer_connect" target="Varien_External">Connect with the Magento Community</a><br>
+    <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/varien_logo.gif" class="v-middle" alt="">&nbsp;&nbsp;
+    Magento™ is a trademark of Magento Inc.<br>Copyright © 2023 Magento Inc.</p>
+Magento ver. 1.9.3.3<script type="text/javascript">
+    $('footer_bug_tracking').target = 'Varien_External';
+    $('footer_connect').target = 'Varien_External';
+    function setInterfaceLanguage(evt){
+        var elem = Event.element(evt);
+        if(elem){
+            setLocation('http://qa1magento.dev.evozon.com/index.php/admin/index/changeLocale/key/e1c5451bdc3178f8681ac9aca1cbd8d0/locale/'+elem.value+'/uenc/aHR0cDovL3FhMW1hZ2VudG8uZGV2LmV2b3pvbi5jb20vaW5kZXgucGhwL2FkbWluL2N1c3RvbWVyL2VkaXQvaWQvMzAxL2tleS8wYTMxM2Q1NDA1YjRlZTc2NjE3MjIwODJhZTI3YTA0Ny8,');
+        }
+    }
+    Event.observe('interface_locale', 'change', setInterfaceLanguage)
+</script>
+        </div>
+    </div>
+    <script type="text/javascript">
+function saveAndContinueEdit(urlTemplate) {
+        var template = new Template(urlTemplate, /(^|.|\r|\n)({{(\w+)}})/);
+        var url = template.evaluate({tab_id:customer_info_tabsJsTabs.activeTab.id});
+        editForm.submit(url);
+}
+</script>
+    <div id="loading-mask" style="display:none">
+    <p class="loader" id="loading_mask_loader"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/ajax-loader-tr.gif" alt="Loading..."><br>Please wait...</p>
+</div><div class="content-header-floating" style="display: none;"><div class="content-header">
+    <h3 class="icon-head head-customer">ana popa</h3>    <p class="form-buttons"><button id="id_8ffffea6e3b2dcc335c285d1f1bfe587" title="Back" type="button" class="scalable back" onclick="setLocation('http://qa1magento.dev.evozon.com/index.php/admin/customer/index/key/761a03439e4f11c145ebb68471711fe4/')" style=""><span><span><span>Back</span></span></span></button><button id="id_10a85f601eb78c28119c157a4b7c93b7" title="Reset" type="button" class="scalable " onclick="setLocation(window.location.href)" style=""><span><span><span>Reset</span></span></span></button><button id="id_92dcc3094c357aedc52210d336aee2c9" title="Create Order" type="button" class="scalable add" onclick="setLocation('http://qa1magento.dev.evozon.com/index.php/admin/sales_order_create/start/customer_id/301/key/99d40d3f84e0fd9bfa7d0a118727d6ca/')" style=""><span><span><span>Create Order</span></span></span></button><button id="id_d3b9d7765610b84dafef5d427b0ebbc8" title="Delete Customer" type="button" class="scalable delete" onclick="deleteConfirm('Are you sure you want to do this?', 'http://qa1magento.dev.evozon.com/index.php/admin/customer/delete/id/301/key/1a51656978e90ee585a79606cf2bf08f/')" style=""><span><span><span>Delete Customer</span></span></span></button><button id="id_a05fe6bdecf08713b34a96b2e85cbf02" title="Save Customer" type="button" class="scalable save" onclick="editForm.submit();" style=""><span><span><span>Save Customer</span></span></span></button><button id="id_098722ccf3f65fba2badf30594c2de2c" title="Save and Continue Edit" type="button" class="scalable save" onclick="saveAndContinueEdit('http://qa1magento.dev.evozon.com/index.php/admin/customer/save/back/edit/tab/{{tab_id}}/id/301/key/ebb1284ff4caa06324b3b8f0d08b62bb/')" style=""><span><span><span>Save and Continue Edit</span></span></span></button></p>
+</div></div>
+
+
+
+
+</body></html>
