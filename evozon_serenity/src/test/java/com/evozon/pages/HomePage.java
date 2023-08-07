@@ -33,7 +33,6 @@ public class HomePage extends BasePage {
         searchField.submit();
     }
 
-
     public void clickRegisterLink(){
         waitFor(registerLink);
         clickOn(registerLink);

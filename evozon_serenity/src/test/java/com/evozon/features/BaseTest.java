@@ -1,5 +1,6 @@
 package com.evozon.features;
 
+import com.evozon.steps.AddProductSteps;
 import com.evozon.steps.CartSteps;
 import com.evozon.steps.LoginSteps;
 import com.evozon.steps.RegisterSteps;
@@ -22,8 +23,12 @@ public class BaseTest {
 
     @Steps
     protected CartSteps cartSteps;
+
     @Steps
     protected RegisterSteps registerSteps;
+
+    @Steps
+    protected AddProductSteps addProductSteps;
 
     @Before
     public void init(){

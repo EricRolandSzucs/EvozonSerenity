@@ -9,8 +9,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(SerenityRunner.class)
 public class AddToCartTest extends BaseTest{
-    @Steps
-    private AddProductSteps addProductSteps;
 
     @Test
     public void validAddSimpleProductTest(){
