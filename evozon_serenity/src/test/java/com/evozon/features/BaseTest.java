@@ -2,6 +2,7 @@ package com.evozon.features;
 
 import com.evozon.steps.CartSteps;
 import com.evozon.steps.LoginSteps;
+import com.evozon.steps.RegisterSteps;
 import com.evozon.utils.Constants;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -20,6 +21,8 @@ public class BaseTest {
     protected LoginSteps loginSteps;
     @Steps
     protected CartSteps cartSteps;
+    @Steps
+    protected RegisterSteps registerSteps;
 
     @Before
     public void init(){

@@ -11,6 +11,9 @@ public class HomePage extends BasePage {
     @FindBy(css = "a[title='Log In']")
     private WebElementFacade loginLink;
 
+    @FindBy(css = "a[title='Register']")
+    private WebElementFacade registerLink;
+
     public void clickAccountLink(){
         clickOn(accountLink);
     }
@@ -18,6 +21,11 @@ public class HomePage extends BasePage {
     public void clickLoginLink(){
         waitFor(loginLink);
         clickOn(loginLink);
+    }
+
+    public void clickRegisterLink(){
+        waitFor(registerLink);
+        clickOn(registerLink);
     }
 
 }
