@@ -1,5 +1,6 @@
 package com.evozon.features;
 
+import com.evozon.utils.Constants;
 import org.junit.Test;
 
 public class LoginTest extends BaseTest{
@@ -7,9 +8,9 @@ public class LoginTest extends BaseTest{
     @Test
     public void validLoginTest(){
         loginSteps.navigateToLoginPage();
-        loginSteps.enterEmailAddress("cosmin@evo.com");
-        loginSteps.enterPassword("123123");
+        loginSteps.enterEmailAddress(Constants.USER_EMAIL);
+        loginSteps.enterPassword(Constants.USER_PASSWORD);
         loginSteps.clickLogin();
-        loginSteps.verifyUserIsLoggedIn("aaa dasda");
+        loginSteps.verifyUserIsLoggedIn(Constants.USER_NAME);
     }
 }
