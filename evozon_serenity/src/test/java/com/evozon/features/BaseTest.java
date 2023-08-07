@@ -19,6 +19,7 @@ public class BaseTest {
 
     @Steps
     protected LoginSteps loginSteps;
+
     @Steps
     protected CartSteps cartSteps;
     @Steps
