@@ -16,4 +16,7 @@ public class Constants {
 
     public static final String CONFIGURABLE_PRODUCT = "Flip Flops";
     public static final String CONFIGURABLE_PRODUCT_ID = "980";
+
+    public static final String VIRTUAL_PRODUCT = "Tester Music";
+    public static final String VIRTUAL_PRODUCT_ID = "993";
 }
