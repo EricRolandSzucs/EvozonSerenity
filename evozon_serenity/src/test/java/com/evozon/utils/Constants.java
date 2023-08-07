@@ -3,7 +3,7 @@ package com.evozon.utils;
 public class Constants {
 
     public static final String BASE_URL = "http://qa1magento.dev.evozon.com/";
-    public static final String ADMIN_URL = "http://qa1magento.dev.evozon.com/admin";
+    public static final String ADMIN_URL = "http://qa1magento.dev.evozon.com/admin"; // added comm
 
     public static final String USER_EMAIL = "test2@gmail.com";
     public static final String USER_PASSWORD = "parola123";
