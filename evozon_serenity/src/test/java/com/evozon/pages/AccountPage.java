@@ -19,4 +19,8 @@ public class AccountPage extends BasePage {
     public String getUserLoggedInMessage() {
         return welcomeTextParagraph.getText();
     }
+
+    public boolean isUserRegistered(String userName) {
+        return welcomeTextParagraph.containsOnlyText("Hello, " + userName + "!");
+    }
 }

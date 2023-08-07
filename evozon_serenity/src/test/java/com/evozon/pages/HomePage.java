@@ -10,9 +10,12 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "a[title='Log In']")
     private WebElementFacade loginLink;
-
+  
     @FindBy(id = "search")
     private WebElementFacade searchField;
+
+    @FindBy(css = "a[title='Register']")
+    private WebElementFacade registerLink;
 
     public void clickAccountLink(){
         clickOn(accountLink);
@@ -30,5 +33,10 @@ public class HomePage extends BasePage {
         searchField.submit();
     }
 
+
+    public void clickRegisterLink(){
+        waitFor(registerLink);
+        clickOn(registerLink);
+    }
 
 }

@@ -1,68 +1,62 @@
 package com.evozon.pages;
 
-import com.github.javafaker.service.FakeValuesService;
-import com.github.javafaker.service.RandomService;
+import com.github.javafaker.Faker;
 import net.serenitybdd.core.pages.PageObject;
-import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.Locale;
-
 public class RegisterPage extends PageObject {
 
-    @FindBy(id ="firstname")
-    private WebElementFacade firstNameField;
+    Faker faker = new Faker();
 
-    @FindBy(id = "middlename")
-    private WebElementFacade middleNameField;
+    @FindBy(id = "firstname")
+    private WebElement firstnameField;
 
     @FindBy(id = "lastname")
-    private WebElementFacade lastNameField;
+    private WebElement lastnameField;
 
     @FindBy(id = "email_address")
-    private WebElementFacade emailAddressField;
+    private WebElement emailAddressField;
 
     @FindBy(id = "password")
-    private WebElementFacade passwordField;
+    private WebElement passwordField;
 
     @FindBy(id = "confirmation")
-    private WebElementFacade confirmationField;
+    private WebElement confirmationPasswordField;
 
-    @FindBy(css = "button[title='Register']")
-    private WebElementFacade registerButton;
+    @FindBy(id = "is_subscribed")
+    private WebElement isSubscribedCheckbox;
 
-    public void setFirstNameField(String firstName) {
-        typeInto(firstNameField, firstName);
+    @FindBy(css = "button[title=Register] > span > span")
+    private WebElement registerButton;
+
+    public void setFirstnameField(String firstname){
+        waitFor(firstnameField);
+        typeInto(firstnameField, firstname);
     }
 
-    public void setMiddleNameField(String middleName) {
-        typeInto(middleNameField, middleName);
+    public void setLastnameField(String lastname){
+        typeInto(lastnameField, lastname);
     }
 
-    public void setLastNameField(String lastName) {
-        typeInto(lastNameField, lastName);
+    public void setRandomEmailAddressField(){
+        String randomEmailAddress = faker.bothify("??????###@gmail.com");
+        typeInto(emailAddressField, randomEmailAddress);
     }
 
-    public void setEmailAddressField() {
-        FakeValuesService fakeValuesService = new FakeValuesService(
-                new Locale("en", "US"), new RandomService());
-
-        String email = fakeValuesService.bothify("??????###@gmail.com");
-        typeInto(emailAddressField, email);
-    }
-
-    public void setPasswordField(String password) {
+    public void setPasswordField(String password){
         typeInto(passwordField, password);
     }
 
-    public void setConfirmationField(String confirmation) {
+    public void setConfirmationPasswordField(String confirmationPassword) {
+        typeInto(confirmationPasswordField, confirmationPassword);
+    }
 
-        typeInto(confirmationField, confirmation);
+    public void setIsSubscribedCheckbox(){
+        clickOn(isSubscribedCheckbox);
     }
 
     public void clickRegisterButton(){
         clickOn(registerButton);
     }
 }
-
