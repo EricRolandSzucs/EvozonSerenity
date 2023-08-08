@@ -36,14 +36,12 @@ public class AddProductSteps extends BaseSteps {
 
     @Step
     public void doValidAddToCartSimpleProduct(){
-        searchSteps.searchForProduct(Constants.SIMPLE_PRODUCT);
         addProduct(Constants.SIMPLE_PRODUCT);
         verifyProductWasAdded(Constants.SIMPLE_PRODUCT);
     }
 
     @Step
     public void doValidAddToCartConfigurableProduct(){
-        searchSteps.searchForProduct(Constants.CONFIGURABLE_PRODUCT);
         clickOnProduct(Constants.CONFIGURABLE_PRODUCT);
         selectProductOptions();
         addProductFromPage();
@@ -52,7 +50,6 @@ public class AddProductSteps extends BaseSteps {
 
     @Step
     public void doValidAddToCartVirtualProduct(){
-        searchSteps.searchForProduct(Constants.VIRTUAL_PRODUCT);
         addProduct(Constants.VIRTUAL_PRODUCT);
         verifyProductWasAdded(Constants.VIRTUAL_PRODUCT);
     }
