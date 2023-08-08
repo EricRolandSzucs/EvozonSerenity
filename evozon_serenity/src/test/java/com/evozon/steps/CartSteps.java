@@ -1,6 +1,7 @@
 package com.evozon.steps;
 
 import net.thucydides.core.annotations.Step;
+import org.junit.Assert;
 
 public class CartSteps extends BaseSteps {
 
@@ -20,17 +21,22 @@ public class CartSteps extends BaseSteps {
     }
 
     @Step
-    public void verifyQuantityWasUpdated(int quantity){
-        cartPage.verifyQuantityWasUpdated(quantity);
+    public void checkQuantityIsUpdated(int quantity){
+        cartPage.checkQuantityIsUpdated(quantity);
     }
 
     @Step
-    public void clickRemove(){
+    public void identifyProduct(String name){
+        cartPage.identifyProduct(name);
+    }
+
+    @Step
+    public void removeProductFromCart(){
         cartPage.clickRemoveButton();
     }
 
     @Step
-    public void verifyProductWasDeleted(){
-        cartPage.productWasDeleted();
+    public void checkProductIsDeleted(){
+        Assert.assertTrue(cartPage.productIsDeleted());
     }
 }
