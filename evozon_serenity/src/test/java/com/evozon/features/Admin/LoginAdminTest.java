@@ -15,9 +15,8 @@ public class LoginAdminTest extends BaseAdminTest
         loginSteps.enterUsername(Constants.ADMIN_USERNAME);
         loginSteps.enterPassword(Constants.ADMIN_PASSWORD);
         loginSteps.clickLogin();
-
-        homeSteps.clickOnClosePopup();
-        homeSteps.checkIfAdminIsLoggedIn();
+        loginSteps.clickOnClosePopup();
+        loginSteps.checkIfAdminIsLoggedIn();
     }
 
 }

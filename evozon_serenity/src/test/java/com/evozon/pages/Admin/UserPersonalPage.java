@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.time.Duration;
+import java.util.List;
 
 public class UserPersonalPage extends BasePage
 {
@@ -17,13 +18,12 @@ public class UserPersonalPage extends BasePage
 
     public void clickDeleteCustomerButton()
     {
-       clickOn(deleteCustomerButton);
+        clickOn(deleteCustomerButton);
+        acceptPopup();
     }
 
     public void acceptPopup()
     {
-
-        withTimeoutOf(Duration.ofSeconds(5));
         getAlert().accept();
     }
 }

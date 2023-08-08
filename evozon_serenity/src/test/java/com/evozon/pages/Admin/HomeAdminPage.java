@@ -4,6 +4,8 @@ import com.evozon.pages.BasePage;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class HomeAdminPage extends BasePage
 {
     @FindBy(css = ".logo")
@@ -17,6 +19,14 @@ public class HomeAdminPage extends BasePage
 
     @FindBy(css = ".parent.level0:nth-child(4) .level1:first-child a")
     private WebElementFacade manageCustomersLink;
+
+
+    @FindBy(css = ".parent.level0:nth-child(3)")
+    private WebElementFacade navbarCatalogDropdown;
+
+
+    @FindBy(css = ".parent.level0:nth-child(3) .level1:first-child a")
+    private WebElementFacade manageProductsLink;
 
     @FindBy(css = ".link-logout")
     private WebElementFacade logoutLink;
@@ -42,6 +52,10 @@ public class HomeAdminPage extends BasePage
     {
         clickOn(manageCustomersLink);
     }
+
+    public void clickCatalogDropdown() {clickOn(navbarCatalogDropdown);}
+
+    public void clickManageProductsLink(){clickOn(manageProductsLink);}
 
     public void clickLogoutLink()
     {

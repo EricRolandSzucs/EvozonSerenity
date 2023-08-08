@@ -1,10 +1,7 @@
 package com.evozon.features.Admin;
 
 import com.evozon.pages.Admin.ManageCustomersPage;
-import com.evozon.steps.Admin.AddNewCustomerSteps;
-import com.evozon.steps.Admin.DeleteCustomerSteps;
-import com.evozon.steps.Admin.HomeAdminSteps;
-import com.evozon.steps.Admin.LoginAdminSteps;
+import com.evozon.steps.Admin.*;
 import com.evozon.utils.Constants;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -19,16 +16,15 @@ public class BaseAdminTest
     @Steps
     protected LoginAdminSteps loginSteps;
 
-
-    @Steps
-    protected HomeAdminSteps homeSteps;
-
     @Steps
     protected DeleteCustomerSteps deleteCustomerSteps;
 
 
     @Steps
     protected AddNewCustomerSteps addNewCustomerSteps;
+
+    @Steps
+    protected CreateProductSteps createNewProductSteps;
 
 
     @Before

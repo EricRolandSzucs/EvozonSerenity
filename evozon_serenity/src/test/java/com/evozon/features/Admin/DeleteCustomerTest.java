@@ -1,6 +1,7 @@
 package com.evozon.features.Admin;
 
 import com.evozon.utils.Constants;
+import com.github.javafaker.Faker;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.Before;
@@ -14,8 +15,7 @@ public class DeleteCustomerTest extends BaseAdminTest
     public void getToManageCustomersPage()
     {
         loginSteps.doLogin(Constants.ADMIN_USERNAME, Constants.USER_PASSWORD);
-        homeSteps.clickOnClosePopup();
-        homeSteps.navigateToManageCustomers();
+        deleteCustomerSteps.navigateToManageCustomers();
     }
 
 
@@ -25,9 +25,7 @@ public class DeleteCustomerTest extends BaseAdminTest
         WebElementFacade user = deleteCustomerSteps.getUserToDelete();
         deleteCustomerSteps.clickUserEdit(user);
         deleteCustomerSteps.clickDeleteUser();
-        deleteCustomerSteps.acceptPopup();
+        //deleteCustomerSteps.acceptPopup();
         deleteCustomerSteps.checkIfUserIsDeleted();
     }
-
-
 }

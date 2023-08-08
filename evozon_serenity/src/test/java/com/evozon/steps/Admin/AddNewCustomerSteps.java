@@ -1,14 +1,30 @@
 package com.evozon.steps.Admin;
 
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
-import java.util.List;
 
 
 public class AddNewCustomerSteps extends BaseAdminSteps
 {
+    @Step
+    public void clickCustomersMenuOption()
+    {
+        homePage.clickCustomersDropdown();
+    }
+
+    @Step
+    public void clickManageCustomerSubCategory()
+    {
+        homePage.clickManageCustomersLink();
+    }
+
+    @Step
+    public void navigateToManageCustomers()
+    {
+        clickCustomersMenuOption();
+        clickManageCustomerSubCategory();
+    }
     @Step
     public void clickOnAddNewCustomer()
     {
@@ -58,6 +74,15 @@ public class AddNewCustomerSteps extends BaseAdminSteps
     public void checkIfUserIsSaved()
     {
         Assert.assertEquals("The customer has been saved.",manageCustomersPage.getSuccessMessage());
+    }
 
+    @Step
+    public void doCreateNewCustomer(String firstName, String lastName, String email, String password)
+    {
+        enterFirstName(firstName);
+        enterLastName(lastName);
+        enterEmailAddress(email);
+        enterPassword(password);
+        clickSaveCustomer();
     }
 }

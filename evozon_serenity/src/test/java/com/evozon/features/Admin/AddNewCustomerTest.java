@@ -14,8 +14,7 @@ public class AddNewCustomerTest extends BaseAdminTest
     public void getToManageCustomersPage()
     {
         loginSteps.doLogin(Constants.ADMIN_USERNAME, Constants.USER_PASSWORD);
-        homeSteps.clickOnClosePopup();
-        homeSteps.navigateToManageCustomers();
+        addNewCustomerSteps.navigateToManageCustomers();
     }
 
 
