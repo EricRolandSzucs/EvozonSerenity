@@ -11,3 +11,5 @@
 /vcs.xml
 /target
 build.gradle
+/.idea
+evozon_serenity.iml
