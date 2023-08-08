@@ -41,6 +41,9 @@ public class BaseTest {
     @Steps
     protected WishlistSteps wishlistSteps;
 
+    @Steps
+    protected ChangePasswordSteps passwordChangeSteps;
+
     @Before
     public void init(){
         driver.manage().window().maximize();

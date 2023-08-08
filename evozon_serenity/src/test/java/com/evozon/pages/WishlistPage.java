@@ -18,6 +18,9 @@ public class WishlistPage extends BasePage{
     @FindBy(css = ".btn-share")
     private WebElementFacade shareButton;
 
+    @FindBy(id = "email_address")
+    private WebElementFacade emailsTextArea;
+
     private WebElementFacade identifiableProduct;
 
     private WebElementFacade quantity;
@@ -66,4 +69,17 @@ public class WishlistPage extends BasePage{
     public void clickShareButton() {
         clickOn(shareButton);
     }
+
+    public void setEmailsTextArea(String text) {
+        typeInto(emailsTextArea, text);
+    }
+
+    public void submitEmailShare(){
+        emailsTextArea.submit();
+    }
+
+    public boolean isWishlistShared() {
+        return confirmationTextParagraph.containsOnlyText("Your Wishlist has been shared.");
+    }
+
 }
