@@ -12,7 +12,4 @@ public class AccountPage extends BasePage {
         return welcomeTextParagraph.containsOnlyText("Hello, " + userName + "!");
     }
 
-    public boolean isUserRegistered(String userName) {
-        return welcomeTextParagraph.containsOnlyText("Hello, " + userName + "!");
-    }
 }

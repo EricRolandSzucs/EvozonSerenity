@@ -1,10 +1,7 @@
 package com.evozon.steps;
 
-import com.evozon.pages.*;
 import com.evozon.utils.Constants;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
 
 public class AddProductSteps extends BaseSteps {
 
@@ -35,13 +32,13 @@ public class AddProductSteps extends BaseSteps {
     }
 
     @Step
-    public void doValidAddToCartSimpleProduct(){
+    public void doAddToCartSimpleProduct(){
         addProduct(Constants.SIMPLE_PRODUCT);
         verifyProductWasAdded(Constants.SIMPLE_PRODUCT);
     }
 
     @Step
-    public void doValidAddToCartConfigurableProduct(){
+    public void doAddToCartConfigurableProduct(){
         clickOnProduct(Constants.CONFIGURABLE_PRODUCT);
         selectProductOptions();
         addProductFromPage();
@@ -49,7 +46,7 @@ public class AddProductSteps extends BaseSteps {
     }
 
     @Step
-    public void doValidAddToCartVirtualProduct(){
+    public void doAddToCartVirtualProduct(){
         addProduct(Constants.VIRTUAL_PRODUCT);
         verifyProductWasAdded(Constants.VIRTUAL_PRODUCT);
     }

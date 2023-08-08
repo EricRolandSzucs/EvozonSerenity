@@ -1,5 +1,6 @@
 package com.evozon.features;
 
+import com.evozon.utils.Constants;
 import org.junit.Test;
 
 public class RegisterTest extends BaseTest {
@@ -7,13 +8,13 @@ public class RegisterTest extends BaseTest {
     @Test
     public void validRegisterTest(){
         registerSteps.navigateToRegisterPage();
-        registerSteps.enterFirstname("Tabita");
-        registerSteps.enterLastname("Lucaciu");
-//        registerSteps.enterEmailAddress();
-        registerSteps.enterPassword("password");
-        registerSteps.enterConfirmationPassword("password");
+        registerSteps.enterFirstname(Constants.FIRSTNAME);
+        registerSteps.enterLastname(Constants.LASTNAME);
+        registerSteps.enterEmailAddress();
+        registerSteps.enterPassword(Constants.PASSWORD);
+        registerSteps.enterConfirmationPassword(Constants.PASSWORD);
         registerSteps.signUpForNewsletter();
         registerSteps.clickRegister();
-        registerSteps.verifyUserIsRegistered("Tabita Lucaciu");
+        registerSteps.verifyUserIsLoggedIn(Constants.FIRSTNAME + " " + Constants.LASTNAME);
     }
 }

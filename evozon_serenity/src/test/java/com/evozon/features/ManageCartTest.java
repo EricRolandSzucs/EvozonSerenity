@@ -9,9 +9,9 @@ public class ManageCartTest extends BaseTest {
     public void validUpdateQtyTest(){
         int quantity = 3;
         searchSteps.searchForProduct(Constants.SIMPLE_PRODUCT);
-        addProductSteps.doValidAddToCartSimpleProduct();
+        addProductSteps.doAddToCartSimpleProduct();
         searchSteps.searchForProduct(Constants.CONFIGURABLE_PRODUCT);
-        addProductSteps.doValidAddToCartConfigurableProduct();
+        addProductSteps.doAddToCartConfigurableProduct();
         cartSteps.identifyProduct(Constants.CONFIGURABLE_PRODUCT);
         cartSteps.emptyQuantityField();
         cartSteps.enterQuantity(quantity);
@@ -24,9 +24,9 @@ public class ManageCartTest extends BaseTest {
     public void updateShoppingCartLinkTest(){
         int quantity1 = 3, quantity2 = 4;
         searchSteps.searchForProduct(Constants.SIMPLE_PRODUCT);
-        addProductSteps.doValidAddToCartSimpleProduct();
+        addProductSteps.doAddToCartSimpleProduct();
         searchSteps.searchForProduct(Constants.CONFIGURABLE_PRODUCT);
-        addProductSteps.doValidAddToCartConfigurableProduct();
+        addProductSteps.doAddToCartConfigurableProduct();
         cartSteps.identifyProduct(Constants.CONFIGURABLE_PRODUCT);
         cartSteps.emptyQuantityField();
         cartSteps.enterQuantity(quantity1);
@@ -43,9 +43,9 @@ public class ManageCartTest extends BaseTest {
     @Test
     public void validRemoveFromCartTest(){
         searchSteps.searchForProduct(Constants.VIRTUAL_PRODUCT);
-        addProductSteps.doValidAddToCartVirtualProduct();
+        addProductSteps.doAddToCartVirtualProduct();
         searchSteps.searchForProduct(Constants.SIMPLE_PRODUCT);
-        addProductSteps.doValidAddToCartSimpleProduct();
+        addProductSteps.doAddToCartSimpleProduct();
         cartSteps.identifyProduct(Constants.SIMPLE_PRODUCT);
         cartSteps.removeProductFromCart();
         cartSteps.checkProductIsDeleted();
@@ -54,11 +54,11 @@ public class ManageCartTest extends BaseTest {
     @Test
     public void validEmptyCartLinkTest(){
         searchSteps.searchForProduct(Constants.VIRTUAL_PRODUCT);
-        addProductSteps.doValidAddToCartVirtualProduct();
+        addProductSteps.doAddToCartVirtualProduct();
         searchSteps.searchForProduct(Constants.SIMPLE_PRODUCT);
-        addProductSteps.doValidAddToCartSimpleProduct();
+        addProductSteps.doAddToCartSimpleProduct();
         searchSteps.searchForProduct(Constants.CONFIGURABLE_PRODUCT);
-        addProductSteps.doValidAddToCartConfigurableProduct();
+        addProductSteps.doAddToCartConfigurableProduct();
         cartSteps.clickEmptyCartLink();
         cartSteps.checkCartIsEmpty();
     }
@@ -66,7 +66,7 @@ public class ManageCartTest extends BaseTest {
     @Test
     public void validContinueShoppingLinkTest(){
         searchSteps.searchForProduct(Constants.VIRTUAL_PRODUCT);
-        addProductSteps.doValidAddToCartVirtualProduct();
+        addProductSteps.doAddToCartVirtualProduct();
         cartSteps.clickContinueShoppingLink();
         String currentUrl = driver.getCurrentUrl();
         cartSteps.checkUrlIsMatched(currentUrl);

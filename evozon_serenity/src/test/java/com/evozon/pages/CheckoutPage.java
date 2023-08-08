@@ -64,6 +64,5 @@ public class CheckoutPage extends BasePage {
     public boolean isOrderPlaced() {
         withTimeoutOf(Duration.ofSeconds(10)).waitFor(orderConfirmationText);
         return orderConfirmationText.containsOnlyText("YOUR ORDER HAS BEEN RECEIVED.");
-
     }
 }
