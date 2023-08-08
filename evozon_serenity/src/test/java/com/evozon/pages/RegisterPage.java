@@ -39,10 +39,10 @@ public class RegisterPage extends PageObject {
         typeInto(lastnameField, lastname);
     }
 
-    public void setRandomEmailAddressField(){
-        String randomEmailAddress = faker.bothify("??????###@gmail.com");
-        typeInto(emailAddressField, randomEmailAddress);
-    }
+//    public void setRandomEmailAddressField(){
+//        String randomEmailAddress = faker.bothify("??????###@gmail.com");
+//        typeInto(emailAddressField, randomEmailAddress);
+//    }
 
     public void setPasswordField(String password){
         typeInto(passwordField, password);
