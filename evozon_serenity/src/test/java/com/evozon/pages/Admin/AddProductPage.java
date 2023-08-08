@@ -54,6 +54,18 @@ public class AddProductPage extends BasePage
     @FindBy(css = "#tax_class_id option")
     private List<WebElementFacade> taxOptions;
 
+    @FindBy(css = "input[name=\"attribute\"]")
+    private List<WebElementFacade> configurableAttributesList;
+
+
+    @FindBy(css = "#product_info_tabs li")
+    private List<WebElementFacade> sideNavLinks;
+
+    @FindBy(css = "label[for=\"apparel_type\"]")
+    private WebElementFacade typeExtraField;
+
+    @FindBy(css = "#apparel_type option")
+    private List<WebElementFacade> extraRequiredTypeOptions;
 
 
     public List<WebElementFacade> getAttributeSetOptions(){return attributeSetOptions;}
@@ -94,7 +106,8 @@ public class AddProductPage extends BasePage
 
     public void setProdWightField(String weight)
     {
-        typeInto(prodWightField,weight);
+        if(prodWightField.isCurrentlyEnabled())
+            typeInto(prodWightField,weight);
     }
 
     public List<WebElementFacade> getStatusOptions(){return statusOptions;}
@@ -102,10 +115,6 @@ public class AddProductPage extends BasePage
     public void clickStatusOption(WebElementFacade chosenOption)
     {
         clickOn(chosenOption);
-    }
-
-    public void scrollToTop() {
-        evaluateJavascript("window.scrollTo(0, 0);");
     }
 
     public void clickPricesSideLink()
@@ -129,5 +138,26 @@ public class AddProductPage extends BasePage
     }
 
     public void clickSaveButton(){clickOn(saveButton);}
+
+    public List<WebElementFacade> getConfigurableAttributesList(){return configurableAttributesList;}
+
+    public void checkConfigurableAttribute(WebElementFacade attribute)
+    {
+        clickOn(attribute);
+    }
+
+    public List<WebElementFacade> getSideNavLinks(){return sideNavLinks;}
+
+    public void clickOnExtraLink(WebElementFacade link){clickOn(link);}
+
+    public List<WebElementFacade> getAllExtraRequiredTypeOptions()
+    {
+        if(typeExtraField.isCurrentlyEnabled())
+        {
+            return extraRequiredTypeOptions;
+        }
+        else
+            return null;
+    }
 
 }
