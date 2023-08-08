@@ -36,4 +36,10 @@ public class CreateProductTest extends BaseAdminTest
 
         createNewProductSteps.checkProductIsSaved();
     }
+
+    @Test
+    public void createConfigurableProduct()
+    {
+        
+    }
 }
