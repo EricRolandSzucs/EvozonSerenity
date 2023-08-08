@@ -34,7 +34,8 @@ public class ChangePasswordSteps extends BaseSteps{
     public void doPasswordChange(String oldPassword, String newPassword) {
         accountInformationPage.setCurrentPasswordField(oldPassword);
         accountInformationPage.setPasswordField(newPassword);
-        accountInformationPage.setPasswordField(newPassword);
+        accountInformationPage.setConfirmationField(newPassword);
+        accountInformationPage.clickPasswordChangeButton();
     }
 
 }

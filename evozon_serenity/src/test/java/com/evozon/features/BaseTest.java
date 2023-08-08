@@ -24,6 +24,9 @@ public class BaseTest {
     protected LoginSteps loginSteps;
 
     @Steps
+    protected LogoutSteps logoutSteps;
+
+    @Steps
     protected CartSteps cartSteps;
 
     @Steps

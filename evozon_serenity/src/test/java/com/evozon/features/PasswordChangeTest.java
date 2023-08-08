@@ -1,6 +1,7 @@
 package com.evozon.features;
 
 import com.evozon.utils.Constants;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,6 +20,15 @@ public class PasswordChangeTest extends BaseTest{
         passwordChangeSteps.setConfirmationField("parola124");
         passwordChangeSteps.clickPasswordChangeButton();
 
+        logoutSteps.doLogout();
+        loginSteps.doLogin(Constants.USER_EMAIL, "parola124");
 
+        loginSteps.verifyUserIsLoggedIn(Constants.USER_NAME);
+    }
+
+    @After
+    public void changePasswordBack() {
+        passwordChangeSteps.clickOnPasswordChangeLink();
+        passwordChangeSteps.doPasswordChange("parola124", Constants.USER_PASSWORD);
     }
 }
