@@ -12,8 +12,17 @@ public class CartPage extends BasePage {
     @FindBy(css = ".success-msg")
     private WebElementFacade productAddedParagraph;
 
+    @FindBy(css = "[title='Empty Cart']")
+    private WebElementFacade emptyCartLink;
+
     @FindBy(css = ".bottom .btn-checkout")
     private WebElementFacade checkoutButton;
+
+    @FindBy(css = "button:not([style='visibility:hidden;'])[title='Update Shopping Cart']")
+    private WebElementFacade updateShoppingCartLink;
+
+    @FindBy(css = "[title='Continue Shopping']")
+    private WebElementFacade continueShoppingLink;
 
     private WebElementFacade identifiableProduct;
 
@@ -67,5 +76,21 @@ public class CartPage extends BasePage {
 
     public boolean productIsDeleted(){
         return !identifiableProduct.isCurrentlyVisible();
+    }
+
+    public void clickEmptyCartLink(){
+        clickOn(emptyCartLink);
+    }
+
+    public void clickUpdateShoppingCartLink(){
+        clickOn(updateShoppingCartLink);
+    }
+
+    public void clickContinueShoppingLink(){
+        clickOn(continueShoppingLink);
+    }
+
+    public boolean checkEmptyCart(){
+        return shoppingCartTitle.containsOnlyText("SHOPPING CART IS EMPTY");
     }
 }

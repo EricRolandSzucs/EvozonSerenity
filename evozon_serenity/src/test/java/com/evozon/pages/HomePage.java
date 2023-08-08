@@ -1,7 +1,9 @@
 package com.evozon.pages;
 
+import com.evozon.utils.Constants;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.junit.Assert;
 
 public class HomePage extends BasePage {
 
@@ -38,4 +40,7 @@ public class HomePage extends BasePage {
         clickOn(registerLink);
     }
 
+    public boolean checkMatchedUrl(String currentUrl){
+        return currentUrl.equals(Constants.BASE_URL);
+    }
 }

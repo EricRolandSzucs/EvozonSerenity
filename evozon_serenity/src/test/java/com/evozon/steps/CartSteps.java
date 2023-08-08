@@ -39,4 +39,29 @@ public class CartSteps extends BaseSteps {
     public void checkProductIsDeleted(){
         Assert.assertTrue(cartPage.productIsDeleted());
     }
+
+    @Step
+    public void clickEmptyCartLink(){
+        cartPage.clickEmptyCartLink();
+    }
+
+    @Step
+    public void checkCartIsEmpty(){
+        Assert.assertTrue(cartPage.checkEmptyCart());
+    }
+
+    @Step
+    public void clickUpdateShoppingCartLink(){
+        cartPage.clickUpdateShoppingCartLink();
+    }
+
+    @Step
+    public void clickContinueShoppingLink(){
+        cartPage.clickContinueShoppingLink();
+    }
+
+    @Step
+    public void checkUrlIsMatched(String currentUrl){
+        homePage.checkMatchedUrl(currentUrl);
+    }
 }
