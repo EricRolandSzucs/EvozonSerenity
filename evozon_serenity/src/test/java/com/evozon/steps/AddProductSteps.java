@@ -9,19 +9,13 @@ import org.junit.Assert;
 public class AddProductSteps extends BaseSteps {
 
     @Step
-    public void searchForProduct(String product) {
-        homePage.setSearchField(product);
-        homePage.submitSearchField();
-    }
-
-    @Step
     public void addProduct(String product) {
         productGridPage.clickAddToCartButton(product);
     }
 
     @Step
-    public void clickOnProduct() {
-        productGridPage.clickConfigurableProductPageLink();
+    public void clickOnProduct(String product) {
+        productGridPage.clickProductPageLink(product);
     }
 
     @Step

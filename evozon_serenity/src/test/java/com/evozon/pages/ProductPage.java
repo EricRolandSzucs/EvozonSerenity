@@ -14,6 +14,9 @@ public class ProductPage extends BasePage{
     @FindBy(css = "#option72")
     private WebElementFacade sizeOptionButton;
 
+    @FindBy(css = ".link-wishlist")
+    private WebElementFacade addToWishlistButton;
+
     public void clickColorOptionButton() {
         clickOn(colorOptionButton);
     }
@@ -25,4 +28,10 @@ public class ProductPage extends BasePage{
     public void clickAddToCartButton() {
         clickOn(addToCartButton);
     }
+
+    public void clickAddToWishlistButton() {
+        clickOn(addToWishlistButton);
+    }
+
+
 }

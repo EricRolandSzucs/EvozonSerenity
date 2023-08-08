@@ -1,0 +1,1009 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Dashboard / Magento Admin</title>
+<link rel="icon" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/favicon.ico" type="image/x-icon">
+
+<script type="text/javascript">
+    var BLANK_URL = 'http://qa1magento.dev.evozon.com/js/blank.html';
+    var BLANK_IMG = 'http://qa1magento.dev.evozon.com/js/spacer.gif';
+    var BASE_URL = 'http://qa1magento.dev.evozon.com/index.php/admin/index/index/key/47c025b344173eeb684e65a8752b632a/';
+    var SKIN_URL = 'http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/';
+    var FORM_KEY = 'vNh3norB5XHl1wRd';
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/js/calendar/calendar-win2k-1.css">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/reset.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/boxes.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/custom.css" media="all">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/print.css" media="print">
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/menu.css" media="screen, projection">
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/prototype/window.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/hash.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/events.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/loader.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/grid.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/tabs.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/form.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/accordion.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/tools.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/uploader.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/mage/adminhtml/product.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/calendar/calendar.js"></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/calendar/calendar-setup.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/iestyles.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/below_ie7.css" media="all" />
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/lib/ds-sleight.js" defer></script>
+<script type="text/javascript" src="http://qa1magento.dev.evozon.com/js/varien/iehover-fix.js"></script>
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/ie7.css" media="all" />
+<![endif]-->
+
+
+
+<script type="text/javascript">
+    Fieldset.addToPrefix(2);
+</script>
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script>
+
+<script type="text/javascript">
+//<![CDATA[
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; // full day names
+Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]; // short day names
+Calendar._FD = 0; // First day of the week. "0" means display Sunday first, "1" means display Monday first, etc.
+Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; // full month names
+Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; // short month names
+Calendar._am = "AM"; // am/pm
+Calendar._pm = "PM";
+
+// tooltips
+Calendar._TT = {};
+Calendar._TT["INFO"] = "About the calendar";
+
+Calendar._TT["ABOUT"] =
+"DHTML Date/Time Selector\n" +
+"(c) dynarch.com 2002-2005 / Author: Mihai Bazon\n" +
+"For latest version visit: http://www.dynarch.com/projects/calendar/\n" +
+"Distributed under GNU LGPL. See http://gnu.org/licenses/lgpl.html for details." +
+"\n\n" +
+"Date selection:\n" +
+"- Use the \xab, \xbb buttons to select year\n" +
+"- Use the \u2039, \u203a buttons to select month\n" +
+"- Hold mouse button on any of the above buttons for faster selection.";
+Calendar._TT["ABOUT_TIME"] = "\n\n" +
+"Time selection:\n" +
+"- Click on any of the time parts to increase it\n" +
+"- or Shift-click to decrease it\n" +
+"- or click and drag for faster selection.";
+
+Calendar._TT["PREV_YEAR"] = "Prev. year (hold for menu)";
+Calendar._TT["PREV_MONTH"] = "Prev. month (hold for menu)";
+Calendar._TT["GO_TODAY"] = "Go Today";
+Calendar._TT["NEXT_MONTH"] = "Next month (hold for menu)";
+Calendar._TT["NEXT_YEAR"] = "Next year (hold for menu)";
+Calendar._TT["SEL_DATE"] = "Select date";
+Calendar._TT["DRAG_TO_MOVE"] = "Drag to move";
+Calendar._TT["PART_TODAY"] = ' (' + "today" + ')';
+
+// the following is to inform that "%s" is to be the first day of week
+Calendar._TT["DAY_FIRST"] = "Display %s first";
+
+// This may be locale-dependent. It specifies the week-end days, as an array
+// of comma-separated numbers. The numbers are from 0 to 6: 0 means Sunday, 1
+// means Monday, etc.
+Calendar._TT["WEEKEND"] = "0,6";
+
+Calendar._TT["CLOSE"] = "Close";
+Calendar._TT["TODAY"] = "today";
+Calendar._TT["TIME_PART"] = "(Shift-)Click or drag to change value";
+
+// date formats
+Calendar._TT["DEF_DATE_FORMAT"] = "%b %e, %Y";
+Calendar._TT["TT_DATE_FORMAT"] = "%B %e, %Y";
+
+Calendar._TT["WK"] = "Week";
+Calendar._TT["TIME"] = "Time:";
+
+CalendarDateObject._LOCAL_TIMZEONE_OFFSET_SECONDS = -25200;
+CalendarDateObject._SERVER_TIMZEONE_SECONDS = 1691388225;
+
+//]]>
+</script>
+</head>
+
+<body id="html-body" class=" adminhtml-dashboard-index">
+<div class="wrapper">
+        <noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong>JavaScript seems to be disabled in your browser.</strong></p>
+                <p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>
+            </div>
+        </div>
+    </noscript>
+    <p class="demo-notice">This is a demo store. Any orders placed through this store will not be honored or fulfilled.</p>
+        <div class="header">
+            <div class="header-top">
+    <a href="http://qa1magento.dev.evozon.com/index.php/admin/index/index/key/47c025b344173eeb684e65a8752b632a/"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/logo.gif" alt="Magento Logo" class="logo"></a>
+    <div class="header-right">
+        <p class="super">
+            Logged in as testuser<span class="separator">|</span>Monday, August 7, 2023<span class="separator">|</span><a href="http://qa1magento.dev.evozon.com/index.php/admin/index/logout/key/796c53db1f8c03ac51dc6e0f7c03bb6b/" class="link-logout">Log Out</a>
+        </p>
+                <fieldset>
+            <legend>Search</legend>
+            <span id="global_search_indicator" class="autocomplete-indicator" style="display: none">
+                <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/ajax-loader.gif" alt="Loading..." class="v-middle">
+            </span>
+                        <input id="global_search" name="query" type="text" class="input-text" value="Global Record Search" onfocus="if(this.value=='Global Record Search')this.value=''; " onblur="if(this.value=='')this.value='Global Record Search';" autocomplete="off">
+            <div id="global_search_autocomplete" class="autocomplete" style="display: none;"></div>
+            <script type="text/javascript">
+                new Ajax.Autocompleter(
+                    'global_search',
+                    'global_search_autocomplete',
+                    'http://qa1magento.dev.evozon.com/index.php/admin/index/globalSearch/key/b8e3fc1e0b50e4c286845155ff6b4a57/',
+                    {
+                        paramName:"query",
+                        minChars:2,
+                        indicator:"global_search_indicator",
+                        updateElement:getSelectionId,
+                        evalJSON:'force'
+                    }
+                );
+                function getSelectionId(li) {
+                    location.href = li.getAttribute('url');
+                }
+            </script>
+        </fieldset>
+            </div>
+</div>
+        <div class="clear"></div>
+            
+<div class="nav-bar">
+<!-- menu start -->
+<ul id="nav">
+<li class=" active  level0"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/dashboard/index/key/1ab21c70d405cf70cca1c5ae301ea309/" class="active"><span>Dashboard</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Sales</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_order/index/key/0abaca144920aea65640602b97a23977/" class=""><span>Orders</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_invoice/index/key/eb849788db3a000e24fd689556a078e9/" class=""><span>Invoices</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_shipment/index/key/9801b17bd323c045b0ccf83a12e1a76a/" class=""><span>Shipments</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_creditmemo/index/key/db94811b696ff6cc91c5f710d9deec19/" class=""><span>Credit Memos</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_transactions/index/key/c6bf1fe69e6553209617777febcc015b/" class=""><span>Transactions</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_recurring_profile/index/key/89085b75269eef77b6b14e6af92d0749/" class=""><span>Recurring Profiles (beta)</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_billing_agreement/index/key/283ea7f0df17c36687ac3075ccc5195a/" class=""><span>Billing Agreements</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/checkout_agreement/index/key/0e81d7e7a33e80b2afcaaa8d3620b09b/" class=""><span>Terms and conditions</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent last level1"> <a href="#" onclick="return false" class=""><span>Tax</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_rule/index/key/59c9ab2b5258caa053623beb0a58ef8b/" class=""><span>Manage Tax Rules</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_rate/index/key/bb1111101ac88dcf65808a04037cf721/" class=""><span>Manage Tax Zones &amp; Rates</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_rate/importExport/key/90c4f945e950b657e70084e94296b7a9/" class=""><span>Import / Export Tax Rates</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_class_customer/index/key/d5d328805ce1f8bad5d64401cf679a20/" class=""><span>Customer Tax Classes</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/tax_class_product/index/key/48dfdedb5ca1fc75d68f48771bd3caec/" class=""><span>Product Tax Classes</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Catalog</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product/index/key/9b4f6ce093f54acc3bebd2f675b6d7bd/" class=""><span>Manage Products</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_category/index/key/6874cd5ec722450d01051780bd59174d/" class=""><span>Manage Categories</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Attributes</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_attribute/index/key/f1687bf8556cf934af4378ead7054fdf/" class=""><span>Manage Attributes</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_set/index/key/e9d168462da733389a089aacb7a44892/" class=""><span>Manage Attribute Sets</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/urlrewrite/index/key/e26cdacd87be7e8e6c2301615b54f939/" class=""><span>URL Rewrite Management</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/index/key/a5ae0f63d7bced757c9e520c1119fe74/" class=""><span>Search Terms</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Reviews and Ratings</span></a>
+<ul>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level2"> <a href="#" onclick="return false" class=""><span>Customer Reviews</span></a>
+<ul>
+<li class="  level3"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_review/pending/key/1272c64d95fcbe2d12627de94ecec220/" class=""><span>Pending Reviews</span></a>
+</li>
+<li class="  last level3"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product_review/index/key/a997a4eac7b579ce913f600d71e78628/" class=""><span>All Reviews</span></a>
+</li>
+</ul>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/rating/index/key/1ec9f37c56a62282c0b0584750b8e236/" class=""><span>Manage Ratings</span></a>
+</li>
+</ul>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sitemap/index/key/a64b96a2a6c89a8fa309769d0ab6cd34/" class=""><span>Google Sitemap</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Customers</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer/index/key/77e718ee1ed2247650e2c530ab001d5b/" class=""><span>Manage Customers</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer_group/index/key/f62a342cd6be57a22458450598f3117c/" class=""><span>Customer Groups</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/customer_online/index/key/0ee5c17c739bc795989622d6bb273434/" class=""><span>Online Customers</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Promotions</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/promo_catalog/index/key/42249ed2fc79e78fd51257c4cd3358b1/" class=""><span>Catalog Price Rules</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/promo_quote/index/key/b76455fcf47258578cbe57f6468eb69e/" class=""><span>Shopping Cart Price Rules</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Newsletter</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_template/index/key/db1903abc94d1286ce182c99ab0dca89/" class=""><span>Newsletter Templates</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_queue/index/key/794a2a3459e58903cee13c458fac37fa/" class=""><span>Newsletter Queue</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_subscriber/index/key/ca23d7cac9ca0c134ab5fa05df8d6893/" class=""><span>Newsletter Subscribers</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/newsletter_problem/index/key/e3d7dc501babf36e59b0bb404a5936de/" class=""><span>Newsletter Problem Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>CMS</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/cms_page/index/key/e7a9451c5131f8f5553df90da805b140/" class=""><span>Pages</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/cms_block/index/key/e2c7d0b4d28d888601ac7525c5a6c93c/" class=""><span>Static Blocks</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/widget_instance/index/key/bcb3b93ad76ce80a7c5c5bcd41baa90e/" class=""><span>Widgets</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>Reports</span></a>
+<ul>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Sales</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/sales/key/0179bbdcfee856738f7f0fc318f5690c/" class=""><span>Orders</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/tax/key/ec80ca8e7c92767e8798fecdaa3ba6a1/" class=""><span>Tax</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/invoiced/key/4dbf877d318989a301f0ca35c23086dc/" class=""><span>Invoiced</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/shipping/key/56ecdd9d2bb98e05acd7498fa68dca9b/" class=""><span>Shipping</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/refunded/key/a8672c0fdf8208cbbfcbffa5a4ab0a85/" class=""><span>Refunds</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/coupons/key/768a86330b984840ba4700f41e5080ba/" class=""><span>Coupons</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/paypal_reports/index/key/9838760fdc59601afd45102dc6df5bae/" class=""><span>PayPal Settlement Reports</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Shopping Cart</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_shopcart/product/key/99ea7a2224fd98e764f0c9e0c2a72de6/" class=""><span>Products in carts</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_shopcart/abandoned/key/d05c91fa5bff45620dd5a17ff43c426b/" class=""><span>Abandoned carts</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Products</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_sales/bestsellers/key/199f5a3c6a87cddea8ba4752af88e04a/" class=""><span>Bestsellers</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/sold/key/2e6c6e6a8b22382b4239371656176e8f/" class=""><span>Products Ordered</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/viewed/key/3f3be7fcce71ce686a31601a8249c59b/" class=""><span>Most Viewed</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/lowstock/key/6976e2cf29bd2352187752df06099bc9/" class=""><span>Low stock</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_product/downloads/key/0301321b37b52a08c47af9f2e380cc41/" class=""><span>Downloads</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Customers</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_customer/accounts/key/6ae0a235d05671334a74dae67112eab2/" class=""><span>New Accounts</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_customer/totals/key/26cee0321a1892ba410e3967d5740bc1/" class=""><span>Customers by orders total</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_customer/orders/key/9a668c741b3e80ecef6822a3b876d592/" class=""><span>Customers by number of orders</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Reviews</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_review/customer/key/1ad861d51812ed6c74640ec52435bc1d/" class=""><span>Customers Reviews</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_review/product/key/61d6037900e6a41e456ab15c0adc17c6/" class=""><span>Products Reviews</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report/search/key/375f2089caba4f05d168dee4d18c2d9a/" class=""><span>Search Terms</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/report_statistics/index/key/0eacde328d1c15384ada4279f9fe7b8a/" class=""><span>Refresh Statistics</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level0"> <a href="#" onclick="return false" class=""><span>System</span></a>
+<ul>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_account/index/key/e038f34ea552d7f23e17c56a7a8a2eb6/" class=""><span>My Account</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/notification/index/key/7f102f16294b76466f37aa7a0219d435/" class=""><span>Notifications</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Tools</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_backup/index/key/8407e5ac62e034b58dec32c67817d756/" class=""><span>Backups</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/compiler_process/index/key/95f5b02bd0cb6ea8eac7778cc0bd663f/" class=""><span>Compilation</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Web Services</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api_user/index/key/c9bb631ce9924192f623e761c07868f0/" class=""><span>SOAP/XML-RPC - Users</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api_role/index/key/cf350cccd62d11982393d628efb6e894/" class=""><span>SOAP/XML-RPC - Roles</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api2_role/index/key/1ec46326671b38980d917f8424a53c6d/" class=""><span>REST - Roles</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/api2_attribute/index/key/792c932eefdfdb19aa3ff99cbed0ed96/" class=""><span>REST - Attributes</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/oauth_consumer/index/key/860f3f750ac876b2e8b95d50aef80ee7/" class=""><span>REST - OAuth Consumers</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/oauth_authorizedTokens/index/key/4abd0585aedc79177963e3e997c96048/" class=""><span>REST - OAuth Authorized Tokens</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/oauth_admin_token/index/key/16d3c1fd7357754241e7a0db55257f8b/" class=""><span>REST - My Apps</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_design/index/key/7f2cbe291e66a83c2c78f56b9c33f70e/" class=""><span>Design</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Import/Export</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/import/index/key/6608cfb8eb20f7c08f564257a6b0a673/" class=""><span>Import</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/export/index/key/62014a84504788a023a3fc973680167c/" class=""><span>Export</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_convert_gui/index/key/b2963144ee708fd9674fb3b83a6c0191/" class=""><span>Dataflow - Profiles</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_convert_profile/index/key/c6037e116142dafeff0a7b39a57d30eb/" class=""><span>Dataflow - Advanced Profiles</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_currency/index/key/88b83951582961f19ee43941bbcf33a0/" class=""><span>Manage Currency</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_currency/index/key/88b83951582961f19ee43941bbcf33a0/" class=""><span>Rates</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_currencysymbol/index/key/5dbbe6af47538c356bba8ae00bb717f4/" class=""><span>Symbols</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_email_template/index/key/d5e384febed84cede1b87dc5c063fd3b/" class=""><span>Transactional Emails</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_variable/index/key/a4ff6f096321c432bd95d0b42a178f92/" class=""><span>Custom Variables</span></a>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Permissions</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_user/index/key/106305a409bf562f4c0a452d68e16885/" class=""><span>Users</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_role/index/key/ce1649f55139131e2541a8fc712916a0/" class=""><span>Roles</span></a>
+</li>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_variable/index/key/2b7119f0b356f3694d26e6d1b4b2a057/" class=""><span>Variables</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/permissions_block/index/key/31949e55064e40e30cd7f87cba824f9e/" class=""><span>Blocks</span></a>
+</li>
+</ul>
+</li>
+<li onmouseover="Element.addClassName(this,'over')" onmouseout="Element.removeClassName(this,'over')" class="  parent level1"> <a href="#" onclick="return false" class=""><span>Magento Connect</span></a>
+<ul>
+<li class="  level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/extension_local/index/key/01490a737aa853bbf65231a3a05ee712/" class=""><span>Magento Connect Manager</span></a>
+</li>
+<li class="  last level2"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/extension_custom/index/key/fdd479af1acdcffb757b30736035107f/" class=""><span>Package Extensions</span></a>
+</li>
+</ul>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/cache/index/key/6270607c6b92934652175af34a57aa61/" class=""><span>Cache Management</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/process/list/key/461106ab7fad6f403c7e20435b23fc1c/" class=""><span>Index Management</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_store/index/key/eb4ae0b759006dc3c21cc6915264d9b8/" class=""><span>Manage Stores</span></a>
+</li>
+<li class="  level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/sales_order_status/index/key/721da3aec814b56bc1b789314db79d9e/" class=""><span>Order Statuses</span></a>
+</li>
+<li class="  last level1"> <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_config/index/key/dad0ed71126ee23d50e38ca2bc55abd4/" class=""><span>Configuration</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- menu end -->
+
+    <a id="page-help-link" href="http://merch.docs.magento.com/ce/user_guide/store-operations/reports-dashboard.html" target="magento_page_help">Get help for this page</a>
+    <script type="text/javascript">$('page-help-link').target = 'magento_page_help'</script>
+
+</div>
+        </div>
+        <div class="notification-global">
+    <strong>One or more of the Cache Types are invalidated:</strong>
+    Blocks HTML output, Layouts.
+    Click here to go to <a href="http://qa1magento.dev.evozon.com/index.php/admin/cache/index/key/6270607c6b92934652175af34a57aa61/">Cache Management</a> and refresh cache types.</div>
+    <div class="notification-global notification-global-warning">
+        <strong style="color:red">Important: </strong>
+        <span>Formkey validation on checkout disabled. This may expose security risks.
+        We strongly recommend to Enable Form Key Validation On Checkout in
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/system_config/edit/section/admin/key/ce814aa7ac113226f7f9ba584173db93/">Admin / Security Section</a>,
+        for protect your own checkout process. </span>
+    </div>
+<div class="notification-global">
+        
+    <span class="f-right">
+                You have <span class="critical"><strong>18</strong> critical</span>, <strong>7</strong> major, <strong>19</strong> minor and <strong>152</strong> notice unread message(s). <a href="http://qa1magento.dev.evozon.com/index.php/admin/notification/index/key/7f102f16294b76466f37aa7a0219d435/">Go to messages inbox</a>
+    </span>
+            <strong class="label clickable" onclick="openMessagePopup()">
+    
+    Latest Message:</strong> New Patch for PayPal Instant Payment Notification (IPN) Changes. Upgrade to 1.9.3.3 or SUPEE-8167 by June 30, 2017 to Avoid Service Disruptions – 6/13/2017            <a href="https://magento.com/tech-resources/download " onclick="this.target='_blank';">Read details</a>
+    </div>
+<script type="text/javascript">
+//<![CDATA[
+    var messagePopupClosed = false;
+    function openMessagePopup() {
+        var height = $('html-body').getHeight();
+        $('message-popup-window-mask').setStyle({'height':height+'px'});
+        toggleSelectsUnderBlock($('message-popup-window-mask'), false);
+        Element.show('message-popup-window-mask');
+        $('message-popup-window').addClassName('show');
+    }
+
+    function closeMessagePopup() {
+        toggleSelectsUnderBlock($('message-popup-window-mask'), true);
+        Element.hide('message-popup-window-mask');
+        $('message-popup-window').removeClassName('show');
+        messagePopupClosed = true;
+    }
+
+    Event.observe(window, 'load', openMessagePopup);
+    Event.observe(window, 'keyup', function(evt) {
+        if(messagePopupClosed) return;
+        var code;
+        if (evt.keyCode) code = evt.keyCode;
+        else if (evt.which) code = evt.which;
+        if (code == Event.KEY_ESC) {
+            closeMessagePopup();
+        }
+    });
+//]]>
+</script>
+<div id="message-popup-window-mask" style="height: 1247px;"></div>
+<div id="message-popup-window" class="message-popup show">
+    <div class="message-popup-head">
+        <a href="#" onclick="closeMessagePopup(); return false;" title="close"><span>close</span></a>
+        <h2>Incoming Message</h2>
+    </div>
+    <div class="message-popup-content">
+        <div class="message">
+            <span class="message-icon message-major" style="background-image:url(http://widgets.magentocommerce.com/1.9.3.3/SEVERITY_MAJOR.gif);">major</span>
+            <p class="message-text">New Patch for PayPal Instant Payment Notification (IPN) Changes. Upgrade to 1.9.3.3 or SUPEE-8167 by June 30, 2017 to Avoid Service Disruptions – 6/13/2017</p>
+        </div>
+        <p class="read-more"><a href="https://magento.com/tech-resources/download " onclick="this.target='_blank';">Read details</a></p>
+    </div>
+</div>
+<div class="notification-global">
+    <strong>One or more of the Indexes are not up to date:</strong>
+    Catalog URL Rewrites.
+    Click here to go to <a href="http://qa1magento.dev.evozon.com/index.php/admin/process/list/key/461106ab7fad6f403c7e20435b23fc1c/">Index Management</a> and rebuild required indexes.</div>
+
+
+
+
+        <div class="middle" id="anchor-content">
+            <div id="page:main-container">
+                            <div id="messages"></div>
+                
+<script type="text/javascript">
+//<![CDATA[
+function changeDiagramsPeriod(periodObj) {
+    periodParam = periodObj.value ? 'period/' + periodObj.value + '/' : '';
+    ajaxBlockParam = 'block/tab_orders/';
+    ajaxBlockUrl = 'http://qa1magento.dev.evozon.com/index.php/admin/dashboard/ajaxBlock/key/1ec24c34ba90daf22c3842e3abe63660/' + ajaxBlockParam + periodParam;
+    new Ajax.Request(ajaxBlockUrl, {
+        parameters: {isAjax: 'true', form_key: FORM_KEY},
+        onSuccess: function(transport) {
+            tabContentElementId = 'diagram_tab_orders_content';
+            try {
+                if (transport.responseText.isJSON()) {
+                    var response = transport.responseText.evalJSON()
+                    if (response.error) {
+                        alert(response.message);
+                    }
+                    if(response.ajaxExpired && response.ajaxRedirect) {
+                        setLocation(response.ajaxRedirect);
+                    }
+                } else {
+                    $(tabContentElementId).update(transport.responseText);
+                }
+            }
+            catch (e) {
+                $(tabContentElementId).update(transport.responseText);
+            }
+        }
+    });
+    ajaxBlockParam = 'block/tab_amounts/';
+    ajaxBlockUrl = 'http://qa1magento.dev.evozon.com/index.php/admin/dashboard/ajaxBlock/key/1ec24c34ba90daf22c3842e3abe63660/' + ajaxBlockParam + periodParam;
+    new Ajax.Request(ajaxBlockUrl, {
+        parameters: {isAjax: 'true', form_key: FORM_KEY},
+        onSuccess: function(transport) {
+            tabContentElementId = 'diagram_tab_amounts_content';
+            try {
+                if (transport.responseText.isJSON()) {
+                    var response = transport.responseText.evalJSON()
+                    if (response.error) {
+                        alert(response.message);
+                    }
+                    if(response.ajaxExpired && response.ajaxRedirect) {
+                        setLocation(response.ajaxRedirect);
+                    }
+                } else {
+                    $(tabContentElementId).update(transport.responseText);
+                }
+            }
+            catch (e) {
+                $(tabContentElementId).update(transport.responseText);
+            }
+        }
+    });
+    ajaxBlockUrl = 'http://qa1magento.dev.evozon.com/index.php/admin/dashboard/ajaxBlock/block/totals/key/1ec24c34ba90daf22c3842e3abe63660/' + periodParam;
+    new Ajax.Request(ajaxBlockUrl, {
+        parameters: {isAjax: 'true', form_key: FORM_KEY},
+        onSuccess: function(transport) {
+            tabContentElementId = 'dashboard_diagram_totals';
+            try {
+                if (transport.responseText.isJSON()) {
+                    var response = transport.responseText.evalJSON()
+                    if (response.error) {
+                        alert(response.message);
+                    }
+                    if(response.ajaxExpired && response.ajaxRedirect) {
+                        setLocation(response.ajaxRedirect);
+                    }
+                } else {
+                    $(tabContentElementId).replace(transport.responseText);
+                }
+            }
+            catch (e) {
+                $(tabContentElementId).replace(transport.responseText);
+            }
+        }
+    });
+}
+
+function toggleCal(id) {
+    $('dashboard_'+id+'_cal_div').toggle();
+    $('dashboard_'+id+'_range_div').toggle();
+}
+//]]>
+</script>
+<div class="content-header">
+    <table cellspacing="0">
+        <tbody><tr>
+            <td><h3 class="head-dashboard">Dashboard</h3></td>
+        </tr>
+    </tbody></table>
+</div>
+<div class="dashboard-container">
+    <p class="switcher"><label for="store_switcher">Choose Store View:</label>
+<select name="store_switcher" id="store_switcher" onchange="return switchStore(this);">
+    <option value="">All Store Views</option>
+                                                                                                    <optgroup label="Main Website"></optgroup>
+                                                                        <optgroup label="&nbsp;&nbsp;&nbsp;Madison Island">
+                                <option value="1">&nbsp;&nbsp;&nbsp;&nbsp;English</option>
+                                                            <option value="2">&nbsp;&nbsp;&nbsp;&nbsp;French</option>
+                                                            <option value="3">&nbsp;&nbsp;&nbsp;&nbsp;German</option>
+                                        </optgroup>
+                        </select>
+<a href="http://merch.docs.magento.com/ce/user_guide/configuration/scope.html" onclick="this.target='_blank'" title="What is this?" class="link-store-scope">What is this?</a></p>
+<script type="text/javascript">
+    function switchStore(obj) {
+        var storeParam = obj.value ? 'store/' + obj.value + '/' : '';
+        if (obj.switchParams) {
+            storeParam += obj.switchParams;
+        }
+            setLocation('http://qa1magento.dev.evozon.com/index.php/admin/dashboard/index/key/1ab21c70d405cf70cca1c5ae301ea309/' + storeParam);
+        }
+</script>
+    <table cellspacing="25" width="100%">
+        <tbody><tr>
+            <td>                        <div class="entry-edit">
+                <div class="entry-edit-head"><h4>Lifetime Sales</h4></div>
+                <fieldset class="a-center bold">
+                    <span class="nowrap" style="font-size:18px;"><span class="price">$40,668.08</span><span style="font-size:14px; color:#686868;"></span></span>
+                </fieldset>
+            </div>
+                        <div class="entry-edit">
+                <div class="entry-edit-head"><h4>Average Orders</h4></div>
+                <fieldset class="a-center bold">
+                    <span class="nowrap" style="font-size:18px;"><span class="price">$1,936.58</span><span style="font-size:14px; color:#686868;"></span></span>
+                </fieldset>
+            </div>
+                            <div class="entry-edit">
+                    <div class="entry-edit-head"><h4>Last 5 Orders</h4></div>
+                    <fieldset class="np"><div class="grid np">
+<table cellspacing="0" style="border:0;" id="lastOrdersGrid_table">
+        <colgroup><col>
+        <col width="100">
+        <col width="100">
+                </colgroup><thead>
+                            <tr class="headings">
+                                    <th class=" no-link"><span class="nobr">Customer</span></th>
+                                    <th class=" no-link"><span class="nobr">Items</span></th>
+                                    <th class=" no-link last"><span class="nobr">Grand Total</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://qa1magento.dev.evozon.com/index.php/admin/sales_order/view/order_id/247/key/1e4450eec0d4b5a37fb8db3712ba1627/" class="even">
+                    <td class=" ">Testor TT Testing</td>
+                    <td class="a-right a-right ">1</td>
+                    <td class="a-right a-right last">$25,000.00</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/sales_order/view/order_id/246/key/1e4450eec0d4b5a37fb8db3712ba1627/">
+                    <td class=" ">Testor TT Testing</td>
+                    <td class="a-right a-right ">1</td>
+                    <td class="a-right a-right last">$50,000.00</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/sales_order/view/order_id/245/key/1e4450eec0d4b5a37fb8db3712ba1627/" class="even">
+                    <td class=" ">John Michael Smith</td>
+                    <td class="a-right a-right ">1</td>
+                    <td class="a-right a-right last">$226.75</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/sales_order/view/order_id/244/key/1e4450eec0d4b5a37fb8db3712ba1627/">
+                    <td class=" ">John Michael Smith</td>
+                    <td class="a-right a-right ">1</td>
+                    <td class="a-right a-right last">$226.75</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/sales_order/view/order_id/243/key/1e4450eec0d4b5a37fb8db3712ba1627/" class="even">
+                    <td class=" ">John Michael Smith</td>
+                    <td class="a-right a-right ">1</td>
+                    <td class="a-right a-right last">$226.75</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    lastOrdersGridJsObject = new varienGrid('lastOrdersGrid', 'http://qa1magento.dev.evozon.com/index.php/admin/dashboard/index/key/1ab21c70d405cf70cca1c5ae301ea309/', 'page', 'sort', 'dir', 'filter');
+    lastOrdersGridJsObject.useAjax = '';
+            lastOrdersGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</fieldset>
+                </div>
+                <div class="entry-edit">
+                    <div class="entry-edit-head"><h4>Last 5 Search Terms</h4></div>
+                    <fieldset class="np"><div class="grid np">
+<table cellspacing="0" style="border:0;" id="lastSearchGrid_table">
+        <colgroup><col>
+        <col width="100">
+        <col width="100">
+                </colgroup><thead>
+                            <tr class="headings">
+                                    <th class=" no-link"><span class="nobr">Search Term</span></th>
+                                    <th class=" no-link"><span class="nobr">Results</span></th>
+                                    <th class=" no-link last"><span class="nobr">Number of Uses</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/id/432/key/a2603f0a09e4b8a6c0f173809d02df7c/" class="even">
+                    <td class=" ">COTTON SOCKS</td>
+                    <td class=" a-right ">27</td>
+                    <td class=" a-right last">87</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/id/434/key/a2603f0a09e4b8a6c0f173809d02df7c/">
+                    <td class=" ">Flip Flops</td>
+                    <td class=" a-right ">1</td>
+                    <td class=" a-right last">8</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/id/441/key/a2603f0a09e4b8a6c0f173809d02df7c/" class="even">
+                    <td class=" ">Tester Music</td>
+                    <td class=" a-right ">6</td>
+                    <td class=" a-right last">2</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/id/438/key/a2603f0a09e4b8a6c0f173809d02df7c/">
+                    <td class=" ">Tester Music</td>
+                    <td class=" a-right ">6</td>
+                    <td class=" a-right last">10</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/id/440/key/a2603f0a09e4b8a6c0f173809d02df7c/" class="even">
+                    <td class=" ">Test Music</td>
+                    <td class=" a-right ">6</td>
+                    <td class=" a-right last">2</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    lastSearchGridJsObject = new varienGrid('lastSearchGrid', 'http://qa1magento.dev.evozon.com/index.php/admin/dashboard/index/key/1ab21c70d405cf70cca1c5ae301ea309/', 'page', 'sort', 'dir', 'filter');
+    lastSearchGridJsObject.useAjax = '';
+            lastSearchGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</fieldset>
+                </div>
+                <div class="entry-edit">
+                    <div class="entry-edit-head"><h4>Top 5 Search Terms</h4></div>
+                    <fieldset class="np"><div class="grid np">
+<table cellspacing="0" style="border:0;" id="topSearchGrid_table">
+        <colgroup><col>
+        <col width="100">
+        <col width="100">
+                </colgroup><thead>
+                            <tr class="headings">
+                                    <th class=" no-link"><span class="nobr">Search Term</span></th>
+                                    <th class=" no-link"><span class="nobr">Results</span></th>
+                                    <th class=" no-link last"><span class="nobr">Number of Uses</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/key/a2603f0a09e4b8a6c0f173809d02df7c/" class="even">
+                    <td class=" ">testproduct</td>
+                    <td class=" a-right ">1</td>
+                    <td class=" a-right last">90</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/key/a2603f0a09e4b8a6c0f173809d02df7c/">
+                    <td class=" ">COTTON SOCKS</td>
+                    <td class=" a-right ">27</td>
+                    <td class=" a-right last">87</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/key/a2603f0a09e4b8a6c0f173809d02df7c/" class="even">
+                    <td class=" ">a</td>
+                    <td class=" a-right ">115</td>
+                    <td class=" a-right last">66</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/key/a2603f0a09e4b8a6c0f173809d02df7c/">
+                    <td class=" ">skirt</td>
+                    <td class=" a-right ">2</td>
+                    <td class=" a-right last">36</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_search/edit/key/a2603f0a09e4b8a6c0f173809d02df7c/" class="even">
+                    <td class=" ">shirt</td>
+                    <td class=" a-right ">5</td>
+                    <td class=" a-right last">21</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    topSearchGridJsObject = new varienGrid('topSearchGrid', 'http://qa1magento.dev.evozon.com/index.php/admin/dashboard/index/key/1ab21c70d405cf70cca1c5ae301ea309/', 'page', 'sort', 'dir', 'filter');
+    topSearchGridJsObject.useAjax = '';
+            topSearchGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</fieldset>
+                </div>
+            </td>
+            <td>
+                <div class="entry-edit" style="border:1px solid #ccc;">
+                    <!--  -->
+<ul id="diagram_tab" class="tabs-horiz">
+    <li>
+        <a href="#" id="diagram_tab_orders" title="Orders" class="tab-item-link active">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Orders</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="#" id="diagram_tab_amounts" title="Amounts" class="tab-item-link">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Amounts</span>
+        </a>
+        
+    </li>
+</ul>
+<script type="text/javascript">
+
+    diagram_tabJsTabs = new varienTabs('diagram_tab', 'diagram_tab_content', 'diagram_tab_orders', []);
+</script>
+                                            <div id="diagram_tab_content"><div id="diagram_tab_orders_content" style=""><div style="margin:20px;">
+    <p class="switcher a-right" style="padding:5px 10px;">Select Range:
+    <select name="period" id="order_orders_period" onchange="changeDiagramsPeriod(this);">
+                                <option value="24h">Last 24 Hours</option>
+                                <option value="7d">Last 7 Days</option>
+                                <option value="1m">Current Month</option>
+                                <option value="1y">YTD</option>
+                                <option value="2y">2YTD</option>
+            </select></p><br>
+            <p class="a-center" style="width:587px;height:300px; margin:0 auto;">No Data Found</p>
+    </div>
+</div><div id="diagram_tab_amounts_content" style="display:none"><div style="margin:20px;">
+    <p class="switcher a-right" style="padding:5px 10px;">Select Range:
+    <select name="period" id="order_amounts_period" onchange="changeDiagramsPeriod(this);">
+                                <option value="24h">Last 24 Hours</option>
+                                <option value="7d">Last 7 Days</option>
+                                <option value="1m">Current Month</option>
+                                <option value="1y">YTD</option>
+                                <option value="2y">2YTD</option>
+            </select></p><br>
+            <p class="a-center" style="width:587px;height:300px; margin:0 auto;">No Data Found</p>
+    </div>
+</div></div>
+                                        <div style="margin:20px;">
+                        <div class="box" id="dashboard_diagram_totals">
+    <div class="entry-edit">
+        <table cellspacing="0" width="100%">
+            <tbody><tr>
+                            <td class="a-center bold">
+                    <span>Revenue</span><br>
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;"><span class="price">$0.00</span><span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                            <td class="a-center bold">
+                    <span>Tax</span><br>
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;"><span class="price">$0.00</span><span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                            <td class="a-center bold">
+                    <span>Shipping</span><br>
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;"><span class="price">$0.00</span><span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                            <td class="a-center bold">
+                    <span>Quantity</span><br>
+                    <span class="nowrap" style="font-size:18px; color:#EA7601;">0<span style="font-size:14px; color:#DE8946;"></span></span>
+                </td>
+                        </tr>
+        </tbody></table>
+    </div>
+</div>
+                    </div>
+                    <div style="margin:20px;">
+                        <!--  -->
+<ul id="grid_tab" class="tabs-horiz">
+    <li>
+        <a href="#" id="grid_tab_ordered_products" title="Bestsellers" class="tab-item-link active">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Bestsellers</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/dashboard/productsViewed/key/549402c523f37c354ef36c973cb890da/" id="grid_tab_reviewed_products" title="Most Viewed Products" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Most Viewed Products</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/dashboard/customersNewest/key/405d6471692e1ba6e27db9855852730b/" id="grid_tab_new_customers" title="New Customers" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>New Customers</span>
+        </a>
+        
+    </li>
+    <li>
+        <a href="http://qa1magento.dev.evozon.com/index.php/admin/dashboard/customersMost/key/a9ae8f8858bf711f17ebd666fbb889c0/" id="grid_tab_customers" title="Customers" class="tab-item-link ajax notloaded">
+            <span><span class="changed" title="The information in this tab has been changed."></span><span class="error" title="This tab contains invalid data. Please solve the problem before saving."></span>Customers</span>
+        </a>
+        
+    </li>
+</ul>
+<script type="text/javascript">
+
+    grid_tabJsTabs = new varienTabs('grid_tab', 'grid_tab_content', 'grid_tab_ordered_products', []);
+</script>
+                        <div id="grid_tab_content"><div id="grid_tab_ordered_products_content" style=""><div class="grid np">
+<table cellspacing="0" style="border:0;" id="productsOrderedGrid_table">
+        <colgroup><col>
+        <col width="120">
+        <col width="120">
+                </colgroup><thead>
+                            <tr class="headings">
+                                    <th class=" no-link"><span class="nobr">Product Name</span></th>
+                                    <th class=" no-link"><span class="nobr">Price</span></th>
+                                    <th class=" no-link last"><span class="nobr">Quantity Ordered</span></th>
+                                </tr>
+                    </thead>
+        <tbody>
+                <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product/edit/id/311/key/5093404601477137c381eb56e1d1654b/" class="even">
+                    <td class=" ">Convertible Dress</td>
+                    <td class=" a-right ">$340.00</td>
+                    <td class="a-right a-right last">35</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product/edit/id/285/key/5093404601477137c381eb56e1d1654b/">
+                    <td class=" ">Tori Tank</td>
+                    <td class=" a-right ">$60.00</td>
+                    <td class="a-right a-right last">31</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product/edit/id/240/key/5093404601477137c381eb56e1d1654b/" class="even">
+                    <td class=" ">Sullivan Sport Coat</td>
+                    <td class=" a-right ">$510.00</td>
+                    <td class="a-right a-right last">25</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product/edit/id/371/key/5093404601477137c381eb56e1d1654b/">
+                    <td class=" ">Florentine Satchel Handbag</td>
+                    <td class=" a-right ">$625.00</td>
+                    <td class="a-right a-right last">20</td>
+                </tr>
+            <tr title="http://qa1magento.dev.evozon.com/index.php/admin/catalog_product/edit/id/400/key/5093404601477137c381eb56e1d1654b/" class="even">
+                    <td class=" ">Compact mp3 Player</td>
+                    <td class=" a-right ">$40.00</td>
+                    <td class="a-right a-right last">20</td>
+                </tr>
+            </tbody>
+</table>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    productsOrderedGridJsObject = new varienGrid('productsOrderedGrid', 'http://qa1magento.dev.evozon.com/index.php/admin/dashboard/index/key/1ab21c70d405cf70cca1c5ae301ea309/', 'page', 'sort', 'dir', 'filter');
+    productsOrderedGridJsObject.useAjax = '';
+            productsOrderedGridJsObject.rowClickCallback = openGridRow;
+                //]]>
+</script>
+</div><div id="grid_tab_reviewed_products_content" style="display:none"></div><div id="grid_tab_new_customers_content" style="display:none"></div><div id="grid_tab_customers_content" style="display:none"></div></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+                        </div>
+        </div>
+        <div class="footer">
+            <p class="bug-report">
+    <a href="http://www.magentocommerce.com/bug-tracking" id="footer_bug_tracking" target="Varien_External">Help Us Keep Magento Healthy - Report All Bugs</a><br>
+    Interface Locale: <select name="locale" id="interface_locale" class="" title="Interface Language" style="width:200px"><option value="af_ZA">Afrikaans (Suid-Afrika) / Afrikaans (South Africa)</option><option value="az_AZ">Azərbaycan (Azərbaycan) / Azerbaijani (Azerbaijan)</option><option value="id_ID">Bahasa Indonesia (Indonesia) / Indonesian (Indonesia)</option><option value="ms_MY">Bahasa Melayu (Malaysia) / Malay (Malaysia)</option><option value="bs_BA">Bosanski (Bosna i Hercegovina) / Bosnian (Bosnia and Herzegovina)</option><option value="ca_ES">Català (Espanya) / Catalan (Spain)</option><option value="cy_GB">Cymraeg (Y Deyrnas Unedig) / Welsh (United Kingdom)</option><option value="da_DK">Dansk (Danmark) / Danish (Denmark)</option><option value="de_DE">Deutsch (Deutschland) / German (Germany)</option><option value="de_CH">Deutsch (Schweiz) / German (Switzerland)</option><option value="de_AT">Deutsch (Österreich) / German (Austria)</option><option value="et_EE">Eesti (Eesti) / Estonian (Estonia)</option><option value="en_AU">English (Australia) / English (Australia)</option><option value="en_CA">English (Canada) / English (Canada)</option><option value="en_IE">English (Ireland) / English (Ireland)</option><option value="en_NZ">English (New Zealand) / English (New Zealand)</option><option value="en_GB">English (United Kingdom) / English (United Kingdom)</option><option value="en_US" selected="selected">English (United States) / English (United States)</option><option value="es_AR">Español (Argentina) / Spanish (Argentina)</option><option value="es_CL">Español (Chile) / Spanish (Chile)</option><option value="es_CO">Español (Colombia) / Spanish (Colombia)</option><option value="es_CR">Español (Costa Rica) / Spanish (Costa Rica)</option><option value="es_ES">Español (España) / Spanish (Spain)</option><option value="es_MX">Español (México) / Spanish (Mexico)</option><option value="es_PA">Español (Panamá) / Spanish (Panama)</option><option value="es_PE">Español (Perú) / Spanish (Peru)</option><option value="es_VE">Español (Venezuela) / Spanish (Venezuela)</option><option value="fil_PH">Filipino (Pilipinas) / Filipino (Philippines)</option><option value="fr_CA">Français (Canada) / French (Canada)</option><option value="fr_FR">Français (France) / French (France)</option><option value="gl_ES">Galego (España) / Galician (Spain)</option><option value="hr_HR">Hrvatski (Hrvatska) / Croatian (Croatia)</option><option value="it_IT">Italiano (Italia) / Italian (Italy)</option><option value="it_CH">Italiano (Svizzera) / Italian (Switzerland)</option><option value="sw_KE">Kiswahili (Kenya) / Swahili (Kenya)</option><option value="lv_LV">Latviešu (Latvija) / Latvian (Latvia)</option><option value="lt_LT">Lietuvių (Lietuva) / Lithuanian (Lithuania)</option><option value="hu_HU">Magyar (Magyarország) / Hungarian (Hungary)</option><option value="nl_NL">Nederlands (Nederland) / Dutch (Netherlands)</option><option value="nb_NO">Norsk Bokmål (Norge) / Norwegian Bokmål (Norway)</option><option value="nn_NO">Nynorsk (Noreg) / Norwegian Nynorsk (Norway)</option><option value="pl_PL">Polski (Polska) / Polish (Poland)</option><option value="pt_BR">Português (Brasil) / Portuguese (Brazil)</option><option value="pt_PT">Português (Portugal) / Portuguese (Portugal)</option><option value="ro_RO">Română (România) / Romanian (Romania)</option><option value="sq_AL">Shqip (Shqipëri) / Albanian (Albania)</option><option value="sk_SK">Slovenčina (Slovensko) / Slovak (Slovakia)</option><option value="sl_SI">Slovenščina (Slovenija) / Slovenian (Slovenia)</option><option value="sr_RS">Srpski (Srbija) / Serbian (Serbia)</option><option value="fi_FI">Suomi (Suomi) / Finnish (Finland)</option><option value="sv_SE">Svenska (Sverige) / Swedish (Sweden)</option><option value="vi_VN">Tiếng Việt (Việt Nam) / Vietnamese (Vietnam)</option><option value="tr_TR">Türkçe (Türkiye) / Turkish (Turkey)</option><option value="is_IS">íslenska (Ísland) / Icelandic (Iceland)</option><option value="cs_CZ">čeština (Česká republika) / Czech (Czech Republic)</option><option value="el_GR">Ελληνικά (Ελλάδα) / Greek (Greece)</option><option value="be_BY">беларуская (Беларусь) / Belarusian (Belarus)</option><option value="bg_BG">български (България) / Bulgarian (Bulgaria)</option><option value="mk_MK">македонски (Македонија) / Macedonian (Macedonia)</option><option value="mn_MN">монгол (Монгол) / Mongolian (Mongolia)</option><option value="ru_RU">русский (Россия) / Russian (Russia)</option><option value="uk_UA">українська (Україна) / Ukrainian (Ukraine)</option><option value="he_IL">עברית (ישראל) / Hebrew (Israel)</option><option value="ar_DZ">العربية (الجزائر) / Arabic (Algeria)</option><option value="ar_KW">العربية (الكويت) / Arabic (Kuwait)</option><option value="ar_MA">العربية (المغرب) / Arabic (Morocco)</option><option value="ar_SA">العربية (المملكة العربية السعودية) / Arabic (Saudi Arabia)</option><option value="ar_EG">العربية (مصر) / Arabic (Egypt)</option><option value="fa_IR">فارسی (ایران) / Persian (Iran)</option><option value="hi_IN">हिंदी (भारत) / Hindi (India)</option><option value="bn_BD">বাংলা (বাংলাদেশ) / Bengali (Bangladesh)</option><option value="gu_IN">ગુજરાતી (ભારત) / Gujarati (India)</option><option value="th_TH">ไทย (ไทย) / Thai (Thailand)</option><option value="lo_LA">ລາວ (ລາວ) / Lao (Laos)</option><option value="ka_GE">ქართული (საქართველო) / Georgian (Georgia)</option><option value="km_KH">ខ្មែរ (កម្ពុជា) / Khmer (Cambodia)</option><option value="zh_CN">中文 (中国) / Chinese (China)</option><option value="zh_HK">中文 (中華人民共和國香港特別行政區) / Chinese (Hong Kong SAR China)</option><option value="zh_TW">中文 (台灣) / Chinese (Taiwan)</option><option value="ja_JP">日本語 (日本) / Japanese (Japan)</option><option value="ko_KR">한국어 (대한민국) / Korean (South Korea)</option></select></p>
+<p class="legality">
+    <a href="http://magento.com/resources/technical" id="footer_connect" target="Varien_External">Connect with the Magento Community</a><br>
+    <img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/varien_logo.gif" class="v-middle" alt="">&nbsp;&nbsp;
+    Magento™ is a trademark of Magento Inc.<br>Copyright © 2023 Magento Inc.</p>
+Magento ver. 1.9.3.3<script type="text/javascript">
+    $('footer_bug_tracking').target = 'Varien_External';
+    $('footer_connect').target = 'Varien_External';
+    function setInterfaceLanguage(evt){
+        var elem = Event.element(evt);
+        if(elem){
+            setLocation('http://qa1magento.dev.evozon.com/index.php/admin/index/changeLocale/key/a3cef11a0fb04fdd99ffc793de3ff47d/locale/'+elem.value+'/uenc/aHR0cDovL3FhMW1hZ2VudG8uZGV2LmV2b3pvbi5jb20vaW5kZXgucGhwL2FkbWluL2Rhc2hib2FyZC9pbmRleC9rZXkvMWFiMjFjNzBkNDA1Y2Y3MGNjYTFjNWFlMzAxZWEzMDkv');
+        }
+    }
+    Event.observe('interface_locale', 'change', setInterfaceLanguage)
+</script>
+        </div>
+    </div>
+        <div id="loading-mask" style="display:none">
+    <p class="loader" id="loading_mask_loader"><img src="http://qa1magento.dev.evozon.com/skin/adminhtml/default/default/images/ajax-loader-tr.gif" alt="Loading..."><br>Please wait...</p>
+</div><div class="content-header-floating" style="display: none;"><div class="content-header">
+    <table cellspacing="0">
+        <tbody><tr>
+            <td><h3 class="head-dashboard">Dashboard</h3></td>
+        </tr>
+    </tbody></table>
+</div></div>
+
+
+
+
+</body></html>
