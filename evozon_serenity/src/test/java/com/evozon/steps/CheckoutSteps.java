@@ -6,17 +6,6 @@ import org.junit.Assert;
 public class CheckoutSteps extends BaseSteps {
 
     @Step
-    public void searchForProduct(String product) {
-        homePage.setSearchField(product);
-        homePage.submitSearchField();
-    }
-
-    @Step
-    public void addProduct(String product) {
-        productGridPage.clickAddToCartButton(product);
-    }
-
-    @Step
     public void clickOnCheckoutButton() {
         cartPage.clickCheckoutButton();
     }
