@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 public class CheckoutTest extends BaseTest{
 
     @Test
-    public void validCheckoutTest(){
+    public void validCheckoutTest() throws InterruptedException {
         loginSteps.doLogin(Constants.USER_EMAIL, Constants.USER_PASSWORD);
         searchSteps.searchForProduct(Constants.SIMPLE_PRODUCT);
         addProductSteps.addProduct(Constants.SIMPLE_PRODUCT);
@@ -26,7 +26,10 @@ public class CheckoutTest extends BaseTest{
         checkoutSteps.completePayment();
         checkoutSteps.completeOrder();
 
-        checkoutSteps.verifyOrderIsPlaced();
+        checkoutSteps.navigateToAdminPage();
+        loginAdminSteps.doLogin(Constants.ADMIN_USERNAME, Constants.ADMIN_PASSWORD);
+        checkoutSteps.navigateToOrdersInAdmin();
+        checkoutSteps.verifyOrderIsPresent(Constants.USER_NAME);
     }
 }
 
