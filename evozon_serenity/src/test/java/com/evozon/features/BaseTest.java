@@ -9,7 +9,6 @@ import com.evozon.steps.*;
 import com.evozon.utils.Constants;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -50,6 +49,9 @@ public class BaseTest {
 
     @Steps
     protected SortSteps sortSteps;
+
+    @Steps
+    protected NavigationSteps navigationSteps;
 
     @Before
     public void init(){

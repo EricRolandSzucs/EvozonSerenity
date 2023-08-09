@@ -8,6 +8,9 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 import java.util.Random;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 
 public class HomePage extends BasePage {
 
@@ -25,6 +28,14 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "a[title='Register']")
     private WebElementFacade registerLink;
+
+    private WebElementFacade category;
+
+    @FindBy(css = ".logo")
+    private WebElementFacade homeLogoLink;
+
+    @FindBy(css = ".welcome-msg")
+    private WebElementFacade welcomeMessage;
 
     @FindBy(css = ".nav-primary>.level0")
     private List<WebElementFacade> categories;
@@ -68,6 +79,32 @@ public class HomePage extends BasePage {
         WebElementFacade randomMenuItem = categories.get(randomIndex);
         Actions actions = new Actions(getDriver());
         actions.moveToElement(randomMenuItem).click().perform();
+    }
+
+
+    public void clickOnCategory(String categoryName) {
+        category = element(By.xpath("//li[contains(@class, 'level0')]/a[contains(text(),'" + categoryName + "')]"));
+        new Actions(getDriver()).moveToElement(category).perform();
+    }
+
+    public void clickOnSubcategory(String subcategoryName) {
+        System.out.println(By.xpath("//li[contains(@class, 'level1')]/a[contains(text(),'" + subcategoryName + "')]"));
+        WebElementFacade subcategory = category.find(By.xpath("//li[contains(@class, 'level1')]/a[contains(text(),'" + subcategoryName + "')]"));
+        if(subcategory.isCurrentlyVisible()) {
+            clickOn(subcategory);
+        }
+        else
+            clickOn(category);
+    }
+
+    public void clickHomeLogo()
+    {
+        clickOn(homeLogoLink);
+    }
+
+    public String getWelcomeMessage()
+    {
+        return welcomeMessage.getText();
     }
 
 }
