@@ -1,12 +1,9 @@
-package com.evozon.features.wishlist;
+package com.evozon.features.Wishlist;
 
 
 import com.evozon.features.BaseTest;
-import com.evozon.steps.AddProductSteps;
-import com.evozon.steps.LoginSteps;
 import com.evozon.utils.Constants;
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Steps;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

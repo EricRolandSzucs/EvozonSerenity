@@ -19,4 +19,10 @@ public class Constants {
 
     public static final String VIRTUAL_PRODUCT = "Tester Music";
     public static final String VIRTUAL_PRODUCT_ID = "993";
+
+    //register constants
+    public static final String FIRSTNAME = "Tabita";
+    public static final String LASTNAME = "Lucaciu";
+    public static final String PASSWORD = "password";
+
 }

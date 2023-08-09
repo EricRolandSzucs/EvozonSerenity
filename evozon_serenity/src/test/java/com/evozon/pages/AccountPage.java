@@ -19,10 +19,6 @@ public class AccountPage extends BasePage {
         return welcomeTextParagraph.containsOnlyText("Hello, " + userName + "!");
     }
 
-    public boolean isUserRegistered(String userName) {
-        return welcomeTextParagraph.containsOnlyText("Hello, " + userName + "!");
-    }
-
     public void clickChangePasswordLink() {
         clickOn(changePasswordLink);
     }
@@ -30,4 +26,5 @@ public class AccountPage extends BasePage {
     public boolean isUserLoggedOut() {
         return logoutTextParagraph.containsOnlyText("YOU ARE NOW LOGGED OUT");
     }
+
 }

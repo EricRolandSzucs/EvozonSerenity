@@ -1,8 +1,5 @@
 package com.evozon.steps;
 
-import com.evozon.pages.AccountPage;
-import com.evozon.pages.HomePage;
-import com.evozon.pages.RegisterPage;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
@@ -24,10 +21,10 @@ public class RegisterSteps extends BaseSteps {
         registerPage.setLastnameField(lastname);
     }
 
-//    @Step
-//    public void enterEmailAddress(){
-//        registerPage.setRandomEmailAddressField();
-//    }
+    @Step
+    public void enterEmailAddress(){
+        registerPage.setRandomEmailAddressField();
+    }
 
     @Step
     public void enterPassword(String password){
@@ -50,7 +47,7 @@ public class RegisterSteps extends BaseSteps {
     }
 
     @Step
-    public void verifyUserIsRegistered(String username){
-        Assert.assertTrue(accountPage.isUserRegistered(username));
+    public void verifyUserIsLoggedIn(String username){
+        Assert.assertTrue(accountPage.isUserLoggedIn(username));
     }
 }
