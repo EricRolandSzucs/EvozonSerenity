@@ -40,6 +40,28 @@ public class CreateProductTest extends BaseAdminTest
     @Test
     public void createConfigurableProduct()
     {
-        
+        createNewProductSteps.clickAddNewProduct();
+        createNewProductSteps.chooseAttributeSet();
+        createNewProductSteps.chooseProductType("configurable");
+        createNewProductSteps.clickContinue();
+        if(createNewProductSteps.checkAllConfigurableAttributes())
+        {
+            createNewProductSteps.clickContinue();
+
+            createNewProductSteps.enterProductName();
+            createNewProductSteps.enterProductDescription();
+            createNewProductSteps.enterProductShortDescription();
+            createNewProductSteps.enterProductSku();
+            createNewProductSteps.enterProductWeight();
+            createNewProductSteps.chooseStatusOption("1");
+            createNewProductSteps.clickPricesLink();
+            createNewProductSteps.enterProductPrice();
+            createNewProductSteps.choseTaxOption();
+            createNewProductSteps.clickSideNavExtraLink();
+            createNewProductSteps.chooseType();
+            createNewProductSteps.clickSave();
+
+            createNewProductSteps.checkProductIsSaved();
+        }
     }
 }

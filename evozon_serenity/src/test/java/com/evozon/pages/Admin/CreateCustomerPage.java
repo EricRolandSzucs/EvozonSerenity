@@ -4,6 +4,8 @@ import com.evozon.pages.BasePage;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class CreateCustomerPage extends BasePage
 {
     @FindBy(css = "#_accountwebsite_id")
@@ -63,7 +65,6 @@ public class CreateCustomerPage extends BasePage
     {
         typeInto(passwordField,password);
     }
-
 
     public void clickSaveCustomerButton()
     {
