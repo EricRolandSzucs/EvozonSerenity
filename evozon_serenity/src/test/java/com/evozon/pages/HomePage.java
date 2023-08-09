@@ -3,7 +3,11 @@ package com.evozon.pages;
 import com.evozon.utils.Constants;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
-import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.List;
+import java.util.Random;
 
 public class HomePage extends BasePage {
 
@@ -21,6 +25,9 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "a[title='Register']")
     private WebElementFacade registerLink;
+
+    @FindBy(css = ".nav-primary>.level0")
+    private List<WebElementFacade> categories;
 
     public void clickAccountLink(){
         clickOn(accountLink);
@@ -53,4 +60,14 @@ public class HomePage extends BasePage {
     public boolean checkMatchedUrl(String currentUrl){
         return currentUrl.equals(Constants.BASE_URL);
     }
+
+    public void clickCategory(){
+        Random random = new Random();
+        int randomIndex = random.nextInt(categories.size());
+
+        WebElementFacade randomMenuItem = categories.get(randomIndex);
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement(randomMenuItem).click().perform();
+    }
+
 }

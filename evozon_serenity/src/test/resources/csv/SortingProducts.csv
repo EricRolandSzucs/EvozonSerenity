@@ -1,0 +1,7 @@
+sortOption,sortOrder
+Position,ascending
+Name,ascending
+Price,ascending
+Position,descending
+Name,descending
+Price,descending
