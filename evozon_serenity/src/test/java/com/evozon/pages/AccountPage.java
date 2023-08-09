@@ -19,6 +19,11 @@ public class AccountPage extends BasePage {
         return welcomeTextParagraph.containsOnlyText("Hello, " + userName + "!");
     }
 
+    public String getWelcomeText()
+    {
+        return welcomeTextParagraph.getText();
+    }
+
     public void clickChangePasswordLink() {
         clickOn(changePasswordLink);
     }

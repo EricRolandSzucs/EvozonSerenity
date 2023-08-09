@@ -12,6 +12,9 @@ public class RegisterPage extends PageObject {
     @FindBy(id = "firstname")
     private WebElement firstnameField;
 
+    @FindBy(id = "middlename")
+    private WebElement middleNameOrInitialField;
+
     @FindBy(id = "lastname")
     private WebElement lastnameField;
 
@@ -30,13 +33,33 @@ public class RegisterPage extends PageObject {
     @FindBy(css = "button[title=Register] > span > span")
     private WebElement registerButton;
 
+    @FindBy(css = ".page-title h1")
+    private WebElement pageTitle;
+
     public void setFirstnameField(String firstname){
         waitFor(firstnameField);
-        typeInto(firstnameField, firstname);
+        if(firstname!=null) {
+            typeInto(firstnameField, firstname);
+        }
+    }
+
+    public void setMiddleNameOrInitialField(String middleNameOrInitial)
+    {
+        if(middleNameOrInitial!=null) {
+            typeInto(middleNameOrInitialField, middleNameOrInitial);
+        }
     }
 
     public void setLastnameField(String lastname){
-        typeInto(lastnameField, lastname);
+        if(lastname!=null) {
+            typeInto(lastnameField, lastname);
+        }
+    }
+
+    public void setEmailAddressField(String email) {
+        if (email != null) {
+            typeInto(emailAddressField, email);
+        }
     }
 
     public void setRandomEmailAddressField(){
@@ -45,11 +68,15 @@ public class RegisterPage extends PageObject {
     }
 
     public void setPasswordField(String password){
-        typeInto(passwordField, password);
+        if (password != null) {
+            typeInto(passwordField, password);
+        }
     }
 
     public void setConfirmationPasswordField(String confirmationPassword) {
-        typeInto(confirmationPasswordField, confirmationPassword);
+        if (confirmationPassword != null) {
+            typeInto(confirmationPasswordField, confirmationPassword);
+        }
     }
 
     public void setIsSubscribedCheckbox(){
@@ -58,5 +85,11 @@ public class RegisterPage extends PageObject {
 
     public void clickRegisterButton(){
         clickOn(registerButton);
+    }
+
+
+    public String getPageTitle()
+    {
+        return pageTitle.getText();
     }
 }
