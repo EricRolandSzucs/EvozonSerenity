@@ -22,6 +22,21 @@ public class AddProductSteps extends BaseSteps {
     }
 
     @Step
+    public void selectSizeOption(String size){
+        productPage.clickParameterSizeOptionButton(size);
+    }
+
+    @Step
+    public void selectColorOption(String color){
+        productPage.clickParameterColorOptionButton(color);
+    }
+
+    @Step
+    public void selectDropdownOption(String option) {
+        productPage.clickParameterOption(option);
+    }
+
+    @Step
     public void addProductFromPage() {
         productPage.clickAddToCartButton();
     }

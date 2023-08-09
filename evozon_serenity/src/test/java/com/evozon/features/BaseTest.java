@@ -47,6 +47,12 @@ public class BaseTest {
     @Steps
     protected ChangePasswordSteps passwordChangeSteps;
 
+    @Steps
+    protected SortSteps sortSteps;
+
+    @Steps
+    protected NavigationSteps navigationSteps;
+
     @Before
     public void init(){
         driver.manage().window().maximize();
