@@ -1,8 +1,5 @@
-firstName,middleNameOrInitial,lastName,emailAddress,password,confirmPassword,expectedResult
-Ana,Maria,Popa,ana@maria.com,anamaria,anamaria, registered
-Ion, V, Pop, ion@pop.com, ionpop, ionpop, registered
-Mark, , Rusu, mark@rusu.com, markrusu, markrusu, registered
-Liam, , , liam@liam.com, liamliam, liamliam, fail
- , , Liam, liam@liam.com, liamliam, liamliam, fail
-Liam, , Dane, liamDane.com, liamdane, liamdane, fail
-Liam, , Dane, liamDane.
+firstName,middleNameOrInitial,lastName,emailAddress,password,confirmPassword
+Ana,Maria,Popa,ana@mariaa.com,anamaria,anamaria
+Ion,V,Pop,ion@pop.com,ionpop,ionpop
+Mark,,Rusu,mark@rusu.com,markrusu,markrusu
+Liam,,Dane,liam@dane.com,liamdane,liamdane

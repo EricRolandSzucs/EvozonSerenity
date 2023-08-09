@@ -22,6 +22,12 @@ public class HomePage extends BasePage {
     @FindBy(css = "a[title='Register']")
     private WebElementFacade registerLink;
 
+    @FindBy(css = ".logo")
+    private WebElementFacade homeLogoLink;
+
+    @FindBy(css = ".welcome-msg")
+    private WebElementFacade welcomeMessage;
+
     public void clickAccountLink(){
         clickOn(accountLink);
     }
@@ -53,4 +59,15 @@ public class HomePage extends BasePage {
     public boolean checkMatchedUrl(String currentUrl){
         return currentUrl.equals(Constants.BASE_URL);
     }
+
+    public void clickHomeLogo()
+    {
+        clickOn(homeLogoLink);
+    }
+
+    public String getWelcomeMessage()
+    {
+        return welcomeMessage.getText();
+    }
+
 }
