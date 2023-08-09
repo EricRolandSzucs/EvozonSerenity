@@ -1,9 +1,13 @@
-package com.evozon.pages;
+package com.evozon.pages.checkout;
 
+import com.evozon.pages.BasePage;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.time.Duration;
+import java.util.List;
 
 public class CheckoutPage extends BasePage {
     @FindBy(id = "billing:use_for_shipping_no")
@@ -11,9 +15,6 @@ public class CheckoutPage extends BasePage {
 
     @FindBy(css = "#billing-buttons-container button")
     private WebElementFacade billingContinueButton;
-
-    @FindBy(css = "#shipping-buttons-container button")
-    private WebElementFacade shippingInformationContinueButton;
 
     @FindBy(id = "s_method_freeshipping_freeshipping")
     private WebElementFacade shippingRadioButton;
@@ -37,11 +38,6 @@ public class CheckoutPage extends BasePage {
         clickOn(billingContinueButton);
     }
 
-    public void clickShippingInformationContinueButton() {
-        withTimeoutOf(Duration.ofSeconds(10)).waitFor(shippingInformationContinueButton);
-        clickOn(shippingInformationContinueButton);
-    }
-
     public void clickShippingMethodContinueButton() {
         clickOn(shippingMethodContinueButton);
     }
@@ -61,8 +57,12 @@ public class CheckoutPage extends BasePage {
         clickOn(placeOrderButton);
     }
 
+    public String setOrderNumber() {
+        withTimeoutOf(Duration.ofSeconds(20)).waitFor(orderConfirmationText);
+        return element(By.cssSelector(".col-main  p:first-of-type a")).getText();
+    }
     public boolean isOrderPlaced() {
-        withTimeoutOf(Duration.ofSeconds(10)).waitFor(orderConfirmationText);
+        withTimeoutOf(Duration.ofSeconds(20)).waitFor(orderConfirmationText);
         return orderConfirmationText.containsOnlyText("YOUR ORDER HAS BEEN RECEIVED.");
     }
 }

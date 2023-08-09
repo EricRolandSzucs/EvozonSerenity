@@ -22,6 +22,9 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "a[title='Log Out']")
     private WebElementFacade logoutLink;
+
+    @FindBy(css = "#header-account a[title='My Account']")
+    private WebElementFacade myAccountLink;
   
     @FindBy(id = "search")
     private WebElementFacade searchField;
@@ -48,6 +51,7 @@ public class HomePage extends BasePage {
         waitFor(loginLink);
         clickOn(loginLink);
     }
+
 
     public void clickLogoutLink(){
         waitFor(logoutLink);

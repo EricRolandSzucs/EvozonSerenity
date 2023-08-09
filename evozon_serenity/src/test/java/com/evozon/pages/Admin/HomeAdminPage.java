@@ -25,8 +25,15 @@ public class HomeAdminPage extends BasePage
     private WebElementFacade navbarCatalogDropdown;
 
 
+    @FindBy(css = ".parent.level0:nth-child(2)")
+    private WebElementFacade navbarSalesDropdown;
+
+
     @FindBy(css = ".parent.level0:nth-child(3) .level1:first-child a")
     private WebElementFacade manageProductsLink;
+
+    @FindBy(css = ".parent.level0:nth-child(2) .level1:first-child a")
+    private WebElementFacade ordersLink;
 
     @FindBy(css = ".link-logout")
     private WebElementFacade logoutLink;
@@ -55,7 +62,12 @@ public class HomeAdminPage extends BasePage
 
     public void clickCatalogDropdown() {clickOn(navbarCatalogDropdown);}
 
+    public void clickSalesDropdown() {clickOn(navbarSalesDropdown);}
+
     public void clickManageProductsLink(){clickOn(manageProductsLink);}
+
+    public void clickOrderLink() {clickOn(ordersLink);}
+
 
     public void clickLogoutLink()
     {
