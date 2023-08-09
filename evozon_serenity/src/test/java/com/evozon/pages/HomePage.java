@@ -4,6 +4,8 @@ import com.evozon.utils.Constants;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 
 public class HomePage extends BasePage {
 
@@ -21,6 +23,8 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "a[title='Register']")
     private WebElementFacade registerLink;
+
+    private WebElementFacade category;
 
     public void clickAccountLink(){
         clickOn(accountLink);
@@ -52,5 +56,20 @@ public class HomePage extends BasePage {
 
     public boolean checkMatchedUrl(String currentUrl){
         return currentUrl.equals(Constants.BASE_URL);
+    }
+
+    public void clickOnCategory(String categoryName) {
+        category = element(By.xpath("//li[contains(@class, 'level0')]/a[contains(text(),'" + categoryName + "')]"));
+        new Actions(getDriver()).moveToElement(category).perform();
+    }
+
+    public void clickOnSubcategory(String subcategoryName) {
+        System.out.println(By.xpath("//li[contains(@class, 'level1')]/a[contains(text(),'" + subcategoryName + "')]"));
+        WebElementFacade subcategory = category.find(By.xpath("//li[contains(@class, 'level1')]/a[contains(text(),'" + subcategoryName + "')]"));
+        if(subcategory.isCurrentlyVisible()) {
+            clickOn(subcategory);
+        }
+        else
+            clickOn(category);
     }
 }

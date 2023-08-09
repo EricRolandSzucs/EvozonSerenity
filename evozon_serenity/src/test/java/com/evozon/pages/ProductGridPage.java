@@ -19,4 +19,9 @@ public class ProductGridPage extends BasePage {
     public void clickProductPageLink(String productName) {
         clickOn(element(By.xpath("//h2[a[@title='" + productName + "']]")));
     }
+
+    public boolean isProductPresent(String productName) {
+        return element(By.xpath("//h2[a[@title='" + productName + "']]")).isCurrentlyVisible();
+
+    }
 }
