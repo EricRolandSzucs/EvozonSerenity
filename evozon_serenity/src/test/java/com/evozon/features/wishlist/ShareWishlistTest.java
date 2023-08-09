@@ -21,5 +21,4 @@ public class ShareWishlistTest extends BaseTest {
         wishlistSteps.submitShare();
         wishlistSteps.verifyWishlistIsShared();
     }
-
 }
