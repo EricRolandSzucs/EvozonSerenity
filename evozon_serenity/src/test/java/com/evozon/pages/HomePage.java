@@ -12,6 +12,9 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "a[title='Log In']")
     private WebElementFacade loginLink;
+
+    @FindBy(css = "a[title='Log Out']")
+    private WebElementFacade logoutLink;
   
     @FindBy(id = "search")
     private WebElementFacade searchField;
@@ -27,6 +30,13 @@ public class HomePage extends BasePage {
         waitFor(loginLink);
         clickOn(loginLink);
     }
+
+    public void clickLogoutLink(){
+        waitFor(logoutLink);
+        clickOn(logoutLink);
+    }
+
+
     public void setSearchField(String search) {
         typeInto(searchField, search);
     }

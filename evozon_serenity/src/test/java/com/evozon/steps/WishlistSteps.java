@@ -62,6 +62,15 @@ public class WishlistSteps extends BaseSteps{
         wishlistPage.clickShareButton();
     }
 
+    @Step
+    public void setEmailTextArea(String text) { wishlistPage.setEmailsTextArea(text);}
+
+    @Step
+    public void submitShare() { wishlistPage.submitEmailShare();}
+
+    @Step
+    public void verifyWishlistIsShared() { Assert.assertTrue(wishlistPage.isWishlistShared());}
+
 
 
 

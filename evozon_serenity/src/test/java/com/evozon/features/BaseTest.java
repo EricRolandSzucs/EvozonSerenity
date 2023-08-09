@@ -24,6 +24,9 @@ public class BaseTest {
     protected LoginSteps loginSteps;
 
     @Steps
+    protected LogoutSteps logoutSteps;
+
+    @Steps
     protected CartSteps cartSteps;
 
     @Steps
@@ -40,6 +43,9 @@ public class BaseTest {
 
     @Steps
     protected WishlistSteps wishlistSteps;
+
+    @Steps
+    protected ChangePasswordSteps passwordChangeSteps;
 
     @Before
     public void init(){

@@ -119,4 +119,38 @@ public class CreateProductSteps extends BaseAdminSteps
         Assert.assertEquals("The product has been saved.",manageProductsPage.getSuccessMessage());
     }
 
+
+    @Step
+    public boolean checkAllConfigurableAttributes()
+    {
+        List<WebElementFacade> attributes = addProductPage.getConfigurableAttributesList();
+        if(!attributes.isEmpty())
+        {
+            for(WebElementFacade attribute: attributes)
+                addProductPage.checkConfigurableAttribute(attribute);
+            return true;
+        }
+        return false;
+    }
+
+    @Step
+    public void clickSideNavExtraLink()
+    {
+        List<WebElementFacade> links = addProductPage.getSideNavLinks();
+        if(links.size() > 14)
+            addProductPage.clickOnExtraLink(links.get(6));
+    }
+
+
+    @Step
+    public void chooseType()
+    {
+        List<WebElementFacade> types = addProductPage.getAllExtraRequiredTypeOptions();
+        if(types != null)
+        {
+            types.set(0, types.get(types.size() - 1)); // overwrite first element (empty option)
+            types.get(random.nextInt(types.size())).click();
+        }
+    }
+
 }
