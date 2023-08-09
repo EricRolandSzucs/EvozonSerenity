@@ -37,6 +37,7 @@ public class ManageCustomersPage extends BasePage
 
     public void clickEditUser(WebElementFacade user)
     {
+        waitFor(user);
         clickOn(user);
     }
 

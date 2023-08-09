@@ -26,6 +26,12 @@ public class HomePage extends BasePage {
 
     private WebElementFacade category;
 
+    @FindBy(css = ".logo")
+    private WebElementFacade homeLogoLink;
+
+    @FindBy(css = ".welcome-msg")
+    private WebElementFacade welcomeMessage;
+
     public void clickAccountLink(){
         clickOn(accountLink);
     }
@@ -72,4 +78,15 @@ public class HomePage extends BasePage {
         else
             clickOn(category);
     }
+
+    public void clickHomeLogo()
+    {
+        clickOn(homeLogoLink);
+    }
+
+    public String getWelcomeMessage()
+    {
+        return welcomeMessage.getText();
+    }
+
 }

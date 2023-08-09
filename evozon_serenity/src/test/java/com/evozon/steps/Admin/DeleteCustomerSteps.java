@@ -10,6 +10,7 @@ import java.util.List;
 
 public class DeleteCustomerSteps extends BaseAdminSteps
 {
+    private String firstName, middleNameOrInitial, lastName, emailAddress, password, confirmPassword;
 
     @Step
     public void clickCustomersMenuOption()
@@ -39,7 +40,7 @@ public class DeleteCustomerSteps extends BaseAdminSteps
         {
 
             String txt = user.getText();
-            if(txt.contains("ana popa"))
+            if((!middleNameOrInitial.isEmpty() && txt.contains(firstName+" " +middleNameOrInitial+" "+lastName)) || (middleNameOrInitial.isEmpty() && txt.contains(firstName+" "+lastName)))
             {
                 return user;
             }
@@ -61,18 +62,19 @@ public class DeleteCustomerSteps extends BaseAdminSteps
         userPersonalPage.clickDeleteCustomerButton();
     }
 
-//    @Step
-//    public void acceptPopup()
-//    {
-////        Alert alert = getDriver().switchTo().alert();
-////        alert.accept();
-//        userPersonalPage.acceptPopup();
-//    }
-
 
     @Step
     public void checkIfUserIsDeleted()
     {
         Assert.assertEquals("The customer has been deleted.",manageCustomersPage.getSuccessMessage());
+    }
+
+    @Step
+    public void doDeleteUser()
+    {
+        WebElementFacade user = getUserToDelete();
+        clickUserEdit(user);
+        clickDeleteUser();
+        checkIfUserIsDeleted();
     }
 }
