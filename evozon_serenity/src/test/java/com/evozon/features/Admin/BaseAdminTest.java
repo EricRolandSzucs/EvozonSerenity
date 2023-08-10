@@ -26,8 +26,6 @@ public class BaseAdminTest
     @Steps
     protected CreateProductSteps createNewProductSteps;
 
-    @Steps
-    protected FakeSteps fakeSteps;
 
 
     @Before

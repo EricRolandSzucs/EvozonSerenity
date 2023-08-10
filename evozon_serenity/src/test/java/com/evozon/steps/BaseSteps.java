@@ -11,7 +11,9 @@ import com.evozon.pages.LoginPage;
 import com.evozon.pages.RegisterPage;
 
 
+import com.evozon.pages.checkout.BillingPage;
 import com.evozon.pages.checkout.CheckoutPage;
+import com.evozon.pages.checkout.ShippingInformationPage;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class BaseSteps extends ScenarioSteps {
@@ -26,5 +28,15 @@ public class BaseSteps extends ScenarioSteps {
     protected CheckoutPage checkoutPage;
     protected WishlistPage wishlistPage;
     protected AccountInformationPage accountInformationPage;
+
+    protected BillingPage billingPage;
+
+    protected ShippingInformationPage shippingInformationPage;
+
+    protected HomeAdminPage homeAdminPage;
+
+    protected OrdersPage ordersAdminPage;
+
+    protected SubcategoryPage subcategoryPage;
 
 }
