@@ -4,7 +4,6 @@ import com.evozon.utils.Constants;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -13,6 +12,9 @@ public class ProductGridPage extends BasePage {
 
     @FindBy(xpath = "//a[@title='" + Constants.CONFIGURABLE_PRODUCT + "']")
     private WebElementFacade predefinedConfigurableProductPageLink;
+
+    @FindBy(css = ".products-grid.products-grid--max-3-col.first.last.odd li.item.last>a")
+    private List<WebElementFacade> resultProductsGridLinks;
 
     @FindBy(css = ".category-products > div:not(.toolbar-bottom) .sort-by select")
     private WebElementFacade sortBySelector;
@@ -35,6 +37,16 @@ public class ProductGridPage extends BasePage {
         clickOn(element(By.xpath("//h2[a[@title='" + productName + "']]")));
     }
 
+    public List<WebElementFacade> getResultProductLinksList()
+    {
+        return resultProductsGridLinks;
+    }
+
+    public void clickOnDetailsForProduct(WebElementFacade product)
+    {
+        clickOn(product);
+    }
+
     public boolean isProductPresent(String productName) {
         return element(By.xpath("//h2[a[@title='" + productName + "']]")).isCurrentlyVisible();
 
@@ -54,7 +66,7 @@ public class ProductGridPage extends BasePage {
             clickOn(ascSwitcher);
     }
 
-    public boolean checkIsSortingBy(String option, String order) {
+    public boolean verifyIsSortedBy(String option, String order) {
         List<String> actualSortedProducts = new ArrayList<>();
 
         switch (option) {
@@ -76,7 +88,7 @@ public class ProductGridPage extends BasePage {
             case "Price":
                 List<Double> priceList = new ArrayList<>();
                 for (WebElementFacade item : itemsList) {
-                    String priceText = item.find(By.cssSelector(".price")).getText();
+                    String priceText = item.find(By.cssSelector(":not(.old-price)>.price")).getText();
                     double price = Double.parseDouble(priceText.replaceAll("[^0-9.]", ""));
                     priceList.add(price);
                 }

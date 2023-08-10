@@ -1,9 +1,7 @@
 package com.evozon.steps;
 
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 
 public class WishlistSteps extends BaseSteps{
 
@@ -28,7 +26,7 @@ public class WishlistSteps extends BaseSteps{
 
     @Step
     public void verifyProductIsDeleted(){
-        Assert.assertTrue(wishlistPage.checkProductExists());
+        Assert.assertTrue(wishlistPage.verifyProductExists());
     }
 
     @Step
@@ -44,7 +42,7 @@ public class WishlistSteps extends BaseSteps{
 
     @Step
     public void verifyQuantityChange(String quantity) {
-        Assert.assertTrue(wishlistPage.checkQuantityValue(quantity));
+        Assert.assertTrue(wishlistPage.verifyQuantityValue(quantity));
     }
 
     @Step

@@ -1,6 +1,7 @@
 package com.evozon.steps;
 
 import com.evozon.utils.Constants;
+import com.github.javafaker.Faker;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
@@ -15,14 +16,14 @@ public class CheckoutSteps extends BaseSteps {
 
     @Step
     public void completeBilling() {
-        if(billingPage.isBillingInfoNotDefined()) {
-            billingPage.setFirstNameField("First");
-            billingPage.setLastNameField("Last");
-            billingPage.setAddressField("Address");
-            billingPage.setCityField("City");
-            billingPage.setPostcodeField("12241");
+        if(billingPage.isBillingInfoUndefined()) {
+            billingPage.setFirstNameField();
+            billingPage.setLastNameField();
+            billingPage.setAddressField();
+            billingPage.setCityField();
+            billingPage.setPostcodeField();
             billingPage.setCountryDropDown();
-            billingPage.setTelephoneField("2313121");
+            billingPage.setTelephoneField();
         }
         checkoutPage.setDifferentAddressRadioButton();
         checkoutPage.clickBillingContinueButton();
@@ -30,14 +31,14 @@ public class CheckoutSteps extends BaseSteps {
 
     @Step
     public void completeShippingInformation() {
-        if(shippingInformationPage.isShippingInfoNotDefined()) {
-            shippingInformationPage.setFirstNameShippingField("First");
-            shippingInformationPage.setLastNameShippingField("Last");
-            shippingInformationPage.setAddressShippingField("Address");
-            shippingInformationPage.setCityShippingField("City");
-            shippingInformationPage.setPostcodeShippingField("12241");
+        if(shippingInformationPage.isShippingInfoUndefined()) {
+            shippingInformationPage.setFirstNameShippingField();
+            shippingInformationPage.setLastNameShippingField();
+            shippingInformationPage.setAddressShippingField();
+            shippingInformationPage.setCityShippingField();
+            shippingInformationPage.setPostcodeShippingField();
             shippingInformationPage.setCountryShippingDropDown();
-            shippingInformationPage.setTelephoneShippingField("2313121");
+            shippingInformationPage.setTelephoneShippingField();
         }
         shippingInformationPage.clickShippingInformationContinueButton();
     }
@@ -74,7 +75,7 @@ public class CheckoutSteps extends BaseSteps {
     public void verifyOrderIsPresent(String user) throws InterruptedException {
         ordersAdminPage.setOrderIdField(orderNumber);
         ordersAdminPage.clickSearchButton();
-        ordersAdminPage.checkIfOrderIsPresent(orderNumber);
+        ordersAdminPage.verifyIfOrderIsPresent(orderNumber);
     }
 
     @Step

@@ -2,10 +2,14 @@ package com.evozon.features.Wishlist;
 
 import com.evozon.features.BaseTest;
 import com.evozon.utils.Constants;
+import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
-public class ShareWishlistTest extends BaseTest {
+@RunWith(SerenityRunner.class)
+public class RemoveFromWishlistTest extends BaseTest {
+
     @Before
     public void navigateToWishlist() {
         loginSteps.doLogin(Constants.USER_EMAIL, Constants.USER_PASSWORD);
@@ -15,10 +19,9 @@ public class ShareWishlistTest extends BaseTest {
     }
 
     @Test
-    public void validShare() {
-        wishlistSteps.shareWishlist();
-        wishlistSteps.setEmailTextArea("fake@gmail.com");
-        wishlistSteps.submitShare();
-        wishlistSteps.verifyWishlistIsShared();
+    public void validRemoveFromWishlistTest(){
+        wishlistSteps.identifyProduct(Constants.SIMPLE_PRODUCT);
+        wishlistSteps.deleteProductFromWishlist();
+        wishlistSteps.verifyProductIsDeleted();
     }
 }

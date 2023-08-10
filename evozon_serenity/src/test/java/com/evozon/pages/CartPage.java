@@ -46,7 +46,7 @@ public class CartPage extends BasePage {
         return quantityField.getAttribute("value");
     }
 
-    public boolean checkQuantityIsUpdated(int quantity){
+    public boolean verifyQuantityIsUpdated(int quantity){
         String quantityString = String.valueOf(quantity);
         return getQuantityField().equals(quantityString);
     }
@@ -90,7 +90,7 @@ public class CartPage extends BasePage {
         clickOn(continueShoppingLink);
     }
 
-    public boolean checkEmptyCart(){
+    public boolean verifyCartIsEmpty(){
         return shoppingCartTitle.containsOnlyText("SHOPPING CART IS EMPTY");
     }
 }

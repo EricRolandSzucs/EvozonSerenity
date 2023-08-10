@@ -15,7 +15,8 @@ public class CheckoutTest extends BaseTest{
 
     @Test
     public void validCheckoutTest() throws InterruptedException {
-        loginSteps.doLogin(Constants.USER_EMAIL, Constants.USER_PASSWORD);
+        registerSteps.doRegisterWithRandomData();
+//        loginSteps.doLogin(Constants.USER_EMAIL, Constants.USER_PASSWORD);
         searchSteps.searchForProduct(Constants.SIMPLE_PRODUCT);
         addProductSteps.addProduct(Constants.SIMPLE_PRODUCT);
         checkoutSteps.clickOnCheckoutButton();

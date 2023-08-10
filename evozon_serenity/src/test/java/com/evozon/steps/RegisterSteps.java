@@ -1,5 +1,6 @@
 package com.evozon.steps;
 
+import com.evozon.utils.Constants;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
@@ -18,9 +19,15 @@ public class RegisterSteps extends BaseSteps {
         registerPage.setFirstnameField(firstname);
     }
 
+    @Step
+    public void enterRandomFirstname(){
+        registerPage.setRandomFirstnameField();
+    }
 
     @Step
-    public void enterMiddleNameOrInitial(String middleNameOrInitial){registerPage.setMiddleNameOrInitialField(middleNameOrInitial);}
+    public void enterMiddleNameOrInitial(String middleNameOrInitial){
+        registerPage.setMiddleNameOrInitialField(middleNameOrInitial);
+    }
 
     @Step
     public void enterLastname(String lastname){
@@ -28,7 +35,14 @@ public class RegisterSteps extends BaseSteps {
     }
 
     @Step
-    public void enterEmailAddress(String email){registerPage.setEmailAddressField(email);}
+    public void enterRandomLastname(){
+        registerPage.setRandomLastnameField();
+    }
+
+    @Step
+    public void enterEmailAddress(String email){
+        registerPage.setEmailAddressField(email);
+    }
 
     @Step
     public void enterRandomEmailAddress(){
@@ -106,5 +120,16 @@ public class RegisterSteps extends BaseSteps {
         enterConfirmationPassword(confirmPassword);
         clickRegister();
         verifyUserIsNotRedirectedToAnotherPage();
+    }
+
+    @Step
+    public void doRegisterWithRandomData() {
+        navigateToRegisterPage();
+        enterRandomFirstname();
+        enterRandomLastname();
+        enterRandomEmailAddress();
+        enterPassword(Constants.PASSWORD);
+        enterConfirmationPassword(Constants.PASSWORD);
+        clickRegister();
     }
 }

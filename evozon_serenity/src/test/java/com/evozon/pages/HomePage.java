@@ -8,9 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 import java.util.Random;
-import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
 
 public class HomePage extends BasePage {
 
@@ -72,11 +69,11 @@ public class HomePage extends BasePage {
         clickOn(registerLink);
     }
 
-    public boolean checkMatchedUrl(String currentUrl){
+    public boolean verifyUrlsAreIdentical(String currentUrl){
         return currentUrl.equals(Constants.BASE_URL);
     }
 
-    public void clickCategory(){
+    public void clickOnRandomCategory(){
         Random random = new Random();
         int randomIndex = random.nextInt(categories.size());
 

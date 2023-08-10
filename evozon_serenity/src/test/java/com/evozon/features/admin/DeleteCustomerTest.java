@@ -1,4 +1,4 @@
-package com.evozon.features.Admin;
+package com.evozon.features.admin;
 
 import com.evozon.utils.Constants;
 import com.github.javafaker.Faker;

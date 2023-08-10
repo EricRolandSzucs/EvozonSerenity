@@ -7,7 +7,7 @@ public class SortSteps extends BaseSteps {
 
     @Step
     public void navigateToCategoryPage(){
-        homePage.clickCategory();
+        homePage.clickOnRandomCategory();
     }
 
     @Step
@@ -30,6 +30,6 @@ public class SortSteps extends BaseSteps {
 
     @Step
     public void verifyProductsAreCorrectlySortedBy(String option, String order){
-        Assert.assertTrue(productGridPage.checkIsSortingBy(option, order));
+        Assert.assertTrue(productGridPage.verifyIsSortedBy(option, order));
     }
 }

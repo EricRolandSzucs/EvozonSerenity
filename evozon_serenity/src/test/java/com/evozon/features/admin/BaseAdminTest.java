@@ -1,7 +1,9 @@
-package com.evozon.features.Admin;
+package com.evozon.features.admin;
 
-import com.evozon.pages.Admin.ManageCustomersPage;
-import com.evozon.steps.Admin.*;
+import com.evozon.steps.admin.AddNewCustomerSteps;
+import com.evozon.steps.admin.CreateProductSteps;
+import com.evozon.steps.admin.DeleteCustomerSteps;
+import com.evozon.steps.admin.LoginAdminSteps;
 import com.evozon.utils.Constants;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;

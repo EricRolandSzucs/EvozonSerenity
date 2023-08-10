@@ -18,6 +18,15 @@ public class ProductPage extends BasePage{
     @FindBy(css = ".link-wishlist")
     private WebElementFacade addToWishlistButton;
 
+    @FindBy(css = ".tab-content .std")
+    private WebElementFacade productDescriptionParagraph;
+
+    @FindBy(css = ".toggle-tabs li:nth-child(2)")
+    private WebElementFacade productAdditionalInformationTab;
+
+    @FindBy(css = ".main-container.col1-layout")
+    private WebElementFacade productPageMainContainer;
+
     public void clickColorOptionButton() {
         clickOn(colorOptionButton);
     }
@@ -32,6 +41,17 @@ public class ProductPage extends BasePage{
 
     public void clickAddToWishlistButton() {
         clickOn(addToWishlistButton);
+    }
+
+    public String getProductDescriptionText(){return productDescriptionParagraph.getText();}
+
+    public void clickAdditionalInformationTab(){clickOn(productAdditionalInformationTab);}
+
+    public String getProductMainPageText(){
+        String productPageText = productPageMainContainer.getText().toLowerCase();
+        clickAdditionalInformationTab();
+        productPageText += productPageMainContainer.getText().toLowerCase();
+        return productPageText;
     }
 
     public void clickParameterColorOptionButton(String colorName) {
