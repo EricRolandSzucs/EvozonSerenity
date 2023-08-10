@@ -5,45 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71db2af2-511d-4b28-8b37-5acc301f7fe1" name="Changes" comment="comment">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/CreateProductTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/AddProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/ManageProductsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/CreateProductSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/utils/ScrollToTopAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/AddNewCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/AddNewCustomerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/InvalidLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/ProductClassificationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/SortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/ValidLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/addToCartDataDriven/AddToCartConfigurableTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/addToCartDataDriven/AddToCartSimpleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/OrdersPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/SubcategoryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/BillingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/ShippingInformationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/NavigationSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/SortSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/AddToCartConfigurable.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/AddToCartSimple.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/LoginWithInvalidEmailOrAddress.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/ProductCategoryPlacement.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/SortingProducts.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/ValidLogin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/AddToCartDataDrivenTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/BaseAdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/BaseAdminTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/DeleteCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/DeleteCustomerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/LoginAdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/LoginAdminTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/CheckoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/LoginTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/HomeAdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/HomeAdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/UserPersonalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/UserPersonalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/AddNewCustomerSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/AddNewCustomerSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductGridPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductGridPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/AddProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/AddProductSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/BaseAdminSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/BaseAdminSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/DeleteCustomerSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/DeleteCustomerSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/HomeAdminSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/LoginAdminSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/LoginAdminSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec_screenshots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7_screenshots.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7_screenshots.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-1394ccc807100629679569056c5d503f119706a085ddac6ac2098cf94c4658ec.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-25238a5d9345c4e142997580884b86df0c549dc3d91a75f47769659ca34ce8c7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/browser-chrome.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/site/serenity/requirements/com.evozon.features-package-requirements.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/requirements/com.evozon.features-package-requirements.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/AddNewCustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/AddNewCustomerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/BaseAdminTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/BaseAdminTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/DeleteCustomerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/DeleteCustomerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/LoginAdminTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/features/Admin/LoginAdminTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/pages/Admin/HomeAdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/pages/Admin/HomeAdminPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/pages/Admin/UserPersonalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/pages/Admin/UserPersonalPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/AddNewCustomerSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/AddNewCustomerSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/BaseAdminSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/BaseAdminSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/DeleteCustomerSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/DeleteCustomerSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/HomeAdminSteps.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/LoginAdminSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/evozon/steps/Admin/LoginAdminSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/BaseSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/CheckoutSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/CheckoutSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/csv/AddToCart.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +57,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2TecHocns1Yczk5CZlRZth1MMkE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,25 +69,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Irina"
+    "git-widget-placeholder": "Merging dev"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.CreateProductTest">
-    <configuration name="AddNewCustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="evozon_serenity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.evozon.features.Admin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.evozon.features.Admin" />
-      <option name="MAIN_CLASS_NAME" value="com.evozon.features.Admin.AddNewCustomerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SearchTest">
     <configuration name="CreateProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="evozon_serenity" />
       <extension name="coverage">
@@ -153,13 +135,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="evozon_serenity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.evozon.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.evozon.features" />
+      <option name="MAIN_CLASS_NAME" value="com.evozon.features.SearchTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.CreateProductTest" />
         <item itemvalue="JUnit.CreateProductTest.createSimpleProduct" />
         <item itemvalue="JUnit.CreateProductTest.navigateToManageProducts" />
         <item itemvalue="JUnit.DeleteCustomerTest" />
-        <item itemvalue="JUnit.AddNewCustomerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +214,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/AddProductPage.java</url>
           <line>112</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/evozon/steps/SearchSteps.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
