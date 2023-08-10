@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class ProductPage extends BasePage{
     @FindBy(css = ".add-to-cart-buttons button")
     private WebElementFacade addToCartButton;
@@ -26,6 +28,10 @@ public class ProductPage extends BasePage{
 
     @FindBy(css = ".main-container.col1-layout")
     private WebElementFacade productPageMainContainer;
+
+    @FindBy(css = ".h1")
+    private WebElementFacade productsTitle;
+
 
     public void clickColorOptionButton() {
         clickOn(colorOptionButton);
@@ -73,6 +79,12 @@ public class ProductPage extends BasePage{
         if(option.isCurrentlyVisible()) {
             clickOn(option);
         }
+    }
+
+
+    public String getProductTitle()
+    {
+        return productsTitle.getText();
     }
 
 
