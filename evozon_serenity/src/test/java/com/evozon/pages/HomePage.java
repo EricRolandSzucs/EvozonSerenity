@@ -3,7 +3,14 @@ package com.evozon.pages;
 import com.evozon.utils.Constants;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+
+import java.util.List;
+import java.util.Random;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 
 public class HomePage extends BasePage {
 
@@ -15,6 +22,9 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "a[title='Log Out']")
     private WebElementFacade logoutLink;
+
+    @FindBy(css = "#header-account a[title='My Account']")
+    private WebElementFacade myAccountLink;
   
     @FindBy(id = "search")
     private WebElementFacade searchField;
@@ -22,11 +32,16 @@ public class HomePage extends BasePage {
     @FindBy(css = "a[title='Register']")
     private WebElementFacade registerLink;
 
+    private WebElementFacade category;
+
     @FindBy(css = ".logo")
     private WebElementFacade homeLogoLink;
 
     @FindBy(css = ".welcome-msg")
     private WebElementFacade welcomeMessage;
+
+    @FindBy(css = ".nav-primary>.level0")
+    private List<WebElementFacade> categories;
 
     public void clickAccountLink(){
         clickOn(accountLink);
@@ -36,6 +51,7 @@ public class HomePage extends BasePage {
         waitFor(loginLink);
         clickOn(loginLink);
     }
+
 
     public void clickLogoutLink(){
         waitFor(logoutLink);
@@ -58,6 +74,31 @@ public class HomePage extends BasePage {
 
     public boolean checkMatchedUrl(String currentUrl){
         return currentUrl.equals(Constants.BASE_URL);
+    }
+
+    public void clickCategory(){
+        Random random = new Random();
+        int randomIndex = random.nextInt(categories.size());
+
+        WebElementFacade randomMenuItem = categories.get(randomIndex);
+        Actions actions = new Actions(getDriver());
+        actions.moveToElement(randomMenuItem).click().perform();
+    }
+
+
+    public void clickOnCategory(String categoryName) {
+        category = element(By.xpath("//li[contains(@class, 'level0')]/a[contains(text(),'" + categoryName + "')]"));
+        new Actions(getDriver()).moveToElement(category).perform();
+    }
+
+    public void clickOnSubcategory(String subcategoryName) {
+        System.out.println(By.xpath("//li[contains(@class, 'level1')]/a[contains(text(),'" + subcategoryName + "')]"));
+        WebElementFacade subcategory = category.find(By.xpath("//li[contains(@class, 'level1')]/a[contains(text(),'" + subcategoryName + "')]"));
+        if(subcategory.isCurrentlyVisible()) {
+            clickOn(subcategory);
+        }
+        else
+            clickOn(category);
     }
 
     public void clickHomeLogo()

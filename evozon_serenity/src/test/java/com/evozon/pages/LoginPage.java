@@ -14,6 +14,9 @@ public class LoginPage extends BasePage {
     @FindBy(id = "send2")
     private WebElementFacade loginButton;
 
+    @FindBy(css = ".error-msg")
+    private WebElementFacade invalidEmailOrPassword;
+
     public void setEmailField(String email){
         waitFor(emailField);
         typeInto(emailField,email);
@@ -25,6 +28,10 @@ public class LoginPage extends BasePage {
 
     public void clickLoginButton(){
         clickOn(loginButton);
+    }
+
+    public boolean invalidEmailOrPasswordMessageIsShown(String message){
+        return invalidEmailOrPassword.containsOnlyText(message);
     }
 
 }

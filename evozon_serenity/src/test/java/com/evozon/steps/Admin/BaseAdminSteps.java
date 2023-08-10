@@ -24,4 +24,7 @@ public class BaseAdminSteps extends ScenarioSteps
     protected ManageProductsPage manageProductsPage;
 
     protected AddProductPage addProductPage;
+
+    protected OrdersPage ordersPage;
+
 }
