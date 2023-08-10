@@ -30,7 +30,7 @@ public class RegisterTest extends BaseTest {
 
         try
         {
-            withTestDataFrom("src/test/resources/csv/validRegister.csv").run(registerSteps).doRegister();
+            withTestDataFrom("src/test/resources/csv/ValidRegister.csv").run(registerSteps).doRegister();
         }
         catch (Exception e){}
     }
@@ -41,7 +41,7 @@ public class RegisterTest extends BaseTest {
         registerSteps.navigateToRegisterPage();
         try
         {
-            withTestDataFrom("src/test/resources/csv/invalidRegister.csv").run(registerSteps).doInvalidRegister();
+            withTestDataFrom("src/test/resources/csv/InvalidRegister.csv").run(registerSteps).doInvalidRegister();
         }
         catch (Exception e){}
     }

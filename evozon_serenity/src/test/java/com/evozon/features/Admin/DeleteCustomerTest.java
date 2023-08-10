@@ -21,7 +21,7 @@ public class DeleteCustomerTest extends BaseAdminTest
         deleteCustomerSteps.navigateToManageCustomers();
         try
         {
-            withTestDataFrom("src/test/resources/csv/validRegister.csv").run(deleteCustomerSteps).doDeleteUser();
+            withTestDataFrom("src/test/resources/csv/ValidRegister.csv").run(deleteCustomerSteps).doDeleteUser();
         }catch (Exception e){}
 
     }
