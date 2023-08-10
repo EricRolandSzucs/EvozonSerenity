@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class ProductPage extends BasePage{
     @FindBy(css = ".add-to-cart-buttons button")
     private WebElementFacade addToCartButton;
@@ -26,6 +28,30 @@ public class ProductPage extends BasePage{
 
     @FindBy(css = ".main-container.col1-layout")
     private WebElementFacade productPageMainContainer;
+
+    @FindBy(css = ".toggle-tabs li.last")
+    private WebElementFacade productReviewTabButton;
+
+    @FindBy(css = ".no-rating a")
+    protected WebElementFacade addFirstReviewButton;
+
+    @FindBy(css = ".rating-links a:last-of-type")
+    private WebElementFacade addReviewButton;
+
+    public void clickProductReviewTabButton() { clickOn(productReviewTabButton); }
+
+    public boolean verifyReviewExistence() {
+        return !addFirstReviewButton.isPresent();
+    }
+
+    public void clickAddFirstProductReviewButton() {
+        clickOn(addFirstReviewButton);
+    }
+
+    public void clickAddProductReviewButton() {
+        clickOn(addReviewButton);
+    }
+
 
     public void clickColorOptionButton() {
         clickOn(colorOptionButton);

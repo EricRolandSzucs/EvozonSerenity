@@ -39,4 +39,6 @@ public class BaseSteps extends ScenarioSteps {
 
     protected SubcategoryPage subcategoryPage;
 
+    protected ProductReviewPage productReviewPage;
+
 }

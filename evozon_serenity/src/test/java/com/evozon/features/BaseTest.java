@@ -57,6 +57,9 @@ public class BaseTest {
     @Steps
     protected LoginAdminSteps loginAdminSteps;
 
+    @Steps
+    protected AddReviewSteps addReviewSteps;
+
     @Before
     public void init(){
         driver.manage().window().maximize();
