@@ -33,6 +33,30 @@ public class ProductPage extends BasePage{
     private WebElementFacade productsTitle;
 
 
+    @FindBy(css = ".toggle-tabs li.last")
+    private WebElementFacade productReviewTabButton;
+
+    @FindBy(css = ".no-rating a")
+    protected WebElementFacade addFirstReviewButton;
+
+    @FindBy(css = ".rating-links a:last-of-type")
+    private WebElementFacade addReviewButton;
+
+    public void clickProductReviewTabButton() { clickOn(productReviewTabButton); }
+
+    public boolean verifyReviewExistence() {
+        return !addFirstReviewButton.isPresent();
+    }
+
+    public void clickAddFirstProductReviewButton() {
+        clickOn(addFirstReviewButton);
+    }
+
+    public void clickAddProductReviewButton() {
+        clickOn(addReviewButton);
+    }
+
+
     public void clickColorOptionButton() {
         clickOn(colorOptionButton);
     }

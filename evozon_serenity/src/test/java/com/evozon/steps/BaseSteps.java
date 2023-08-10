@@ -43,4 +43,6 @@ public class BaseSteps extends ScenarioSteps {
 
     protected ProductDetailsAdminPage productDetailsAdminPage;
 
+    protected ProductReviewPage productReviewPage;
+
 }

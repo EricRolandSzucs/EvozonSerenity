@@ -64,7 +64,7 @@ public class BillingPage extends BasePage {
     }
 
     public void setTelephoneField() {
-        String randomTelephone = faker.phoneNumber().cellPhone();
+        String randomTelephone = faker.bothify("##########");
         typeInto(telephoneField, randomTelephone);
     }
 }
