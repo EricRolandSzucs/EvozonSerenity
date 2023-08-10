@@ -1,12 +1,16 @@
 package com.evozon.pages.checkout;
 
 import com.evozon.pages.BasePage;
+import com.github.javafaker.Faker;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.support.FindBy;
 
 import java.time.Duration;
 
 public class ShippingInformationPage extends BasePage {
+
+    Faker faker = new Faker();
+
     @FindBy(id ="shipping:firstname")
     protected WebElementFacade firstNameShippingField;
 
@@ -31,7 +35,7 @@ public class ShippingInformationPage extends BasePage {
     @FindBy(css = "#shipping-buttons-container button")
     private WebElementFacade shippingInformationContinueButton;
 
-    public boolean isShippingInfoNotDefined() {
+    public boolean isShippingInfoUndefined() {
         waitFor(shippingInformationContinueButton);
         return firstNameShippingField.isCurrentlyVisible();
     }
@@ -41,35 +45,38 @@ public class ShippingInformationPage extends BasePage {
         clickOn(shippingInformationContinueButton);
     }
 
-    public void setFirstNameShippingField(String firstName) {
+    public void setFirstNameShippingField() {
         waitFor(firstNameShippingField);
-        typeInto(firstNameShippingField, firstName);
+        String randomFirstname = faker.name().firstName();
+        typeInto(firstNameShippingField, randomFirstname);
     }
 
-    public void setLastNameShippingField(String lastName) {
-
-        typeInto(lastNameShippingField, lastName);
+    public void setLastNameShippingField() {
+        String randomLastname = faker.name().lastName();
+        typeInto(lastNameShippingField, randomLastname);
     }
 
-    public void setAddressShippingField(String address) {
-
-        typeInto(addressShippingField,address);
+    public void setAddressShippingField() {
+        String randomAddress = faker.address().streetAddress();
+        typeInto(addressShippingField, randomAddress);
     }
 
-    public void setCityShippingField(String city) {
-
-        typeInto(cityShippingField,city);
+    public void setCityShippingField() {
+        String randomCity = faker.address().city();
+        typeInto(cityShippingField, randomCity);
     }
 
-    public void setPostcodeShippingField(String postcode) {
-        typeInto(postcodeShippingField, postcode);
+    public void setPostcodeShippingField() {
+        String randomPostcode = faker.address().zipCode();
+        typeInto(postcodeShippingField, randomPostcode);
     }
 
     public void setCountryShippingDropDown() {
         clickOn(countryShippingDropDown);
     }
 
-    public void setTelephoneShippingField(String telephone) {
-        typeInto(telephoneShippingField, telephone);
+    public void setTelephoneShippingField() {
+        String randomTelephone = faker.phoneNumber().cellPhone();
+        typeInto(telephoneShippingField, randomTelephone);
     }
 }

@@ -1,9 +1,0 @@
-firstName,middleNameOrInitial,lastName,emailAddress,password,confirmPassword
-Liam,,,liam@liam.com,liamliam,liamliam
-,,Liam,liam@liam.com,liamliam,liamliam
-Liam,,Dane,liamDane.com,liamdane,liamdane
-Liam,,Dane,liamDane.com,liamdane,daneliam
-Liam,,Dane,,liamdane,liamdane
-Liam,,Dane,liam@dane.com, liamdane,,
-Liam,,Dane,liam@dane.com,,liamdane
-,,,,,,

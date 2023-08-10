@@ -66,7 +66,7 @@ public class ProductGridPage extends BasePage {
             clickOn(ascSwitcher);
     }
 
-    public boolean checkIsSortingBy(String option, String order) {
+    public boolean verifyIsSortedBy(String option, String order) {
         List<String> actualSortedProducts = new ArrayList<>();
 
         switch (option) {
@@ -88,7 +88,7 @@ public class ProductGridPage extends BasePage {
             case "Price":
                 List<Double> priceList = new ArrayList<>();
                 for (WebElementFacade item : itemsList) {
-                    String priceText = item.find(By.cssSelector(".price")).getText();
+                    String priceText = item.find(By.cssSelector(":not(.old-price)>.price")).getText();
                     double price = Double.parseDouble(priceText.replaceAll("[^0-9.]", ""));
                     priceList.add(price);
                 }

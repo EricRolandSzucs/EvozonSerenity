@@ -21,8 +21,8 @@ public class CartSteps extends BaseSteps {
     }
 
     @Step
-    public void checkQuantityIsUpdated(int quantity){
-        cartPage.checkQuantityIsUpdated(quantity);
+    public void verifyQuantityIsUpdated(int quantity){
+        cartPage.verifyQuantityIsUpdated(quantity);
     }
 
     @Step
@@ -36,7 +36,7 @@ public class CartSteps extends BaseSteps {
     }
 
     @Step
-    public void checkProductIsDeleted(){
+    public void verifyProductIsDeleted(){
         Assert.assertTrue(cartPage.productIsDeleted());
     }
 
@@ -46,8 +46,8 @@ public class CartSteps extends BaseSteps {
     }
 
     @Step
-    public void checkCartIsEmpty(){
-        Assert.assertTrue(cartPage.checkEmptyCart());
+    public void verifyCartIsEmpty(){
+        Assert.assertTrue(cartPage.verifyCartIsEmpty());
     }
 
     @Step
@@ -61,7 +61,7 @@ public class CartSteps extends BaseSteps {
     }
 
     @Step
-    public void checkUrlIsMatched(String currentUrl){
-        homePage.checkMatchedUrl(currentUrl);
+    public void verifyUrlsAreIdentical(String currentUrl){
+        homePage.verifyUrlsAreIdentical(currentUrl);
     }
 }

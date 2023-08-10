@@ -1,6 +1,6 @@
 package com.evozon.suite;
 
-import com.evozon.features.Admin.DeleteCustomerTest;
+import com.evozon.features.admin.DeleteCustomerTest;
 import com.evozon.features.RegisterTest;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

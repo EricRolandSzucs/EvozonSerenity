@@ -1,9 +1,8 @@
 package com.evozon.features;
 
 
-import com.evozon.features.Admin.BaseAdminTest;
 import com.evozon.steps.AddProductSteps;
-import com.evozon.steps.Admin.LoginAdminSteps;
+import com.evozon.steps.admin.LoginAdminSteps;
 import com.evozon.steps.CartSteps;
 import com.evozon.steps.LoginSteps;
 import com.evozon.steps.RegisterSteps;

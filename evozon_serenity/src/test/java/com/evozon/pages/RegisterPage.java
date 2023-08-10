@@ -43,6 +43,11 @@ public class RegisterPage extends PageObject {
         }
     }
 
+    public void setRandomFirstnameField(){
+        String randomFirstname = faker.name().firstName();
+        typeInto(firstnameField, randomFirstname);
+    }
+
     public void setMiddleNameOrInitialField(String middleNameOrInitial)
     {
         if(middleNameOrInitial!=null) {
@@ -54,6 +59,11 @@ public class RegisterPage extends PageObject {
         if(lastname!=null) {
             typeInto(lastnameField, lastname);
         }
+    }
+
+    public void setRandomLastnameField(){
+        String randomLastname = faker.name().lastName();
+        typeInto(lastnameField, randomLastname);
     }
 
     public void setEmailAddressField(String email) {

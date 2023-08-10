@@ -2,10 +2,8 @@ package com.evozon.pages;
 
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.time.Duration;
 import java.util.Objects;
 
 public class WishlistPage extends BasePage{
@@ -38,7 +36,7 @@ public class WishlistPage extends BasePage{
         getAlert().accept();
     }
 
-    public boolean checkProductExists() {
+    public boolean verifyProductExists() {
             return !identifiableProduct.isCurrentlyVisible();
     }
 
@@ -54,7 +52,7 @@ public class WishlistPage extends BasePage{
         return Integer.parseInt(quantity.getValue());
     }
 
-    public boolean checkQuantityValue(String value) {
+    public boolean verifyQuantityValue(String value) {
         return Objects.equals(quantity.getValue(), value);
     }
 

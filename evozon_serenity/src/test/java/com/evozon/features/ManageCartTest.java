@@ -17,7 +17,7 @@ public class ManageCartTest extends BaseTest {
         cartSteps.enterQuantity(quantity);
         cartSteps.clickUpdate();
         cartSteps.identifyProduct(Constants.CONFIGURABLE_PRODUCT);
-        cartSteps.checkQuantityIsUpdated(quantity);
+        cartSteps.verifyQuantityIsUpdated(quantity);
     }
 
     @Test
@@ -35,9 +35,9 @@ public class ManageCartTest extends BaseTest {
         cartSteps.enterQuantity(quantity2);
         cartSteps.clickUpdateShoppingCartLink();
         cartSteps.identifyProduct(Constants.CONFIGURABLE_PRODUCT);
-        cartSteps.checkQuantityIsUpdated(quantity1);
+        cartSteps.verifyQuantityIsUpdated(quantity1);
         cartSteps.identifyProduct(Constants.SIMPLE_PRODUCT);
-        cartSteps.checkQuantityIsUpdated(quantity2);
+        cartSteps.verifyQuantityIsUpdated(quantity2);
     }
 
     @Test
@@ -48,7 +48,7 @@ public class ManageCartTest extends BaseTest {
         addProductSteps.doAddToCartSimpleProduct();
         cartSteps.identifyProduct(Constants.SIMPLE_PRODUCT);
         cartSteps.removeProductFromCart();
-        cartSteps.checkProductIsDeleted();
+        cartSteps.verifyProductIsDeleted();
     }
 
     @Test
@@ -60,7 +60,7 @@ public class ManageCartTest extends BaseTest {
         searchSteps.searchForProduct(Constants.CONFIGURABLE_PRODUCT);
         addProductSteps.doAddToCartConfigurableProduct();
         cartSteps.clickEmptyCartLink();
-        cartSteps.checkCartIsEmpty();
+        cartSteps.verifyCartIsEmpty();
     }
 
     @Test
@@ -69,6 +69,6 @@ public class ManageCartTest extends BaseTest {
         addProductSteps.doAddToCartVirtualProduct();
         cartSteps.clickContinueShoppingLink();
         String currentUrl = driver.getCurrentUrl();
-        cartSteps.checkUrlIsMatched(currentUrl);
+        cartSteps.verifyUrlsAreIdentical(currentUrl);
     }
 }

@@ -1,10 +1,14 @@
 package com.evozon.pages.checkout;
 
 import com.evozon.pages.BasePage;
+import com.github.javafaker.Faker;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.support.FindBy;
 
 public class BillingPage extends BasePage {
+
+    Faker faker = new Faker();
+
     @FindBy(id ="billing:firstname")
     private WebElementFacade firstNameField;
 
@@ -26,35 +30,41 @@ public class BillingPage extends BasePage {
     @FindBy(id = "billing:telephone")
     private WebElementFacade telephoneField;
 
-    public void setFirstNameField(String firstName) {
-        typeInto(firstNameField, firstName);
+    public void setFirstNameField() {
+        String randomFirstname = faker.name().firstName();
+        typeInto(firstNameField, randomFirstname);
     }
 
-    public boolean isBillingInfoNotDefined() {
+    public boolean isBillingInfoUndefined() {
         return firstNameField.isCurrentlyVisible();
     }
 
-    public void setLastNameField(String lastName) {
-        typeInto(lastNameField, lastName);
+    public void setLastNameField() {
+        String randomLastname = faker.name().lastName();
+        typeInto(lastNameField, randomLastname);
     }
 
-    public void setAddressField(String address) {
-        typeInto(addressField, address);
+    public void setAddressField() {
+        String randomAddress = faker.address().streetAddress();
+        typeInto(addressField, randomAddress);
     }
 
-    public void setCityField(String city) {
-        typeInto(cityField, city);
+    public void setCityField() {
+        String randomCity = faker.address().city();
+        typeInto(cityField, randomCity);
     }
 
-    public void setPostcodeField(String postcode) {
-        typeInto(postcodeField,postcode);
+    public void setPostcodeField() {
+        String randomPostcode = faker.address().zipCode();
+        typeInto(postcodeField, randomPostcode);
     }
 
     public void setCountryDropDown() {
         clickOn(countryDropDown);
     }
 
-    public void setTelephoneField(String telephone) {
-        typeInto(telephoneField,telephone);
+    public void setTelephoneField() {
+        String randomTelephone = faker.phoneNumber().cellPhone();
+        typeInto(telephoneField, randomTelephone);
     }
 }
