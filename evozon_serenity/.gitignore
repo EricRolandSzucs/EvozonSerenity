@@ -1,15 +1,5 @@
 # Default ignored files
-/shelf/
-/workspace.xml
-/.gitignore
-/checkstyle-idea.xml
-/compiler.xml
-/encodings.xml
-/jarRepositories.xml
-/misc.xml
-/uiDesigner.xml
-/vcs.xml
-/target
+.idea
+target
+*.iml
 build.gradle
-/.idea
-evozon_serenity.iml
