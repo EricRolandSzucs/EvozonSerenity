@@ -3,8 +3,6 @@ package com.evozon.steps.admin;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.WebElement;
 
 import java.util.List;
 

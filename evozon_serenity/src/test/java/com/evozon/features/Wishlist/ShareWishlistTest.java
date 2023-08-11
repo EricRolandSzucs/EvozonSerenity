@@ -1,5 +1,4 @@
-package com.evozon.features.Wishlist;
-
+package com.evozon.features.wishlist;
 import com.evozon.features.BaseTest;
 import com.evozon.utils.Constants;
 import org.junit.Before;

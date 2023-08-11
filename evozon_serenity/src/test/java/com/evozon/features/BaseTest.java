@@ -2,6 +2,7 @@ package com.evozon.features;
 
 
 import com.evozon.steps.AddProductSteps;
+import com.evozon.steps.admin.CreateProductSteps;
 import com.evozon.steps.admin.LoginAdminSteps;
 import com.evozon.steps.CartSteps;
 import com.evozon.steps.LoginSteps;
@@ -56,6 +57,12 @@ public class BaseTest {
 
     @Steps
     protected LoginAdminSteps loginAdminSteps;
+
+    @Steps
+    protected CreateProductSteps createProductSteps;
+
+    @Steps
+    protected AddReviewSteps addReviewSteps;
 
     @Before
     public void init(){

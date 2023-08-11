@@ -76,7 +76,7 @@ public class ShippingInformationPage extends BasePage {
     }
 
     public void setTelephoneShippingField() {
-        String randomTelephone = faker.phoneNumber().cellPhone();
+        String randomTelephone = faker.bothify("##########");
         typeInto(telephoneShippingField, randomTelephone);
     }
 }

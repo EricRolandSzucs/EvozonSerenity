@@ -1,5 +1,7 @@
 package com.evozon.steps;
 
+import com.evozon.pages.admin.LoginAdminPage;
+import com.evozon.pages.admin.ManageProductsPage;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
@@ -23,8 +25,8 @@ public class SearchSteps extends BaseSteps{
 
     @Step
     public void searchForProduct(String product) {
-        homePage.setSearchField(product);
-        homePage.submitSearchField();
+        setSearchField(product);
+        submitSearchField();
     }
 
     @Step
@@ -39,18 +41,72 @@ public class SearchSteps extends BaseSteps{
         return productGridPage.getResultProductLinksList();
     }
 
+
     @Step
-    public void clickOnAdditionalInformation()
+    public boolean productsPageContainsSearchCategory(String productPageText)
     {
-        productPage.clickAdditionalInformationTab();
+        return  productPageText.contains(category.toLowerCase()) || productPageText.contains(category.toLowerCase()+"s");
     }
 
     @Step
-    public void verifyProductsPageContainsSearchCategory(String productPageText)
+    public void enterProductName(String productTile)
     {
-        Boolean singular = productPageText.contains(category.toLowerCase());
-        Boolean plural = productPageText.contains(category.toLowerCase()+"s");
-        Assert.assertTrue(singular || plural);
+        manageProductsPage.setSearchByNameInputField(productTile);
+    }
+
+    @Step
+    public List<WebElementFacade> getListOfResultedProducts()
+    {
+        return manageProductsPage.getProductsListLinks();
+    }
+
+    @Step
+    public boolean checkIfProductContainsSearchKey(String productTitle)
+    {
+        List<WebElementFacade> infoPages = productDetailsAdminPage.getProductInformationPagesLinksList();
+        for(WebElementFacade page: infoPages)
+        {
+            productDetailsAdminPage.clickOnProductInformationPage(page);
+            if(productDetailsAdminPage.getProductInformationBoxText().contains(productTitle.toLowerCase()))
+                return true;
+        }
+        return false;
+    }
+
+
+    @Step
+    public List<WebElementFacade> searchProductByTitleInAdmin(String productTile)
+    {
+        enterProductName(productTile);
+        return getListOfResultedProducts();
+    }
+
+    @Step
+    public boolean verifyListOfProductsAdminContainsKey(String productTile)
+    {
+        List<WebElementFacade> products = searchProductByTitleInAdmin(productTile);
+        for(WebElementFacade prod: products)
+        {
+            clickOnProduct(prod);
+            if(checkIfProductContainsSearchKey(productTile))
+                return true;
+        }
+        return false;
+    }
+
+    @Step
+    public void verifyProductContainsSearchCategory()
+    {
+        Assert.assertTrue(productsPageContainsSearchCategory(getAllTextFromProductsPage()) || verifyListOfProductsAdminContainsKey(getProductTitle()));
+    }
+
+    @Step
+    public String getProductTitle() {return productPage.getProductTitle();}
+
+    @Step
+    public String getAllTextFromProductsPage()
+    {
+        return productPage.getProductMainPageText();
     }
 
     @Step
@@ -60,10 +116,7 @@ public class SearchSteps extends BaseSteps{
         for(int i = 0; i < prodLinks.size(); i++)
         {
             clickOnProduct(prodLinks.get(i));
-            String allTextOnProductPage = productPage.getProductMainPageText();
-
-            verifyProductsPageContainsSearchCategory(allTextOnProductPage);
-
+            verifyProductContainsSearchCategory();
             getDriver().navigate().back();
             prodLinks = getAllProductsForSearch();
         }

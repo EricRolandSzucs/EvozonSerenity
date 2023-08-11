@@ -4,43 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71db2af2-511d-4b28-8b37-5acc301f7fe1" name="Changes" comment="comment">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/InvalidLoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/ProductClassificationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/SortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/ValidLoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/addToCartDataDriven/AddToCartConfigurableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/addToCartDataDriven/AddToCartSimpleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/OrdersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/SubcategoryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/BillingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/ShippingInformationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/NavigationSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/SortSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/AddToCartConfigurable.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/AddToCartSimple.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/LoginWithInvalidEmailOrAddress.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/ProductCategoryPlacement.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/SortingProducts.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/csv/ValidLogin.csv" afterDir="false" />
+    <list default="true" id="71db2af2-511d-4b28-8b37-5acc301f7fe1" name="Changes" comment="search data driven test 2">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/ReviewTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductReviewPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/AddReviewSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/suite/AccountSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/suite/SmokeSuite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/evozon/suite/WishlistSuite.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/AddToCartDataDrivenTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/BaseAdminTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/Admin/BaseAdminTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/CheckoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/CheckoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/LoginTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/HomeAdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/HomeAdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductGridPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductGridPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/features/Wishlist/ShareWishlistTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/features/Wishlist/ShareWishlistTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/AddProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/AddProductSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/BaseAdminSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/Admin/BaseAdminSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/BillingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/BillingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/ShippingInformationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/pages/checkout/ShippingInformationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/BaseSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/BaseSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/CheckoutSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/CheckoutSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/evozon/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/evozon/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/csv/AddToCart.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +33,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "IrinaDezmirean"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cb0be727-efed-4cb0-bb4b-7733115f05db" />
+        <option name="url" value="https://github.com/EricRolandSzucs/EvozonSerenity.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -73,11 +64,26 @@
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.SearchTest">
+    <configuration name="CheckoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="evozon_serenity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.evozon.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.evozon.features" />
+      <option name="MAIN_CLASS_NAME" value="com.evozon.features.CheckoutTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CreateProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="evozon_serenity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.evozon.features.Admin.*" />
+          <option name="PATTERN" value="com.evozon.features.admin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,7 +98,7 @@
       <module name="evozon_serenity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.evozon.features.Admin.*" />
+          <option name="PATTERN" value="com.evozon.features.admin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,7 +114,7 @@
       <module name="evozon_serenity" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.evozon.features.Admin.*" />
+          <option name="PATTERN" value="com.evozon.features.admin.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,21 +122,6 @@
       <option name="MAIN_CLASS_NAME" value="com.evozon.features.Admin.CreateProductTest" />
       <option name="METHOD_NAME" value="navigateToManageProducts" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeleteCustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="evozon_serenity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.evozon.features.Admin.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.evozon.features.Admin" />
-      <option name="MAIN_CLASS_NAME" value="com.evozon.features.Admin.DeleteCustomerTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,10 +144,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SearchTest" />
+        <item itemvalue="JUnit.CheckoutTest" />
         <item itemvalue="JUnit.CreateProductTest" />
         <item itemvalue="JUnit.CreateProductTest.createSimpleProduct" />
         <item itemvalue="JUnit.CreateProductTest.navigateToManageProducts" />
-        <item itemvalue="JUnit.DeleteCustomerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691407912255</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="search data driven test">
+      <option name="closed" value="true" />
+      <created>1691654106071</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691654106071</updated>
+    </task>
+    <task id="LOCAL-00003" summary="search data driven test 2">
+      <option name="closed" value="true" />
+      <created>1691654439880</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691654439880</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,22 +212,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/evozon/pages/Admin/AddProductPage.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/evozon/steps/SearchSteps.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="search data driven test" />
+    <MESSAGE value="search data driven test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="search data driven test 2" />
   </component>
 </project>

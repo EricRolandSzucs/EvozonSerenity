@@ -23,7 +23,7 @@ public class OrdersPage extends BasePage {
         clickOn(searchButton);
     }
 
-    public boolean checkIfOrderIsPresent(String orderId) {
+    public boolean verifyIfOrderIsPresent(String orderId) {
         WebElementFacade order = element(By.xpath("//tr[td[2][contains(text(),'" + orderId + "')]]"));
         return order.isPresent();
     }

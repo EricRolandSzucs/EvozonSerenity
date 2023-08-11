@@ -4,8 +4,7 @@ package com.evozon.steps;
 import com.evozon.pages.*;
 
 import com.evozon.pages.AccountPage;
-import com.evozon.pages.admin.HomeAdminPage;
-import com.evozon.pages.admin.OrdersPage;
+import com.evozon.pages.admin.*;
 import com.evozon.pages.HomePage;
 import com.evozon.pages.LoginPage;
 import com.evozon.pages.RegisterPage;
@@ -14,6 +13,7 @@ import com.evozon.pages.RegisterPage;
 import com.evozon.pages.checkout.BillingPage;
 import com.evozon.pages.checkout.CheckoutPage;
 import com.evozon.pages.checkout.ShippingInformationPage;
+import com.evozon.steps.admin.CreateProductSteps;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class BaseSteps extends ScenarioSteps {
@@ -38,5 +38,11 @@ public class BaseSteps extends ScenarioSteps {
     protected OrdersPage ordersAdminPage;
 
     protected SubcategoryPage subcategoryPage;
+
+    protected ManageProductsPage manageProductsPage;
+
+    protected ProductDetailsAdminPage productDetailsAdminPage;
+
+    protected ProductReviewPage productReviewPage;
 
 }
